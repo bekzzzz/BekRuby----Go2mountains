@@ -1707,8 +1707,9 @@
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        const saved = localStorage.getItem("siteLang") || "zh";
-        setLanguage(saved);
+        // Always default to Traditional Chinese on load. If a visitor switches to English,
+        // the toggle still works but each fresh visit will start in Chinese.
+        setLanguage("zh");
 
         const langBtn = document.querySelector(".nav-lang__btn");
         if (langBtn) {
