@@ -1,0 +1,41 @@
+.g-image-content {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+.g-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.g-card-img {
+  object-fit: cover;
+  max-width: 50px;
+  max-height: 50px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+.g-links {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.g-links p {
+  display: flex;
+  align-items: center;
+  color: #1877f2;
+}
+
+.g-links a {
+  align-items: center;
+  height: 20px;
+  padding-right: 5px;
+}
+

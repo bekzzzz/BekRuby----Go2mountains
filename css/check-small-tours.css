@@ -1,0 +1,274 @@
+/* ====== Tours Section (Premium Grid) ====== */
+:root {
+  --bg: #f4efe8;
+  --card: #ffffff;
+  --ink: #1d1d1f;
+  --muted: rgba(29, 29, 31, 0.65);
+  --line: rgba(0, 0, 0, 0.08);
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  --radius: 18px;
+}
+
+.tours {
+  background: var(--bg);
+  padding: 90px 18px 110px;
+}
+
+.tours__container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.tours__header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.tours__title {
+  font-size: clamp(26px, 2.2vw, 36px);
+  font-weight: 650;
+  letter-spacing: 0.2px;
+  margin: 0 0 10px;
+  color: var(--ink);
+}
+
+.tours__subtitle {
+  margin: 0 auto 18px;
+  max-width: 720px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.tours__controls {
+  /*display: flex; */
+  display: none;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.chip {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.chip:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.chip.is-active {
+  background: #fff;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* ====== GRID: 6 columns on desktop ====== */
+.tours__grid {
+  display: grid;
+  gap: 28px; /* extra breathing room between columns/rows */
+  grid-template-columns: 1fr;
+  max-width: 1100px; /* keep cards from stretching too wide */
+  margin: 0 auto;
+}
+
+/* Two columns on small/medium screens */
+@media (min-width: 641px) {
+  .tours__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Three columns on desktop: 3 across, next row starts at card 4 */
+@media (min-width: 900px) {
+  .tours__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* If you ALWAYS want 6 columns on normal desktop too, replace above with:
+@media (min-width: 1100px){ .tours__grid{ grid-template-columns: repeat(6, 1fr); } }
+But 6 columns can look small on 1200px screens. Big-desktop rule is premium-safe.
+*/
+
+.tour-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+  transition: transform 0.18s ease, box-shadow 0.18s ease,
+    border-color 0.18s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px; /* slightly smaller card */
+}
+
+.tour-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.tour-card__media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.tour-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.02);
+  transition: transform 0.35s ease;
+}
+
+.tour-card:hover .tour-card__media img {
+  transform: scale(1.06);
+}
+
+/* cinematic top/bottom fade */
+.tour-card__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.08) 35%,
+    rgba(0, 0, 0, 0) 55%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
+}
+
+.tour-card__badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  backdrop-filter: blur(8px);
+}
+
+.tour-card__body {
+  padding: 14px 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.tour-card__title {
+  font-size: 15px;
+  font-weight: 650;
+  margin: 0;
+  color: var(--ink);
+  line-height: 1.25;
+}
+
+.tour-card__meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.tour-card__meta span {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.tour-card__desc {
+  margin: 0;
+  color: rgba(29, 29, 31, 0.75);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.tour-card__actions {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 999px;
+  padding: 10px 12px;
+  font-size: 13px;
+  text-decoration: none;
+  border: 1px solid var(--line);
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease,
+    border-color 0.15s ease;
+  user-select: none;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn--primary {
+  background: transparent;
+  color: #1e7f7a;
+  border: 2px solid #1e7f7a;
+}
+
+.btn--primary:hover {
+  background: #1e7f7a;
+  color: #ffffff;
+}
+
+.btn--ghost {
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--ink);
+}
+
+.tours__footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.tours__more {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.tours__more:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.tours__more.is-hidden {
+  display: none;
+}

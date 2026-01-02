@@ -1,0 +1,972 @@
+/*----gallery ----*/
+.about-sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 0.8)),
+    url(/bek-ruby-15april/assets/hero-page-img/7-days-hero-2.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.about-sub-header h1 {
+  margin-top: 100px;
+}
+
+.about-sub-header ul li a {
+  color: #fff;
+}
+
+.sub-header {
+  height: 50vh;
+  width: 100%;
+}
+
+.tour-section {
+  background-color: var(--tour-bg-color);
+  padding-top: 50px;
+}
+
+.gallery-container {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 200px 200px;
+  grid-template-rows: 200px 200px;
+  position: relative;
+  justify-content: center;
+  background-color: white;
+}
+
+.a {
+  grid-column: 1 / 2;
+  grid-row: 1/3;
+}
+.b {
+  grid-column: 2/4;
+  grid-row: 1;
+}
+.c {
+  grid-column: 2;
+  grid-row: 2;
+}
+.d {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.info-item-cont-level {
+  display: flex;
+  justify-content: space-between;
+}
+
+.level-logo {
+  width: 24px;
+  height: 20px;
+  padding-right: 20px;
+}
+
+.gallery a {
+  overflow: hidden;
+  box-shadow: 1 3px 5px #000;
+}
+
+.gallery a img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+}
+
+.gallery-container h1 {
+  font-size: 32px;
+  color: var(--text-color);
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  z-index: 10;
+}
+
+.photo-collage-all {
+  position: absolute;
+  cursor: pointer;
+  left: 24px;
+  top: 24px;
+  background-color: #fff;
+  color: #1a2b49;
+  padding: 8px 12px;
+  border-radius: 4px;
+  min-height: 40px;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.photo-collage-all:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+img.lg-object.lg-image {
+  width: 60%;
+}
+
+@media (max-width: 700px) {
+  .tour-section {
+    padding-top: 20px;
+  }
+  .gallery-container {
+    width: 100%;
+    margin: auto;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 0;
+    grid-template-rows: 50% 30%;
+    background-color: white;
+    margin-left: -20px;
+  }
+  .gallery-container h1 {
+    font-size: 28px;
+    color: #000;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+  .photo-collage-all {
+    position: absolute;
+    cursor: pointer;
+    background-color: #fff;
+    color: #1a2b49;
+    padding: 8px 12px;
+    border-radius: 4px;
+    min-height: 40px;
+    border: none;
+    transition: box-shadow 0.3s ease;
+    margin: 0;
+    top: 90%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+.info-item-row {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.left-info-item-container {
+  background-color: #fff;
+  display: flex;
+}
+
+.tour-left-info-top ul {
+  padding-top: 26px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.tour-left-info-top ul li {
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+
+.info-item-title p {
+  font-size: 14px;
+  color: #909090;
+  text-transform: uppercase;
+}
+
+.info-item-cont {
+  font-size: 16px;
+}
+
+.date-month {
+  margin-bottom: 10px;
+}
+
+.tour-left-info-bottom ul {
+  padding-top: 26px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+
+.tour-left-info-bottom ul li {
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+
+.level-logo {
+  width: 50px;
+}
+
+.tph-contact {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.thp-price p {
+  font-size: 14px;
+  color: var(--text-color-p-grey);
+}
+
+.thp-price .price {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.thp-price {
+  padding-top: 26px;
+  padding-right: 100px;
+  text-align: right;
+}
+
+.info-item-btn {
+  text-align: center;
+  padding-right: 60px;
+  padding-top: 26px;
+}
+
+.info-item-btn p {
+  padding-bottom: 40px;
+}
+
+.item-hero-btn {
+  background: linear-gradient(270deg, #ff994f, #fa6d86);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+  padding: 12px 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 50px;
+}
+
+.item-hero-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.item-hero-btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.item-hero-btn:hover span {
+  padding-right: 25px;
+}
+.item-hero-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media (max-width: 700px) {
+  .info-item-row {
+    flex-direction: column;
+  }
+  .gallery {
+    grid-template-rows: 200px 200px;
+  }
+  .tour-section {
+    background-color: #fff;
+  }
+  .tph-contact {
+    background-color: #fff0e5;
+  }
+}
+
+@media (max-width: 991px) {
+  .info-item-row {
+    flex-direction: column;
+  }
+  .left-info-item-container {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  }
+  .tph-contact {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .info-item-btn {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+  }
+  .item-hero-btn span {
+    font-size: 16px;
+  }
+  .thp-price {
+    padding-top: 26px;
+    padding-right: 20px;
+    padding-left: 40px;
+    text-align: right;
+  }
+  .tph-contact {
+    height: 240px;
+  }
+  .item-hero-btn {
+    padding: 10px 30px;
+  }
+}
+
+.description-highlights-map {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  padding-top: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.description h3 {
+  color: var(--text-color);
+  font-weight: 600;
+  margin: 10px 0;
+  font-size: 22px;
+  text-align: left;
+}
+
+.description h4 {
+  padding-bottom: 5px;
+}
+
+.description p {
+  color: var(--text-color-p-grey);
+  padding: 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.highlights {
+  padding-top: 20px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.highlights h2 {
+  color: var(--text-color);
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.highlights p {
+  color: var(--text-color-p-grey);
+  padding: 0;
+}
+
+.highlights li {
+  color: var(--text-color-p-grey);
+  padding-bottom: 10px;
+}
+
+.highlights-ul {
+  padding-left: 20px;
+}
+.highlights-span {
+  font-weight: 600;
+}
+
+a.google-map-link {
+  text-decoration: none;
+}
+
+.google-btn {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: solid;
+  border-color: var(--primary-color);
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .description-highlights-map {
+    flex-direction: column;
+  }
+  .description h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .description-highlights-map {
+    flex-direction: column;
+  }
+  .google-map iframe {
+    width: 97%;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .description p {
+    width: 100%;
+  }
+  .highlights {
+    width: 100%;
+  }
+}
+
+/*---------------------------- Itinary ----------------------------*/
+.itinerary {
+  min-height: 750px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  margin-bottom: 150px;
+}
+
+.itinerary-row {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.itinerary h1 {
+  font-size: 32px;
+  columns: var(--text-color);
+}
+
+.itinerary-title {
+  font-size: 40px;
+  margin: 2rem 0rem;
+}
+
+.itinerary-day-cal {
+  max-width: auto;
+  margin-top: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid rgb(172, 170, 170);
+  cursor: pointer;
+}
+
+.itinerary-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itinerary-day-cal h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.itinerary-day-cal h3 span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.itinerary-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+
+.itinerary-answer p {
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+.itinerary-day-cal.active .itinerary-answer {
+  max-height: 650px;
+  animation: fade 1s ease-in-out;
+}
+
+.itinerary-day-cal.active svg {
+  transform: rotate(180deg);
+}
+
+svg {
+  transition: transform 0.3s ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.about-tour-col-info {
+  align-items: center;
+}
+
+.about-tour-col p {
+  font-size: 16px;
+  padding: 15px 0 25px;
+  color: #505050;
+  align-items: center;
+}
+
+.content-image {
+  flex-basis: 50%;
+}
+.overnight .fa {
+  margin-right: 10px;
+}
+
+@media (max-width: 700px) {
+  .itinerary {
+    min-height: 80vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .itinerary-row {
+    background-color: #fff0e5;
+    padding: 50px;
+    border-radius: 15px;
+  }
+  .row-2 {
+    flex-direction: column;
+  }
+  .row-2 .about-tour-col {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .row-2 .about-tour-col .about-tour-col-info {
+    padding-top: 0;
+  }
+  .itinerary-day-cal h3 {
+    font-size: 1rem;
+  }
+  .about-tour-col p {
+    font-size: 16px;
+    color: #666;
+    align-items: center;
+  }
+  .row-2 .about-tour-col img {
+    width: 400px;
+    height: 200px;
+    background-color: #2980b9;
+  }
+  .itinerary-question p {
+    font-size: 12px;
+  }
+  .itinerary h1 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .itinerary-row {
+    width: 110%;
+  }
+  .itinerary {
+    min-height: 120vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .price-include {
+    padding-left: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .description {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  .highlights {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+  .price-not-included-container {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+  section.testimonial {
+    margin-bottom: 0px;
+  }
+  .about-tour-col p {
+    font-size: 16px;
+    padding: 15px 0 25px;
+    color: #505050;
+    align-items: center;
+  }
+}
+
+/*---------------------------- important info ----------------------------*/
+.important-info {
+  width: 80%;
+  margin: auto;
+}
+
+/*---- price for group ----*/
+.price-group-info {
+  padding-left: 50px;
+  padding-top: 30px;
+}
+
+.price-group-info h2 {
+  color: var(--text-color);
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+  .price-group-info {
+    margin-top: -50px;
+    margin-bottom: 50px;
+  }
+}
+
+/*---- suitable for ----*/
+.pricing-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  padding-bottom: 70px;
+  padding-top: 100px;
+}
+
+.price-include {
+  padding-left: 50px;
+  width: 42%;
+}
+
+.price-not-included-container {
+  padding-right: 50px;
+  width: 42%;
+}
+
+.price-not-included {
+  padding-left: 50px;
+}
+
+.pricing-info h3 {
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.6px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #0d2d56;
+  margin-bottom: 30px;
+}
+
+.pricing-info ul li {
+  line-height: 32px;
+  list-style: none;
+  color: var(--text-color-p-grey);
+}
+
+.pricing-info ul li .fa-check-square {
+  color: green;
+}
+.pricing-info ul li .fa-times {
+  color: rgb(206, 5, 5);
+}
+
+.pricing-info hr.new1 {
+  border: 1px solid #b0b0b0;
+}
+
+@media (max-width: 700px) {
+  .pricing-info {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .price-include {
+    padding-left: 50px;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .price-not-included-container {
+    width: 100%;
+  }
+}
+
+/*---- suitable for ----*/
+.suitable-for {
+  width: 60%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  padding-bottom: 50px;
+}
+
+.suitable-for h2 {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.suitable-for-info {
+  padding-left: 50px;
+}
+
+.suitable-for-info h2 {
+  color: var(--text-color);
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.suitable-for-info p {
+  color: var(--text-color-p-grey);
+  padding: 0;
+}
+
+/*----important info ----*/
+.important-info-container {
+  width: 60%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  padding-bottom: 50px;
+}
+
+.important-info-container h2 {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.important-info-col {
+  padding-left: 50px;
+}
+
+.important-info-col h2 {
+  color: var(--text-color);
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.important-info-col p {
+  color: var(--text-color-p-grey);
+  padding: 0;
+  line-height: 30px;
+}
+
+.important-info-col ol li {
+  padding-top: 10px;
+  color: var(--text-color-p-grey);
+}
+
+.price-group-info p {
+  color: var(--text-color-p-grey);
+  padding: 0;
+  line-height: 30px;
+}
+
+/*---- cancellation policy ----*/
+.cancellation-policy-container {
+  width: 60%;
+  margin-right: 20px;
+  border-radius: 5px;
+  padding-bottom: 150px;
+}
+
+.cancellation-policy-container h2 {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.cancellation-policy {
+  padding-left: 50px;
+}
+
+.cancellation-policy h2 {
+  color: var(--text-color);
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.cancellation-policy p {
+  color: var(--text-color-p-grey);
+  padding: 0;
+  line-height: 30px;
+}
+
+@media (max-width: 700px) {
+  .suitable-for {
+    width: 100%;
+    padding-top: 50px;
+  }
+  .suitable-for-info {
+    padding-left: 0;
+  }
+  .important-info-container {
+    width: 100%;
+  }
+  .important-info-col {
+    padding-left: 0;
+  }
+  .cancellation-policy-container {
+    width: 100%;
+  }
+  .cancellation-policy {
+    padding-left: 0;
+  }
+}
+
+/*----tour ----*/
+.section-about-tour {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.sub-header h1 {
+  margin-top: 100px;
+}
+
+.seven-day-tours {
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.row {
+  margin-top: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-1 {
+  margin-bottom: 100px;
+}
+
+.row-1 .day {
+  display: flex;
+  background-color: #2980b9;
+  color: white;
+  padding-left: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-1 .day-two {
+  width: 150px;
+  background-color: #2980b9;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-tour-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+  text-align: left;
+}
+
+.about-tour-col .day {
+  background-color: #297fb9fc;
+  display: inline-block;
+  color: white;
+  padding: 2px 20px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.about-tour-col .distance {
+  margin: 0;
+  padding: 0;
+  color: gray;
+  font-size: 14px;
+}
+
+.about-tour-col h2 {
+  padding-top: 0;
+}
+.about-tour-col p {
+  padding: 15px 0 25px;
+  color: #414141;
+}
+
+.content-image {
+  flex-basis: 50%;
+}
+.about-tour-col img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.overnight {
+  display: flex;
+  align-items: center;
+}
+
+.overnight p {
+  margin: 0;
+  padding: 0;
+}
+.overnight .fa {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  .sub-header {
+    background-position: center;
+  }
+  .sub-header h1 {
+    margin-top: 150px;
+  }
+}

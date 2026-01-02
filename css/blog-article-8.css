@@ -1,0 +1,19 @@
+.travel-wrapper {
+  max-width: 800px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  color: #2c3e50;
+}
+.section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+}
+.highlight {
+  font-weight: bold;
+  color: #e67e22;
+}

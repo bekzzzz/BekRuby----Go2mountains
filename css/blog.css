@@ -1,0 +1,163 @@
+.blog-header {
+  background: #1a6e6a;
+  /* adjust height, padding, etc. here */
+}
+
+.blog-header .nav-links a {
+  color: #ffffff;
+}
+
+.blog-header h1 {
+  margin-top: 100px;
+  color: #fff;
+  font-size: 32px;
+}
+
+.blog-coming-soon {
+  margin: 16px 0 28px;
+  padding: 16px 18px;
+  background: #fffaf0;
+  border: 1px solid #f3d7a6;
+  border-radius: 12px;
+  color: #6b4a1f;
+  font-weight: 600;
+  text-align: center;
+}
+
+.blog {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  display: none;
+}
+
+.row-blog {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+
+.blog h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.blog p {
+  color: var(--text-color-p-grey);
+}
+
+.blog-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  transition: 0.5s;
+}
+
+.blog-col a {
+  text-decoration: none;
+  color: #000;
+}
+
+.blog-col img {
+  width: 100%;
+}
+
+.blog-col p {
+  padding: 0;
+  font-size: 14px;
+}
+
+.blog-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.blog-col p {
+  color: var(--text-color-p-grey);
+  margin-bottom: 10px;
+}
+
+.top-blog {
+  background-color: #71c3fd;
+  border-radius: 12px;
+}
+.top-blog img {
+  margin-bottom: -8px;
+}
+.top-blog p {
+  padding: 20px 20px;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.top-blog-second {
+  background-color: #fa7436;
+  border-radius: 12px;
+}
+.top-blog-second img {
+  margin-bottom: -8px;
+}
+.top-blog-second p {
+  padding: 20px 20px;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.top-blog-third {
+  background-color: #fc747b;
+  border-radius: 12px;
+}
+.top-blog-third img {
+  margin-bottom: -8px;
+}
+.top-blog-third p {
+  padding: 20px 20px;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.blog-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.row-blog:hover > :not(:hover) {
+  opacity: 0.7;
+}
+@media (max-width: 700px) {
+  .row-blog {
+    flex-direction: column;
+  }
+
+  .blog h1 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .blog-header {
+    background-position: center;
+  }
+  .blog-header h1 {
+    font-size: 24px;
+  }
+  .blog {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
+
+.footer-dark {
+  background-color: #0f172a;
+}
