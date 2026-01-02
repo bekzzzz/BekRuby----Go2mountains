@@ -1707,7 +1707,7 @@
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        const saved = localStorage.getItem("siteLang") || "en";
+        const saved = localStorage.getItem("siteLang") || "zh";
         setLanguage(saved);
 
         const langBtn = document.querySelector(".nav-lang__btn");
@@ -1733,7 +1733,7 @@
           const btn = card.querySelector(".review-read-more");
           if (!textEl || !btn) return;
           const lang =
-            (window.currentLang || localStorage.getItem("siteLang") || "en") ===
+            (window.currentLang || localStorage.getItem("siteLang") || "zh") ===
             "zh"
               ? "zh"
               : "en";
@@ -1762,7 +1762,7 @@
             const currentLang =
               (window.currentLang ||
                 localStorage.getItem("siteLang") ||
-                "en") === "zh"
+                "zh") === "zh"
                 ? "zh"
                 : "en";
             const fullText =

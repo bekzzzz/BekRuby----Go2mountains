@@ -77,7 +77,7 @@ let visibleCount = 6; // show 6 first (matches your request)
 
 function cardHTML(tour, labelText) {
   const lang =
-    (window.currentLang || localStorage.getItem("siteLang") || "en") === "zh"
+    (window.currentLang || localStorage.getItem("siteLang") || "zh") === "zh"
       ? "zh"
       : "en";
   const title = tour[`title_${lang}`] || tour.title_en || tour.title || "";
@@ -133,7 +133,7 @@ function render() {
   grid.innerHTML = slice
     .map((card, idx) => {
       const lang =
-        (window.currentLang || localStorage.getItem("siteLang") || "en") ===
+        (window.currentLang || localStorage.getItem("siteLang") || "zh") ===
         "zh"
           ? "zh"
           : "en";
