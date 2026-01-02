@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const slider = hotel.querySelector(".overnight-slider");
     const prevButton = hotel.querySelector(".prev-button");
     const nextButton = hotel.querySelector(".next-button");
+    // Autoscroll disabled; users move slides manually
     let autoTimer;
 
     // Move to the next slide
@@ -43,15 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
       slider.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
     }
 
-    function startAuto() {
-      autoTimer = setInterval(goToNext, 5000);
-    }
-
     function resetAuto() {
       clearInterval(autoTimer);
     }
-
-    startAuto();
 
     // Add intersection observer for text overlay animation
     const observerOptions = {
