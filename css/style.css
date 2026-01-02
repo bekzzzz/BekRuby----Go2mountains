@@ -610,6 +610,7 @@ div .testimonial-starts-tour .fa {
 
 /*---------- why choose us--------*/
 .why-us {
+  display: none;
   padding: 110px 20px;
   background: radial-gradient(
       circle at 20% 20%,
