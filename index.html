@@ -1,14 +1,60 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="shortcut icon"
-      type="x-icon"
-      href="bek-ruby-logo/bek-ruby-title-logo-2.svg"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>跟著我們探索吉爾吉斯</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/bek-ruby-logo/favicon-64.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/bek-ruby-logo/favicon-32.png" />
+
+    <!-- Primary SEO -->
+    <title>Go2Mountains — Authentic Kyrgyzstan Tours &amp; Experiences</title>
+    <meta name="description" content="Explore Kyrgyzstan with local guides. Nomadic culture, mountain treks, horse riding, and bespoke tours — curated by Go2Mountains." />
+    <meta name="keywords" content="Kyrgyzstan tours, Kyrgyzstan travel, nomadic culture, mountain trekking, horse riding, Central Asia travel, Go2Mountains" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://go2mountains.com/" />
+
+    <!-- Open Graph / Facebook / iMessage / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://go2mountains.com/" />
+    <meta property="og:site_name" content="Go2Mountains" />
+    <meta property="og:title" content="Go2Mountains — Authentic Kyrgyzstan Tours &amp; Experiences" />
+    <meta property="og:description" content="Explore Kyrgyzstan with local guides. Nomadic culture, mountain treks, horse riding, and bespoke tours." />
+    <meta property="og:image" content="https://go2mountains.com/assets/hero-img/Frame%203.jpg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_TW" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Go2Mountains — Authentic Kyrgyzstan Tours &amp; Experiences" />
+    <meta name="twitter:description" content="Explore Kyrgyzstan with local guides. Nomadic culture, mountain treks, horse riding, and bespoke tours." />
+    <meta name="twitter:image" content="https://go2mountains.com/assets/hero-img/Frame%203.jpg" />
+
+    <!-- Hreflang: bilingual single-page -->
+    <link rel="alternate" hreflang="en" href="https://go2mountains.com/en/" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://go2mountains.com/zh/" />
+    <link rel="alternate" hreflang="x-default" href="https://go2mountains.com/" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Go2Mountains",
+      "url": "https://go2mountains.com",
+      "logo": "https://go2mountains.com/assets/bek-ruby-logo/logo%20for%20website.png",
+      "description": "Authentic Kyrgyzstan tours and experiences with local guides. Nomadic culture, mountain treks, and bespoke journeys.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "KG"
+      },
+      "areaServed": "Kyrgyzstan",
+      "serviceType": ["Guided Tours", "Cultural Tours", "Adventure Tours", "Horse Riding Tours"]
+    }
+    </script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/blog.css" />
     <link rel="stylesheet" href="css/des-link.css" />
@@ -72,7 +118,7 @@
               <img
                 loading="eager"
                 class="head-ruby-logo"
-                src="assets/bek-ruby-logo/white-bek-ruby.svg"
+                src="assets/bek-ruby-logo/logo for website.png"
                 alt="Bek Ruby Logo"
               />
             </a>
@@ -404,7 +450,7 @@
     <section class="about-us-section">
       <div class="about-us">
         <div class="about-left">
-          <img loading="lazy" src="assets/thumbnail/about-us.BR.jpg" alt="" />
+          <img loading="lazy" src="assets/thumbnail/about-us.BR.jpg" alt="Kyrgyzstan travel photo - about us.BR" />
         </div>
         <div class="about-right">
           <h1 data-i18n="about_title">我們的故事</h1>
@@ -1335,7 +1381,7 @@
             <a href="index.html">
               <img
                 loading="lazy"
-                src="assets/bek-ruby-logo/bek-ruby-orange-green-2.svg"
+                src="assets/bek-ruby-logo/logo for website.png"
                 alt="Bek Ruby Logo"
               />
             </a>
@@ -1739,6 +1785,10 @@
       function setLanguage(lang) {
         const bundle = translations[lang] || translations.en;
         document.documentElement.lang = lang === "zh" ? "zh-Hant" : "en";
+        document.title =
+          lang === "zh"
+            ? "Go2Mountains — 吉爾吉斯深度旅遊體驗"
+            : "Go2Mountains — Authentic Kyrgyzstan Tours & Experiences";
         document.querySelectorAll("[data-i18n]").forEach((el) => {
           const key = el.dataset.i18n;
           if (bundle[key]) {
@@ -1770,9 +1820,13 @@
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        // Always default to Traditional Chinese on load. If a visitor switches to English,
-        // the toggle still works but each fresh visit will start in Chinese.
-        setLanguage("zh");
+        const saved = localStorage.getItem("siteLang");
+        if (saved) {
+          setLanguage(saved);
+        } else {
+          const browser = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+          setLanguage(browser.startsWith("zh") ? "zh" : "en");
+        }
 
         const langBtn = document.querySelector(".nav-lang__btn");
         if (langBtn) {
