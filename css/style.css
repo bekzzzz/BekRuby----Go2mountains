@@ -212,7 +212,9 @@ nav img {
   color: #fff;
   font-size: 13px;
   text-decoration: none;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .nav-lang__btn:hover {
@@ -251,7 +253,9 @@ nav .fa {
   font-weight: 700;
   text-decoration: none;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
   z-index: 50;
 }
 
@@ -612,11 +616,8 @@ div .testimonial-starts-tour .fa {
 .why-us {
   display: none;
   padding: 110px 20px;
-  background: radial-gradient(
-      circle at 20% 20%,
-      rgba(255, 255, 255, 0.07),
-      transparent
-    ),
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.07), transparent),
     #f3f1ed;
 }
 
@@ -756,11 +757,8 @@ div .testimonial-starts-tour .fa {
 /*---------- gallery -----------*/
 .gallery {
   padding: 120px 0 110px;
-  background: radial-gradient(
-      circle at 20% 20%,
-      rgba(255, 255, 255, 0.05),
-      transparent
-    ),
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.05), transparent),
     #0f1c1c;
   color: #eef3f1;
 }
@@ -813,7 +811,10 @@ div .testimonial-starts-tour .fa {
   place-items: center;
   cursor: pointer;
   pointer-events: auto;
-  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
 }
 
@@ -949,7 +950,9 @@ div .testimonial-starts-tour .fa {
   text-decoration: none;
   color: inherit;
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .youtube-card:hover {
@@ -1190,7 +1193,9 @@ svg {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
 }
 
 .instagram-card:hover {
@@ -1357,7 +1362,9 @@ svg {
   text-decoration: none;
   font-weight: 700;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
   width: fit-content;
 }
 
@@ -1451,7 +1458,9 @@ svg {
   place-items: center;
   color: #ffffff;
   text-decoration: none;
-  transition: transform 0.15s ease, background 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease;
 }
 
 .footer-social a:hover {
@@ -1514,7 +1523,9 @@ svg {
   text-decoration: none;
   font-weight: 700;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .footer-cta:hover {
@@ -1560,7 +1571,8 @@ svg {
 /* Contact page refresh */
 .contact-section {
   padding: 110px 20px;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       circle at 20% 20%,
       rgba(255, 153, 79, 0.08),
       transparent 35%
@@ -1637,7 +1649,9 @@ svg {
   background: rgba(255, 255, 255, 0.1);
   color: #111827;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .social-links a:hover {
@@ -1699,7 +1713,9 @@ svg {
   font-weight: 700;
   cursor: pointer;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .contact-btn:hover {
