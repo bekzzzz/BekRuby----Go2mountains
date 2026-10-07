@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/bek-ruby-logo/favicon-64.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/bek-ruby-logo/favicon-32.png" />
+    <link rel="apple-touch-icon" href="assets/bek-ruby-logo/favicon-64.png" />
+
+    <!-- Primary SEO -->
+    <meta name="description" content="9 日招牌行程，前往 Go2Mountains 創辦人貝克長大的托克托古爾：四天騎馬、與他的家人親戚一起生活，並在高山夏牧場與遊牧家庭度過三晚。" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://go2mountains.com/9days-toktogul-zh.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://go2mountains.com/9days-toktogul-zh.html" />
+    <meta property="og:site_name" content="Go2Mountains" />
+    <meta property="og:title" content="深度遊牧生活：貝克故鄉山裡的 9 天 | Go2Mountains" />
+    <meta property="og:description" content="騎馬走進貝克長大的山裡，與他的家人親戚同住，並在高山夏牧場與遊牧家庭共度幾天。" />
+    <meta property="og:image" content="https://go2mountains.com/assets/8-days-migration/migration.jpg" />
+    <meta property="og:locale" content="zh_TW" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="深度遊牧生活：貝克故鄉山裡的 9 天 | Go2Mountains" />
+    <meta name="twitter:description" content="騎馬走進貝克長大的山裡，與他的家人親戚同住，並在高山夏牧場與遊牧家庭共度幾天。" />
+    <meta name="twitter:image" content="https://go2mountains.com/assets/8-days-migration/migration.jpg" />
+
+    <title>深度遊牧生活：貝克故鄉山裡的 9 天 | Go2Mountains</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Same design as 10days-off-road-v2.html: shared stylesheet and script -->
+    <link rel="stylesheet" href="css/10days-off-road-v2.css" />
+    <script defer src="JS/10days-off-road-v2.js"></script>
+    <link rel="stylesheet" href="css/site-chrome.css" />
+    <script defer src="JS/site-chrome.js?v=3"></script>
+    <style>
+      /* page-specific: "Is this trip for you?" */
+      .fit-check { margin-top: 32px; }
+      .fit-check h3 { font-size: 22px; margin-bottom: 14px; }
+      .fit-questions {
+        margin-top: 24px; background: #fff6ef; border: 1px solid #fde0cc;
+        border-radius: var(--radius); padding: 24px 28px;
+      }
+      .fit-questions h3 { font-size: 20px; margin-bottom: 12px; }
+      .fit-questions ol { padding-left: 1.3em; color: var(--ink-soft); }
+      .fit-questions li { margin-bottom: 6px; }
+      .fit-questions p { margin-top: 12px; font-weight: 600; color: var(--ink); }
+      .fit-alt { margin-top: 16px; font-size: 15px; color: var(--ink-soft); }
+      .fit-alt a { color: var(--orange-dark); font-weight: 600; }
+      .hero-sub-zh { font-size: 17px; opacity: 0.9; margin: -6px 0 14px; letter-spacing: 0.04em; }
+    </style>
+  </head>
+  <body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!---------- Site header (shared: css/site-chrome.css + JS/site-chrome.js; links as in index.html) ---------->
+    <header class="g2m-header g2m-header--overlay" id="g2mHeader">
+      <div class="g2m-wrap">
+        <a class="g2m-logo" href="index.html">
+          <img src="assets/bek-ruby-logo/logo for website.png" alt="Bek Ruby Logo" />
+        </a>
+        <ul class="g2m-links" id="g2mLinks">
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="index.html#tours" data-i18n="nav_tours">Tours</a></li>
+          <li><a href="blog.html" data-i18n="nav_stories">Stories</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/@bek_ruby" data-i18n="nav_youtube">Youtube</a></li>
+          <li><a href="visa.html" data-i18n="nav_visa">Visa</a></li>
+          <li><a href="about-us-v2.html" data-i18n="nav_about">About</a></li>
+          <li><a href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149" data-i18n="footer_nav_faq">Q&amp;A</a></li>
+          <li><button class="g2m-lang" id="langBtn" type="button" aria-label="Switch language" data-i18n="nav_lang_label">EN / 中文</button></li>
+        </ul>
+        <a class="g2m-cta" href="contact.html" data-i18n="custom_btn">Start my trip plan</a>
+        <button class="g2m-menu" id="g2mMenu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="g2mLinks">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!---------- Hero ---------->
+    <!-- NOTE: text from Bek & Ruby; details marked TODO need confirming -->
+    <section class="hero" style="background-image: url('assets/8-days-migration/migration.jpg')">
+      <div class="container">
+        <span class="hero-badge"><i class="fa-solid fa-house-chimney"></i> 托克托古爾招牌行程 · 9 日</span>
+        <h1>深度遊牧生活：貝克故鄉山裡的 9 天</h1>
+        <p class="hero-lead">
+          騎馬走進創辦人貝克長大的山裡，與他的家人親戚同住，並在高山夏牧場與遊牧家庭共度幾天。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#itinerary">查看每日行程 <i class="fa-solid fa-arrow-down"></i></a> <a class="btn btn-ghost" href="#before-you-book">這趟旅程適合你嗎？</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><strong>9 天</strong><span>比什凱克出發與結束</span></div>
+          <div class="hero-stat"><strong>4 天</strong><span>騎馬</span></div>
+          <div class="hero-stat"><strong>3 晚</strong><span>在牧場與遊牧家庭同住</span></div>
+          <div class="hero-stat"><strong>2 座山口</strong><span>海拔 3,000 m 以上</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!---------- Sticky section nav ---------->
+    <nav class="section-nav" aria-label="頁面章節">
+      <div class="container">
+        <ul>
+          <li><a href="#overview">行程總覽</a></li>
+          <li><a href="#bek">貝克的故事</a></li>
+          <li><a href="#before-you-book">出發前須知</a></li>
+          <li><a href="#itinerary">每日行程</a></li>
+          <li><a href="#includes">費用包含</a></li>
+        </ul>
+        <a class="btn btn-primary" href="contact.html">預訂行程</a>
+      </div>
+    </nav>
+
+    <main>
+      <!---------- Overview ---------->
+      <section class="section" id="overview">
+        <div class="container">
+          <div class="overview-grid">
+            <div class="overview-text reveal">
+              <span class="eyebrow">關於這趟旅程</span>
+              <h2 class="section-title">九天，完全不同的生活節奏</h2>
+              <p>
+                九天裡，你會把忙碌的世界拋在身後。翻越高山山口，來到遼闊的蘇薩梅爾谷（Suusamyr），抵達貝克的村子受到家人的歡迎，然後騎馬進山：先到他親戚位於山腳下的泥磚屋，再往更高處，到遊牧民族的夏季營地。
+              </p>
+              <p>
+                你會騎馬四天，幫忙擠奶和放牧，和家人們一起做菜，分享他們的餐食、家和日常生活。大部分行程沒有飯店、沒有餐廳，網路也很少或沒有。有的是時間：放慢腳步、靜靜聆聽，在完全不同的節奏裡生活幾天。
+              </p>
+            </div>
+
+            <aside class="facts-card reveal">
+              <h3>行程一覽</h3>
+              <ul class="facts-list">
+                <li><span class="label"><i class="fa-regular fa-calendar"></i>天數</span><span class="value">9 天</span></li>
+                <!-- TODO: confirm season / dates -->
+                <li><span class="label"><i class="fa-solid fa-sun"></i>季節</span><span class="value">夏季牧場季節</span></li>
+                <li>
+                  <span class="label"><i class="fa-solid fa-gauge-high"></i>難度</span> <span class="value level">具挑戰性 <span class="level-bars" aria-hidden="true"><i></i><i></i><i></i></span></span>
+                </li>
+                <li><span class="label"><i class="fa-solid fa-horse"></i>騎馬</span><span class="value">4 天，每天 2–4 小時</span></li>
+                <li><span class="label"><i class="fa-solid fa-people-roof"></i>住宿</span><span class="value">家庭住宅與遊牧氈房</span></li>
+                <li><span class="label"><i class="fa-solid fa-user-group"></i>團型</span><span class="value">小團</span></li>
+                <!-- TODO: add price -->
+                <li><span class="label"><i class="fa-solid fa-tag"></i>費用</span><span class="value">請來信洽詢</span></li>
+              </ul>
+              <a class="btn btn-primary" href="contact.html">預訂或詢問</a>
+              <p class="price-note">與貝克家人同行的招牌旅程</p>
+            </aside>
+          </div>
+
+          <div class="highlights">
+            <article class="highlight reveal">
+              <img loading="lazy" src="assets/image-itinerary/8d-toktogul-nomads.png" alt="托克托古爾" />
+              <div class="highlight-body">
+                <h3>貝克的家鄉村莊</h3>
+                <p>歡迎晚宴、家庭桑拿（banya），以及在貝克長大的房子裡住兩晚。</p>
+              </div>
+            </article>
+            <article class="highlight reveal">
+              <img loading="lazy" src="assets/images/gallery-optimized/IMG_1912.jpg" alt="旅客與牲畜" />
+              <div class="highlight-body">
+                <h3>牛奶的一天</h3>
+                <p>擠牛奶，再和貝克的親戚一起把它做成鮮奶油、奶油、優格乾（kurut）和馬奶酒。</p>
+              </div>
+            </article>
+            <article class="highlight reveal">
+              <img loading="lazy" src="assets/8-days-migration/migration.jpg" alt="騎馬前往牧場的牧民" />
+              <div class="highlight-body">
+                <h3>與遊牧家庭同住三晚</h3>
+                <p>騎馬上到夏牧場，住進遊牧民族的氈房，與他們的馬、牛和羊一起生活。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!---------- Route strip ---------->
+      <section class="route" aria-label="路線">
+        <div class="container">
+          <span class="eyebrow">路線</span>
+          <h2>翻越山口到托克托古爾，再騎馬上山</h2>
+          <div class="route-track">
+            <div class="route-stop"><strong>比什凱克</strong><span>出發</span></div>
+            <div class="route-stop"><strong>蘇薩梅爾</strong><span>第 1 天</span></div>
+            <div class="route-stop"><strong>托克托古爾</strong><span>第 2 天</span></div>
+            <div class="route-stop key"><strong>貝克的村子</strong><span>第 2 和 8 天</span></div>
+            <div class="route-stop"><strong>泥磚屋</strong><span>第 3–4 天</span></div>
+            <div class="route-stop key"><strong>夏牧場</strong><span>第 5–7 天</span></div>
+            <div class="route-stop"><strong>比什凱克</strong><span>第 9 天</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!---------- Bek's story ---------->
+      <section class="section" id="bek">
+        <div class="container">
+          <div class="worth reveal" style="margin-top: 0">
+            <img loading="lazy" src="assets/image-itinerary/about-us/Bek.jpg" alt="貝克與馬兒在山裡" />
+            <div class="worth-body">
+              <span class="eyebrow">貝克的故事</span>
+              <h3>貝克長大的那片山</h3>
+              <!-- TODO (Bek): replace with a few sentences in your own words: a childhood memory, and why you want to share this place with guests. -->
+              <p>
+                貝克出生在托克托古爾附近的一個小村子，童年的夏天都在村子上方的山裡度過，跟著家人住在氈房裡，把牲畜趕到高山牧場。他還不識字就會騎馬，日出時幫忙擠奶，聽著屋外馬兒吃草的聲音入睡。
+              </p>
+              <p class="quote">
+                這趟旅程，是他分享那個世界的方式。這不是看景點的行程，而是邀請你走進他的家、他的家人，以及他從小長大的生活。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------- Before you book ---------->
+      <section class="section" id="before-you-book">
+        <div class="container">
+          <div class="book-header">
+            <div class="reveal">
+              <span class="eyebrow">出發前須知</span>
+              <h2 class="section-title">這趟旅程適合你嗎？</h2>
+              <p class="section-lead">
+                這是我們最深度的旅程。預訂前，請仔細閱讀這個段落和完整的每日行程。
+              </p>
+            </div>
+            <div class="notice reveal">
+              <i class="fa-solid fa-circle-info"></i>
+              <p>
+                <strong>每位旅人都請親自閱讀完整行程，</strong>不只是安排旅程的那一位。
+              </p>
+            </div>
+          </div>
+
+          <div class="includes-grid fit-check">
+            <div class="includes-col yes reveal">
+              <h3>你會愛上這趟旅程，如果你</h3>
+              <ul>
+                <li><i class="fa-solid fa-check"></i>想要體驗在地生活，而不只是觀看，也樂意幫忙真正的日常工作</li>
+                <li><i class="fa-solid fa-check"></i>喜歡騎馬，或很想學，並準備好騎馬 4 天</li>
+                <li><i class="fa-solid fa-check"></i>能開心地過幾天簡單生活：沒有淋浴、簡易戶外廁所、共用寢室</li>
+                <li><i class="fa-solid fa-check"></i>喜歡斷線：沒有訊號、沒有行程表，只有山和人</li>
+                <li><i class="fa-solid fa-check"></i>願意接受新的習俗、食物和生活方式，也享受溫暖親近的款待</li>
+              </ul>
+            </div>
+            <div class="includes-col no reveal">
+              <h3>這趟旅程可能不適合你，如果你</h3>
+              <ul>
+                <li><i class="fa-solid fa-xmark"></i>需要私人衛浴和每天的熱水澡</li>
+                <li><i class="fa-solid fa-xmark"></i>想要觀光景點、舒適的飯店或豐富多變的行程</li>
+                <li><i class="fa-solid fa-xmark"></i>不習慣待在馬、牛、羊旁邊，或不喜歡灰塵和泥巴</li>
+                <li><i class="fa-solid fa-xmark"></i>不想騎馬，或有健康狀況讓連續幾天騎馬很困難</li>
+                <li><i class="fa-solid fa-xmark"></i>每天都需要和工作或家人保持聯繫</li>
+              </ul>
+            </div>
+          </div>
+          <p class="fit-alt reveal">
+            想要舒適一點的行程？看看我們的<a href="8days-classic.html">經典 8 日行程</a>或<a href="7days-nomad-life.html">遊牧生活之旅</a>。
+          </p>
+
+          <div class="fit-questions reveal">
+            <h3>預訂前，請誠實回答這些問題</h3>
+            <ol>
+              <li>你能接受最多 5 天沒有正式淋浴嗎？</li>
+              <li>你能接受與家人共用簡易戶外廁所嗎？</li>
+              <li>你願意住在氈房和傳統泥磚屋，並與旅伴同住嗎？</li>
+              <li>你能連續 4 天、每天騎馬 2–4 小時嗎？或已準備好學習？</li>
+              <li>你能接受大部分行程沒有手機訊號和網路嗎？</li>
+            </ol>
+            <p>如果五題都回答「是」，這趟旅程就是為你準備的。</p>
+          </div>
+
+          <div class="info-grid" style="margin-top: 40px">
+            <div class="info-card reveal">
+              <div class="info-icon"><i class="fa-solid fa-campground"></i></div>
+              <h3>住宿安排</h3>
+              <p>
+                <b>1 晚</b>住在蘇薩梅爾谷的氈房。<b>2 晚</b>住在貝克家在村子裡的房子。<b>2 晚</b>和貝克的親戚住在傳統泥磚屋。<b>3 晚</b>住在夏牧場的遊牧氈房。<b>1 晚</b>住在比什凱克的飯店。房間和氈房都很簡單，通常與旅伴同住。
+              </p>
+            </div>
+            <div class="info-card reveal">
+              <div class="info-icon"><i class="fa-solid fa-droplet"></i></div>
+              <h3>梳洗</h3>
+              <p>
+                第 3 天到第 7 天<b>沒有淋浴</b>：你會用家人準備的溫水梳洗。上山前和下山後，都可以在村子裡洗傳統的<b>桑拿（banya）</b>。
+              </p>
+            </div>
+            <div class="info-card reveal">
+              <div class="info-icon"><i class="fa-solid fa-restroom"></i></div>
+              <h3>廁所</h3>
+              <p>
+                廁所是<b>簡易的在地戶外廁所</b>，與家人共用。除了比什凱克，其他地方都沒有現代化衛浴。
+              </p>
+            </div>
+            <div class="info-card reveal">
+              <div class="info-icon"><i class="fa-solid fa-signal"></i></div>
+              <h3>網路與訊號</h3>
+              <p>
+                山裡<b>沒有網路和手機訊號</b>，村子裡訊號也很弱。充電有限，請攜帶行動電源。
+              </p>
+            </div>
+            <div class="info-card reveal">
+              <div class="info-icon"><i class="fa-solid fa-horse"></i></div>
+              <h3>騎馬</h3>
+              <p>
+                你會騎馬<b>4 天，每天約 2–4 小時</b>，由經驗豐富的在地騎士陪同。歡迎初學者，但需要身體健康。提供頭盔。請在預訂時告訴我們你的騎馬經驗和體重。
+              </p>
+            </div>
+            <div class="info-card reveal">
+              <div class="info-icon"><i class="fa-solid fa-utensils"></i></div>
+              <h3>餐食</h3>
+              <p>
+                所有餐食都由家人烹煮：簡單、家常的吉爾吉斯料理，有很多新鮮乳製品、麵包和肉。如有飲食需求，請在預訂時告訴我們。
+              </p>
+            </div>
+            <div class="info-card reveal">
+              <div class="info-icon"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+              <h3>天氣</h3>
+              <p>
+                山上天氣變化很快：晴天、下雨、寒冷的夜晚，甚至夏天山口也可能下雪。為了安全，導遊可能會調整安排。
+              </p>
+            </div>
+            <div class="info-card reveal">
+              <div class="info-icon"><i class="fa-solid fa-kit-medical"></i></div>
+              <h3>偏遠地區</h3>
+              <p>
+                這趟旅程大部分地方遠離道路和醫院。導遊會攜帶急救包和緊急通訊設備；如有任何健康狀況，請在預訂前告訴我們。
+              </p>
+            </div>
+            <div class="info-card reveal">
+              <div class="info-icon"><i class="fa-solid fa-shield-heart"></i></div>
+              <h3>旅遊保險</h3>
+              <p>
+                必須投保涵蓋<b>騎馬、偏遠地區與緊急後送</b>的旅遊保險。我們採小團，讓體驗更貼近，也讓主人家輕鬆自在。
+              </p>
+            </div>
+          </div>
+
+          <!-- Why it's worth it -->
+          <div class="worth reveal">
+            <img loading="lazy" src="assets/images/gallery-optimized/g-star.jpg" alt="星空下的氈房" />
+            <div class="worth-body">
+              <span class="eyebrow">為什麼值得</span>
+              <h3>沒有匆忙，沒有噪音</h3>
+              <p>
+                早晨從牲畜的聲音和新鮮麵包的香味開始。白天騎馬穿過安靜的山谷、幫忙擠奶，和把你當成客人、很快又當成朋友的家人們一起喝茶。
+              </p>
+              <p>
+                在山裡，天空很大，空氣很乾淨，唯一的計畫就是這一天帶來的一切。許多旅人說，幾天後他們就不再看時間了。
+              </p>
+              <p class="quote">
+                這就是貝克從小長大的吉爾吉斯。如果你準備好放慢腳步、親身生活，他很樂意歡迎你回家。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------- Itinerary ---------->
+      <section class="section" id="itinerary">
+        <div class="container">
+          <div class="itinerary-head">
+            <div>
+              <span class="eyebrow">每日行程</span>
+              <h2 class="section-title">行程安排</h2>
+            </div>
+          </div>
+
+          <div class="day-chips-bar">
+            <nav class="day-chips" aria-label="跳到某一天">
+              <a href="#day-1">1</a><a href="#day-2">2</a><a href="#day-3">3</a><a href="#day-4">4</a><a href="#day-5">5</a><a href="#day-6">6</a><a href="#day-7">7</a><a href="#day-8">8</a><a href="#day-9">9</a>
+            </nav>
+            <button type="button" class="toggle-all" id="toggleAllDays" data-open-label="全部展開" data-close-label="全部收合">全部展開</button>
+          </div>
+
+          <ol class="timeline">
+            <!-- Day 1 -->
+            <li class="day" id="day-1">
+              <div class="day-num"><small>第</small><b>1</b></div>
+              <details class="day-card reveal" open>
+                <summary class="day-summary">
+                  <img class="day-thumb" loading="lazy" src="assets/images/gallery-optimized/IMG_1922.jpg" alt="" />
+                  <div class="day-heading">
+                    <p class="day-route">比什凱克 → 蘇薩梅爾谷</p>
+                    <h3>翻越山口到蘇薩梅爾</h3>
+                  </div>
+                  <div class="day-tags"><span class="tag"><i class="fa-solid fa-mountain"></i>3,000 m 以上山口</span><span class="tag"><i class="fa-solid fa-campground"></i>氈房</span></div>
+                  <span class="day-toggle" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </summary>
+                <div class="day-content">
+                  <div class="day-media">
+                    <img loading="lazy" src="assets/images/gallery-optimized/IMG_1922.jpg" alt="蜿蜒通往高山山口的山路" />
+                  </div>
+                  <div class="day-body">
+                    <p>
+                      離開城市，公路一路爬進山裡，翻越海拔 3,000 公尺以上的高山山口，再下到蘇薩梅爾——一片被群峰環繞、遼闊開闊的草原谷地。夏天牧民會把馬群和羊群帶到這裡。第一晚住在氈房，在滿天星空下度過寧靜的夜晚。
+                    </p>
+                    <ul class="day-facts">
+                    <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>約 4 小時，含停留</div></li>
+                    <li><i class="fa-solid fa-mountain"></i><div><span>最高點</span>高山山口，海拔 3,000 m 以上</div></li>
+                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、晚餐</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>氈房，蘇薩梅爾谷</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>無</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>在地戶外廁所，共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>無</div></li>
+                    </ul>
+                    <!-- TODO: Suusamyr Valley photo -->
+                  </div>
+                </div>
+              </details>
+            </li>
+
+            <!-- Day 2 -->
+            <li class="day" id="day-2">
+              <div class="day-num"><small>第</small><b>2</b></div>
+              <details class="day-card reveal">
+                <summary class="day-summary">
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/8d-toktogul-nomads.png" alt="" />
+                  <div class="day-heading">
+                    <p class="day-route">蘇薩梅爾 → 托克托古爾 → 貝克的村子</p>
+                    <h3>碧綠的托克托古爾與回家的歡迎</h3>
+                  </div>
+                  <div class="day-tags"><span class="tag"><i class="fa-solid fa-water"></i>托克托古爾水庫</span><span class="tag"><i class="fa-solid fa-house-chimney"></i>貝克的家人</span></div>
+                  <span class="day-toggle" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </summary>
+                <div class="day-content">
+                  <div class="day-media">
+                    <img loading="lazy" src="assets/image-itinerary/8d-toktogul-nomads.png" alt="托克托古爾地區" />
+                  </div>
+                  <div class="day-body">
+                    <p>
+                      又是一段壯觀的車程：翻越第二座高山山口，下到群山環繞、湖水碧綠的托克托古爾水庫。下午抵達貝克的家鄉村子，家人以傳統晚餐歡迎你。晚上在家裡的桑拿（banya）放鬆，洗去兩天的旅途疲憊。
+                    </p>
+                    <ul class="day-facts">
+                    <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>約 3 小時，含停留</div></li>
+                    <li><i class="fa-solid fa-mountain"></i><div><span>最高點</span>高山山口，海拔 3,000 m 以上</div></li>
+                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、貝克家的歡迎晚餐</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>貝克家的房子，村子</div></li>
+                    <li><i class="fa-solid fa-hot-tub-person"></i><div><span>梳洗</span>傳統桑拿（banya）</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>簡易戶外廁所，共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>無</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+            </li>
+
+            <!-- Day 3 -->
+            <li class="day" id="day-3">
+              <div class="day-num"><small>第</small><b>3</b></div>
+              <details class="day-card reveal">
+                <summary class="day-summary">
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/7d-horse-toktogul.png" alt="" />
+                  <div class="day-heading">
+                    <p class="day-route">村子 → 山腳下的貝克親戚家</p>
+                    <h3>第一次騎馬：前往泥磚屋</h3>
+                  </div>
+                  <div class="day-tags"><span class="tag"><i class="fa-solid fa-horse"></i>騎馬 2–4 小時</span><span class="tag"><i class="fa-solid fa-people-roof"></i>貝克的親戚</span></div>
+                  <span class="day-toggle" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </summary>
+                <div class="day-content">
+                  <div class="day-media">
+                    <img loading="lazy" src="assets/image-itinerary/7d-horse-toktogul.png" alt="在托克托古爾附近的山丘騎馬" />
+                  </div>
+                  <div class="day-body">
+                    <p>
+                      早餐後備好馬鞍，開始第一次騎馬：約 2–4 小時穿越村子上方的田野和山丘，來到山腳下一棟傳統泥磚屋。這是貝克親戚的家，他們世世代代在這裡耕作和放牧。主人以茶、新鮮麵包和鮮奶油歡迎你，晚上和這家人互相認識，看夕陽落到山峰後時，牲畜一隻隻回家。
+                    </p>
+                    <ul class="day-facts">
+                    <li><i class="fa-solid fa-horse"></i><div><span>騎馬</span>約 2–4 小時</div></li>
+                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、與家人共進晚餐</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>泥磚屋，貝克的親戚家</div></li>
+                    <li><i class="fa-solid fa-droplet"></i><div><span>梳洗</span>溫水，無淋浴</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>簡易戶外廁所，共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>沒有網路和訊號</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+            </li>
+
+            <!-- Day 4 -->
+            <li class="day" id="day-4">
+              <div class="day-num"><small>第</small><b>4</b></div>
+              <details class="day-card reveal">
+                <summary class="day-summary">
+                  <img class="day-thumb" loading="lazy" src="assets/images/gallery-optimized/IMG_1912.jpg" alt="" />
+                  <div class="day-heading">
+                    <p class="day-route">與貝克的親戚一起</p>
+                    <h3>牛奶的一天</h3>
+                  </div>
+                  <div class="day-tags"><span class="tag"><i class="fa-solid fa-cow"></i>擠奶</span><span class="tag"><i class="fa-solid fa-bowl-food"></i>做菜</span></div>
+                  <span class="day-toggle" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </summary>
+                <div class="day-content">
+                  <div class="day-media">
+                    <img loading="lazy" src="assets/images/gallery-optimized/IMG_1912.jpg" alt="牧場上的旅客與牲畜" />
+                  </div>
+                  <div class="day-body">
+                    <p>
+                      這裡的生活很早開始，從早上擠奶開始。你幫忙擠牛奶，然後一整天跟著這些牛奶，看家人把它做成鮮奶油（kaimak）、奶油、優格乾（kurut）和馬奶酒（kymyz）。下午用自己做的東西一起做菜，晚上在貝克家族世代居住的房子裡共享家庭晚餐。
+                    </p>
+                    <ul class="day-facts">
+                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、與家人共進晚餐</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>泥磚屋，貝克的親戚家</div></li>
+                    <li><i class="fa-solid fa-droplet"></i><div><span>梳洗</span>溫水，無淋浴</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>簡易戶外廁所，共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>沒有網路和訊號</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+            </li>
+
+            <!-- Day 5 -->
+            <li class="day" id="day-5">
+              <div class="day-num"><small>第</small><b>5</b></div>
+              <details class="day-card reveal">
+                <summary class="day-summary">
+                  <img class="day-thumb" loading="lazy" src="assets/8-days-migration/migration.jpg" alt="" />
+                  <div class="day-heading">
+                    <p class="day-route">上到夏牧場</p>
+                    <h3>騎馬前往遊牧營地</h3>
+                  </div>
+                  <div class="day-tags"><span class="tag"><i class="fa-solid fa-horse"></i>騎馬 2–4 小時</span><span class="tag"><i class="fa-solid fa-campground"></i>夏牧場</span></div>
+                  <span class="day-toggle" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </summary>
+                <div class="day-content">
+                  <div class="day-media">
+                    <img loading="lazy" src="assets/8-days-migration/migration.jpg" alt="趕著馬群上夏牧場的牧民" />
+                  </div>
+                  <div class="day-body">
+                    <p>
+                      今天騎馬往山裡更高處前進，約 2–4 小時，沿著牧民趕牲畜上夏牧場的小徑。山谷逐漸開闊，空氣越來越涼，最後抵達遊牧營地——這裡的家庭整個夏天都和他們的馬、牛、羊一起住在氈房裡。主人以茶歡迎你，接下來三晚你就住在這裡的氈房。
+                    </p>
+                    <ul class="day-facts">
+                    <li><i class="fa-solid fa-horse"></i><div><span>騎馬</span>約 2–4 小時</div></li>
+                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、與遊牧家庭共進晚餐</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>遊牧氈房，夏牧場</div></li>
+                    <li><i class="fa-solid fa-droplet"></i><div><span>梳洗</span>溫水，無淋浴</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>簡易戶外廁所，共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>沒有網路和訊號</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+            </li>
+
+            <!-- Day 6 -->
+            <li class="day" id="day-6">
+              <div class="day-num"><small>第</small><b>6</b></div>
+              <details class="day-card reveal">
+                <summary class="day-summary">
+                  <img class="day-thumb" loading="lazy" src="assets/images/gallery-optimized/g-son-kol-5.jpg" alt="" />
+                  <div class="day-heading">
+                    <p class="day-route">夏牧場</p>
+                    <h3>與遊牧民族一起生活</h3>
+                  </div>
+                  <div class="day-tags"><span class="tag"><i class="fa-solid fa-bowl-food"></i>五指麵</span><span class="tag"><i class="fa-solid fa-dice"></i>遊牧遊戲</span></div>
+                  <span class="day-toggle" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </summary>
+                <div class="day-content">
+                  <div class="day-media">
+                    <img loading="lazy" src="assets/images/gallery-optimized/g-son-kol-5.jpg" alt="牧民婦女與她的馬" />
+                  </div>
+                  <div class="day-body">
+                    <p>
+                      用一整天像遊牧民族一樣生活。幫牧民把羊群趕出去吃草，和家人一起做吉爾吉斯國菜五指麵（beshbarmak）——手切麵條配燉肉，下午參加傳統遊戲。傍晚和家人坐在一起，看太陽落到牧場後方，星星一顆顆出現。
+                    </p>
+                    <ul class="day-facts">
+                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、與遊牧家庭共進晚餐</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>遊牧氈房，夏牧場</div></li>
+                    <li><i class="fa-solid fa-droplet"></i><div><span>梳洗</span>溫水，無淋浴</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>簡易戶外廁所，共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>沒有網路和訊號</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+            </li>
+
+            <!-- Day 7 -->
+            <li class="day" id="day-7">
+              <div class="day-num"><small>第</small><b>7</b></div>
+              <details class="day-card reveal">
+                <summary class="day-summary">
+                  <img class="day-thumb" loading="lazy" src="assets/8-days-migration/big-mountain.jpg" alt="" />
+                  <div class="day-heading">
+                    <p class="day-route">夏牧場</p>
+                    <h3>山裡的一日騎行</h3>
+                  </div>
+                  <div class="day-tags"><span class="tag"><i class="fa-solid fa-horse"></i>騎馬 4 小時</span><span class="tag"><i class="fa-solid fa-mountain-sun"></i>觀景點</span></div>
+                  <span class="day-toggle" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </summary>
+                <div class="day-content">
+                  <div class="day-media">
+                    <img loading="lazy" src="assets/8-days-migration/big-mountain.jpg" alt="高山谷地" />
+                  </div>
+                  <div class="day-body">
+                    <p>
+                      和牧民一起騎馬進入營地周圍的山裡，約 4 小時，前往山谷上方高處的觀景點。在山裡野餐午餐，再回到營地，和遊牧家庭度過最後一晚。
+                    </p>
+                    <ul class="day-facts">
+                    <li><i class="fa-solid fa-horse"></i><div><span>騎馬</span>約 4 小時</div></li>
+                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、野餐午餐、與遊牧家庭共進晚餐</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>遊牧氈房，夏牧場</div></li>
+                    <li><i class="fa-solid fa-droplet"></i><div><span>梳洗</span>溫水，無淋浴</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>簡易戶外廁所，共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>沒有網路和訊號</div></li>
+                    </ul>
+                    <!-- TODO: name the Day 7 destination (viewpoint, lake or pass) -->
+                  </div>
+                </div>
+              </details>
+            </li>
+
+            <!-- Day 8 -->
+            <li class="day" id="day-8">
+              <div class="day-num"><small>第</small><b>8</b></div>
+              <details class="day-card reveal">
+                <summary class="day-summary">
+                  <img class="day-thumb" loading="lazy" src="assets/images/gallery-optimized/g-horse.jpg" alt="" />
+                  <div class="day-heading">
+                    <p class="day-route">夏牧場 → 貝克的村子</p>
+                    <h3>回到村子與馬術表演</h3>
+                  </div>
+                  <div class="day-tags"><span class="tag"><i class="fa-solid fa-horse"></i>騎馬 2–4 小時</span><span class="tag"><i class="fa-solid fa-trophy"></i>馬術表演</span></div>
+                  <span class="day-toggle" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </summary>
+                <div class="day-content">
+                  <div class="day-media">
+                    <img loading="lazy" src="assets/images/gallery-optimized/g-horse.jpg" alt="騎在馬背上的吉爾吉斯騎士" />
+                  </div>
+                  <div class="day-body">
+                    <p>
+                      與遊牧家庭道別，騎馬下山回到村子，約 2–4 小時。下午村子為你的旅程舉辦馬術表演，在地騎士展現吉爾吉斯騎士聞名的技巧。洗過期待已久的桑拿後，和貝克的家人共進告別晚餐。
+                    </p>
+                    <ul class="day-facts">
+                    <li><i class="fa-solid fa-horse"></i><div><span>騎馬</span>約 2–4 小時</div></li>
+                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、與貝克家人的告別晚餐</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>貝克家的房子，村子</div></li>
+                    <li><i class="fa-solid fa-hot-tub-person"></i><div><span>梳洗</span>傳統桑拿（banya）</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>簡易戶外廁所，共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>無</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+            </li>
+
+            <!-- Day 9 -->
+            <li class="day" id="day-9">
+              <div class="day-num"><small>第</small><b>9</b></div>
+              <details class="day-card reveal">
+                <summary class="day-summary">
+                  <img class="day-thumb" loading="lazy" src="assets/images/gallery-optimized/IMG_1938.jpg" alt="" />
+                  <div class="day-heading">
+                    <p class="day-route">村子 → 比什凱克</p>
+                    <h3>返回比什凱克</h3>
+                  </div>
+                  <div class="day-tags"><span class="tag"><i class="fa-solid fa-van-shuttle"></i>車程</span><span class="tag"><i class="fa-solid fa-hotel"></i>飯店</span></div>
+                  <span class="day-toggle" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </summary>
+                <div class="day-content">
+                  <div class="day-media">
+                    <img loading="lazy" src="assets/images/gallery-optimized/IMG_1938.jpg" alt="回程路上的山谷" />
+                  </div>
+                  <div class="day-body">
+                    <p>
+                      和家人吃完最後一頓早餐後，驅車返回比什凱克，約 6–7 小時，途中停下來吃午餐、伸展筋骨。傍晚抵達市區，回到有熱水澡和柔軟床鋪的飯店。
+                    </p>
+                    <ul class="day-facts">
+                    <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>約 6–7 小時，含停留</div></li>
+                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、晚餐</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>飯店，比什凱克</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>有，房內</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>有</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!---------- Includes ---------->
+      <!-- TODO: the source text had no price list; please confirm -->
+      <section class="section includes-section" id="includes">
+        <div class="container">
+          <span class="eyebrow">費用說明</span>
+          <h2 class="section-title">費用包含</h2>
+          <div class="includes-grid">
+            <div class="includes-col yes reveal">
+              <h3>包含</h3>
+              <ul>
+                <li><i class="fa-solid fa-check"></i>所有住宿：氈房、家庭住宅與比什凱克的飯店</li>
+                <li><i class="fa-solid fa-check"></i>所有餐食，由家人烹煮</li>
+                <li><i class="fa-solid fa-check"></i>司機與導遊、在地騎士陪同的馬匹、頭盔</li>
+                <li><i class="fa-solid fa-check"></i>桑拿、村子的馬術表演，以及與家人的所有活動</li>
+              </ul>
+            </div>
+            <div class="includes-col no reveal">
+              <h3>不包含</h3>
+              <ul>
+                <li><i class="fa-solid fa-xmark"></i>國際機票</li>
+                <li><i class="fa-solid fa-xmark"></i>涵蓋騎馬、偏遠地區與後送的旅遊保險（必須）</li>
+                <li><i class="fa-solid fa-xmark"></i>個人花費</li>
+                <li><i class="fa-solid fa-xmark"></i>給導遊、騎士和主人家的小費</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------- CTA ---------->
+      <section class="cta" style="background-image: url('assets/images/gallery-optimized/g-horse.jpg')">
+        <div class="container">
+          <h2>貝克很樂意歡迎你回家</h2>
+          <p>
+            對騎馬、生活條件或日期有疑問嗎？寫信給我們，我們會誠實告訴你這趟旅程是否適合你。
+          </p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="contact.html">聯絡我們 <i class="fa-solid fa-arrow-right"></i></a> <a class="btn btn-ghost" href="mailto:bekruby.kg@gmail.com"><i class="fa-regular fa-envelope"></i> bekruby.kg@gmail.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!---------- Site footer (shared: css/site-chrome.css; details as in index.html) ---------->
+    <footer class="g2m-footer">
+      <div class="g2m-wrap">
+        <div class="g2m-footer-top">
+          <div class="g2m-footer-brand">
+            <a href="index.html"><img loading="lazy" src="assets/bek-ruby-logo/logo for website.png" alt="Bek Ruby Logo" /></a>
+            <p data-i18n="footer_about">Kyrgyzstan journeys with real locals. Films, stories, and bespoke trips designed for curious travelers.</p>
+            <div class="g2m-social">
+              <a target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=100063753081808" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a target="_blank" rel="noopener" href="https://www.instagram.com/bek_ruby?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a target="_blank" rel="noopener" href="https://www.youtube.com/@bek_ruby" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html" data-i18n="footer_nav_home">Home</a></li>
+              <li><a href="index.html#tours" data-i18n="footer_nav_tours">Tours</a></li>
+              <li><a href="blog.html" data-i18n="footer_nav_stories">Stories</a></li>
+              <li><a href="about-us-v2.html" data-i18n="footer_nav_about">About us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Helpful</h4>
+            <ul>
+              <li><a href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149" data-i18n="footer_nav_faq">Q&amp;A</a></li>
+              <li><a href="contact.html" data-i18n="footer_nav_contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul class="g2m-footer-contact">
+              <li><i class="fa-solid fa-location-dot"></i><span>87 Suleimanto Street, Ak-Ordo Residential Area, Leninsky District, Bishkek, Kyrgyz Republic</span></li>
+              <li><i class="fa-solid fa-envelope"></i><a href="mailto:bekruby.kg@gmail.com">bekruby.kg@gmail.com</a></li>
+            </ul>
+            <a class="g2m-footer-cta" href="mailto:bekruby.kg@gmail.com" data-i18n="footer_cta">Send email</a>
+          </div>
+        </div>
+        <div class="g2m-footer-bottom">
+          <p data-i18n="footer_legal">Kyrgyz travel agency · Reg No. 11708197200956 · OKPO 34155903</p>
+          <p data-i18n="footer_copy">© Bek &amp; Ruby 2023 — All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

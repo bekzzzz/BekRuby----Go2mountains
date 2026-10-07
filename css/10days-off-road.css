@@ -1,0 +1,288 @@
+/* 10-day Son-Kol, Kel-Suu & Issyk-Kul horse trek page.
+   Builds on style.css + 8-D-Tour.css; only page-specific styles live here. */
+
+.off-road-sub-header {
+  min-height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 0.8)),
+    url(../assets/image-itinerary/10d-kel-suu.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+.off-road-sub-header h1 {
+  margin-top: 100px;
+  padding: 0 16px;
+}
+
+.off-road-sub-header .hero-tagline {
+  max-width: 700px;
+  margin: 12px auto 0;
+  padding: 0 16px;
+  font-size: 17px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.off-road-sub-header ul li a {
+  color: #fff;
+}
+
+/* Activity level meter (no SVG icon exists for "challenging") */
+.level-bars {
+  display: inline-flex;
+  gap: 3px;
+  align-items: flex-end;
+  margin-left: 8px;
+}
+
+.level-bars i {
+  display: block;
+  width: 6px;
+  background-color: #d5d5d5;
+  border-radius: 2px;
+}
+
+.level-bars i:nth-child(1) { height: 8px; }
+.level-bars i:nth-child(2) { height: 13px; }
+.level-bars i:nth-child(3) { height: 18px; }
+
+.level-bars.level-3 i {
+  background-color: var(--primary-color);
+}
+
+/* ---------- Before you book ---------- */
+
+.before-book {
+  width: 80%;
+  margin: 60px auto 0;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 40px 50px;
+}
+
+.before-book h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.before-book-intro {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #414141;
+  margin-bottom: 30px;
+}
+
+.before-book-intro strong {
+  color: var(--primary-color-dark-orange);
+}
+
+.before-book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  padding: 20px 22px;
+}
+
+.book-card h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.book-card h3 .fa {
+  color: var(--primary-color-green-dark);
+  width: 20px;
+  text-align: center;
+}
+
+.book-card p,
+.book-card li {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #505050;
+}
+
+.book-card ul {
+  padding-left: 18px;
+}
+
+.book-card li {
+  list-style: disc;
+  margin-bottom: 4px;
+}
+
+.why-worth-it {
+  margin-top: 30px;
+  padding: 26px 28px;
+  border-left: 4px solid var(--primary-color-green);
+  background-color: #f3faf7;
+  border-radius: 0 12px 12px 0;
+}
+
+.why-worth-it h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.why-worth-it p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #414141;
+  margin-bottom: 10px;
+}
+
+/* ---------- Itinerary ---------- */
+
+.off-road-itinerary .itinerary-row {
+  width: 100%;
+}
+
+.itinerary-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 4px;
+}
+
+.toggle-all-btn {
+  background: none;
+  border: 1px solid var(--primary-color-green-dark);
+  color: var(--primary-color-green-dark);
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.toggle-all-btn:hover {
+  background-color: var(--primary-color-green-dark);
+  color: #fff;
+}
+
+/* Only the header row toggles, so text inside an open day can be selected */
+.off-road-itinerary .itinerary-day-cal {
+  cursor: default;
+}
+
+.off-road-itinerary .itinerary-question {
+  cursor: pointer;
+  gap: 16px;
+}
+
+.off-road-itinerary .itinerary-question p {
+  color: gray;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* Days here are longer than on other tour pages */
+.off-road-itinerary .itinerary-day-cal.active .itinerary-answer {
+  max-height: 3000px;
+}
+
+.off-road-itinerary .row-2 {
+  align-items: flex-start;
+}
+
+.off-road-itinerary .about-tour-col p {
+  padding: 0 0 18px;
+}
+
+.day-facts {
+  margin: 0 0 18px;
+  padding: 0;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.day-facts li {
+  display: flex;
+  gap: 12px;
+  padding: 8px 14px;
+  font-size: 14px;
+  color: #414141;
+  border-bottom: 1px solid #eee;
+  list-style: none;
+}
+
+.day-facts li:last-child {
+  border-bottom: none;
+}
+
+.day-facts li:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.day-facts .fact-label {
+  flex: 0 0 140px;
+  font-weight: 600;
+  color: #222;
+}
+
+.good-to-know {
+  background-color: #fff6ef;
+  border-left: 4px solid var(--primary-color);
+  border-radius: 0 10px 10px 0;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+
+.off-road-itinerary .good-to-know p {
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 700px) {
+  .before-book {
+    width: auto;
+    margin: 40px 16px 0;
+    padding: 28px 20px;
+  }
+
+  .before-book h2 {
+    font-size: 24px;
+  }
+
+  .off-road-itinerary .itinerary-row {
+    padding: 24px 16px;
+  }
+
+  .off-road-itinerary .itinerary-question {
+    flex-wrap: wrap;
+  }
+
+  .off-road-itinerary .row-2 {
+    flex-direction: column;
+  }
+
+  .off-road-itinerary .about-tour-col {
+    flex-basis: auto;
+    width: 100%;
+    padding: 16px 0;
+  }
+
+  .day-facts li {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .day-facts .fact-label {
+    flex-basis: auto;
+  }
+}

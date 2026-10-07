@@ -85,64 +85,67 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="css/site-chrome.css" />
+    <script defer src="JS/site-chrome.js?v=3"></script>
   </head>
 
   <body class="about-page">
-    <header class="header">
-      <div class="header-inner">
-        <nav>
-          <div class="logo-wrapper">
-            <a href="index.html">
-              <img
-                loading="eager"
-                class="head-ruby-logo"
-                src="assets/bek-ruby-logo/logo for website.png"
-                alt="Bek Ruby Logo"
-              />
-            </a>
-          </div>
-
-          <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
-            <ul>
-              <li><a href="index.html" data-i18n="nav_home">Home</a></li>
-              <li><a href="blog.html" data-i18n="nav_tours">Tours</a></li>
-
-              <li><a href="blog.html" data-i18n="nav_stories">Stories</a></li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.youtube.com/@bek_ruby"
-                  data-i18n="nav_youtube"
-                  >YouTube</a
-                >
-              </li>
-              <li><a href="visa.html" data-i18n="nav_visa">Visa</a></li>
-
-              <li><a href="about-us.html" data-i18n="nav_about">About</a></li>
-              <li>
-                <a
-                  href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149"
-                  data-i18n="footer_nav_faq"
-                  >Q&amp;A</a
-                >
-              </li>
-              <!-- <li><a href="visa.html" data-i18n="nav_visa"> Visa</a></li> -->
-              <li class="nav-lang">
-                <a
-                  href="#"
-                  class="nav-lang__btn"
-                  aria-label="Switch language"
-                  data-i18n="nav_lang_label"
-                >
-                  EN / 中文
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
+    <!---------- Site header (shared: css/site-chrome.css + JS/site-chrome.js; links as in index.html) ---------->
+    <header class="g2m-header g2m-header--solid" id="g2mHeader">
+      <div class="g2m-wrap">
+        <a class="g2m-logo" href="index.html">
+          <img
+            src="assets/bek-ruby-logo/logo for website.png"
+            alt="Bek Ruby Logo"
+          />
+        </a>
+        <ul class="g2m-links" id="g2mLinks">
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="index.html#tours" data-i18n="nav_tours">Tours</a></li>
+          <li><a href="blog.html" data-i18n="nav_stories">Stories</a></li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.youtube.com/@bek_ruby"
+              data-i18n="nav_youtube"
+              >Youtube</a
+            >
+          </li>
+          <li><a href="visa.html" data-i18n="nav_visa">Visa</a></li>
+          <li><a href="about-us-v2.html" data-i18n="nav_about">About</a></li>
+          <li>
+            <a
+              href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149"
+              data-i18n="footer_nav_faq"
+              >Q&amp;A</a
+            >
+          </li>
+          <li>
+            <button
+              class="g2m-lang"
+              id="langBtn"
+              type="button"
+              aria-label="Switch language"
+              data-i18n="nav_lang_label"
+            >
+              EN / 中文
+            </button>
+          </li>
+        </ul>
+        <a class="g2m-cta" href="contact.html" data-i18n="custom_btn"
+          >Start my trip plan</a
+        >
+        <button
+          class="g2m-menu"
+          id="g2mMenu"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="g2mLinks"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </header>
 
@@ -381,115 +384,110 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer-shell">
-        <div class="footer-top">
-          <div class="footer-brand">
-            <a href="index.html">
-              <img
+    <!---------- Site footer (shared: css/site-chrome.css; details as in index.html) ---------->
+    <footer class="g2m-footer">
+      <div class="g2m-wrap">
+        <div class="g2m-footer-top">
+          <div class="g2m-footer-brand">
+            <a href="index.html"
+              ><img
                 loading="lazy"
                 src="assets/bek-ruby-logo/logo for website.png"
                 alt="Bek Ruby Logo"
-              />
-            </a>
+            /></a>
             <p data-i18n="footer_about">
               Kyrgyzstan journeys with real locals. Films, stories, and bespoke
               trips designed for curious travelers.
             </p>
-            <div class="footer-social">
+            <div class="g2m-social">
               <a
                 target="_blank"
+                rel="noopener"
                 href="https://www.facebook.com/profile.php?id=100063753081808"
                 aria-label="Facebook"
                 ><i class="fa-brands fa-facebook-f"></i
               ></a>
               <a
                 target="_blank"
-                href="https://www.instagram.com/bek_ruby?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                rel="noopener"
+                href="https://www.instagram.com/bek_ruby?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw=="
                 aria-label="Instagram"
                 ><i class="fa-brands fa-instagram"></i
               ></a>
               <a
                 target="_blank"
+                rel="noopener"
                 href="https://www.youtube.com/@bek_ruby"
                 aria-label="YouTube"
                 ><i class="fa-brands fa-youtube"></i
               ></a>
             </div>
           </div>
-
-          <div class="footer-columns">
-            <div>
-              <h4>Explore</h4>
-              <ul>
-                <li>
-                  <a href="index.html" data-i18n="footer_nav_home">Home</a>
-                </li>
-
-                <li>
-                  <a href="blog.html" data-i18n="footer_nav_stories">Stories</a>
-                </li>
-                <li>
-                  <a href="about-us.html" data-i18n="footer_nav_about"
-                    >About us</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4>Helpful</h4>
-              <ul>
-                <li>
-                  <!-- <a href="visa.html" data-i18n="footer_nav_visa">Visa</a> -->
-                </li>
-                <li>
-                  <a
-                    href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149"
-                    data-i18n="footer_nav_faq"
-                    >Q&amp;A</a
-                  >
-                </li>
-                <li>
-                  <a href="contact.html" data-i18n="footer_nav_contact"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4>Contact</h4>
-              <ul class="footer-contact">
-                <li>
-                  <i class="fa-solid fa-location-dot"></i> 87 Suleimanto Street,
-                  Ak-Ordo Residential Area, Leninsky District, Bishkek, Kyrgyz
-                  Republic
-                </li>
-                <li>
-                  <i class="fa-solid fa-phone"></i>
-                </li>
-                <li>
-                  <i class="fa-solid fa-envelope"></i>
-                  <a href="mailto:info@kaganvoyage.com">bekruby.kg@gmail.com</a>
-                </li>
-              </ul>
-              <a
-                class="footer-cta"
-                href="mailto:bekruby.kg@gmail.com"
-                data-i18n="footer_cta"
-                >Send email</a
-              >
-            </div>
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html" data-i18n="footer_nav_home">Home</a></li>
+              <li>
+                <a href="index.html#tours" data-i18n="footer_nav_tours"
+                  >Tours</a
+                >
+              </li>
+              <li>
+                <a href="blog.html" data-i18n="footer_nav_stories">Stories</a>
+              </li>
+              <li>
+                <a href="about-us-v2.html" data-i18n="footer_nav_about"
+                  >About us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Helpful</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149"
+                  data-i18n="footer_nav_faq"
+                  >Q&amp;A</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" data-i18n="footer_nav_contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul class="g2m-footer-contact">
+              <li>
+                <i class="fa-solid fa-location-dot"></i
+                ><span
+                  >87 Suleimanto Street, Ak-Ordo Residential Area, Leninsky
+                  District, Bishkek, Kyrgyz Republic</span
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i
+                ><a href="mailto:bekruby.kg@gmail.com">bekruby.kg@gmail.com</a>
+              </li>
+            </ul>
+            <a
+              class="g2m-footer-cta"
+              href="mailto:bekruby.kg@gmail.com"
+              data-i18n="footer_cta"
+              >Send email</a
+            >
           </div>
         </div>
-
-        <div class="footer-bottom">
-          <div class="footer-legal">
-            <p data-i18n="footer_legal">
-              吉爾吉斯旅行社 · Reg No. 11708197200956 · OKPO 34155903
-            </p>
-          </div>
-          <p class="footer-copy" data-i18n="footer_copy">
-            © Bek & Ruby 2023 — All Rights Reserved.
+        <div class="g2m-footer-bottom">
+          <p data-i18n="footer_legal">
+            Kyrgyz travel agency · Reg No. 11708197200956 · OKPO 34155903
+          </p>
+          <p data-i18n="footer_copy">
+            © Bek &amp; Ruby 2023 — All Rights Reserved.
           </p>
         </div>
       </div>
@@ -566,9 +564,6 @@
           team_ruby_role: "Co-founder | Journey Designer",
           team_ruby_desc:
             "I began planning trips for people around me at 18, always loving to bring loved ones together to see the world. After traveling widely, I now create journeys in Kyrgyzstan with Bek — designing routes and shaping the rhythm of travel so every experience unfolds at just the right pace.To me, travel is not a product, but a way of life.",
-          team_navat_role: "General Manager",
-          team_navat_desc:
-            "Opens her family yurt, leads cooking sessions, and keeps every guest fed.",
           team_aizada_role: "Translator of Culture & Nature",
           team_aizada_desc:
             "I am your local guide and trip coordinator in Kyrgyzstan. Traveling is not just my job- it is my passion. I love exploring new places, reading, dancing, and organizing unique travel experiences.",
@@ -656,8 +651,6 @@
           team_ruby_role: "Co-founder｜旅行節奏設計師",
           team_ruby_desc:
             "我 18 歲就開始幫身邊的人規劃旅行，最喜歡揪團，把重要的人帶出去看看世界。慢慢走、走得深的旅行，一直都是我心中最好的家人陪伴。繞了半圈世界後，和貝殼用影像記錄吉爾吉斯的山與生活。我負責創作與路線設計，調整旅行的節奏，讓每一段旅程，都剛剛好地發生。對我來說，旅行不是商品，而是一種對生活的提案。",
-          team_navat_role: "總經理",
-          team_navat_desc: "開放自家毡房，帶領料理體驗，讓大家吃得滿意。",
           team_aizada_role: "文化與風景的翻譯者",
           team_aizada_desc:
             "我是您在吉爾吉斯斯坦的在地嚮導與行程協調員。旅行不只是我的工作，更是我的熱情所在。我熱愛探索新的地方、閱讀、跳舞，並且擅長規劃獨特而難忘的旅遊體驗。",

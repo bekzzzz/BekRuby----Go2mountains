@@ -1,0 +1,256 @@
+/* Tours page — builds on home-v2.css (header, buttons, footer, tokens) */
+
+/* ---------- Hero ---------- */
+
+.page-hero {
+  position: relative;
+  min-height: 72vh;
+  min-height: 72svh;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  background: #1b2a33 url("../assets/hero-page-img/7-days-hero-2.jpg") center / cover no-repeat;
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 18, 26, 0.5) 0%,
+    rgba(10, 18, 26, 0.1) 35%,
+    rgba(10, 18, 26, 0.85) 100%
+  );
+}
+
+.page-hero .container {
+  position: relative;
+  padding-bottom: 64px;
+}
+
+.page-hero h1 {
+  font-size: clamp(38px, 6vw, 72px);
+  margin-bottom: 14px;
+}
+
+.page-hero p {
+  font-size: clamp(16px, 1.8vw, 19px);
+  max-width: 620px;
+  opacity: 0.92;
+  font-weight: 300;
+  margin-bottom: 28px;
+}
+
+/* ---------- Classic tours: poster cards ---------- */
+
+.classic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.poster {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  color: #fff;
+  background: var(--ink);
+}
+
+.poster img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.poster::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 18, 26, 0) 40%, rgba(10, 18, 26, 0.88) 100%);
+}
+
+.poster:hover img {
+  transform: scale(1.05);
+}
+
+.poster .tour-days {
+  z-index: 1;
+}
+
+.poster-body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 24px;
+}
+
+.poster-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-bottom: 6px;
+}
+
+.poster-note i {
+  color: #ffb48c;
+}
+
+.poster-body h3 {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.poster-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(4px);
+  transition: background 0.2s;
+}
+
+.poster:hover .poster-link {
+  background: var(--orange);
+  border-color: var(--orange);
+}
+
+/* ---------- Special tours: wide cards ---------- */
+
+.special-list {
+  display: grid;
+  gap: 24px;
+}
+
+.special {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  background: var(--card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.special:nth-child(even) .special-media {
+  order: 2;
+}
+
+.special-media {
+  position: relative;
+  min-height: 300px;
+}
+
+.special-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.special-body {
+  padding: 34px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.special-body h3 {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+
+.special-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.highlights {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.highlights li {
+  display: flex;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+
+.highlights li i {
+  color: var(--green-dark);
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.special-body .btn {
+  margin-top: auto;
+  padding: 11px 22px;
+  font-size: 14px;
+  box-shadow: none;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 960px) {
+  .classic-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .special {
+    grid-template-columns: 1fr;
+  }
+
+  .special:nth-child(even) .special-media {
+    order: 0;
+  }
+
+  .special-media {
+    min-height: 240px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-hero .container {
+    padding-bottom: 44px;
+  }
+
+  .classic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .poster {
+    aspect-ratio: 4 / 4.4;
+  }
+
+  .special-body {
+    padding: 24px 20px;
+  }
+
+  .special-body h3 {
+    font-size: 24px;
+  }
+}

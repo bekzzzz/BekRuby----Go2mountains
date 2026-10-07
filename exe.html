@@ -52,36 +52,70 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="css/site-chrome.css" />
+    <script defer src="JS/site-chrome.js?v=3"></script>
   </head>
   <body>
-    <section class="abour-us-sub-header">
-      <nav>
-        <a href="index.html"
-          ><img loading="eager"
-            class="head-ruby-logo"
+    <!---------- Site header (shared: css/site-chrome.css + JS/site-chrome.js; links as in index.html) ---------->
+    <header class="g2m-header g2m-header--solid" id="g2mHeader">
+      <div class="g2m-wrap">
+        <a class="g2m-logo" href="index.html">
+          <img
             src="assets/bek-ruby-logo/logo for website.png"
             alt="Bek Ruby Logo"
-        /></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="index.html#tours">TOURS</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li>
-              <a target="_blank" href="https://www.youtube.com/@bek_ruby"
-                >YOUTUBE</a
-              >
-            </li>            <li><a href="visa.html">VISA</a></li>
-
-            <li><a href="about-us.html">ABOUT US</a></li>
-            <!-- <li><a href="visa.html">VISA</a></li> -->
-            <li><a href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149">Q&amp;A</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-          </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-      </nav>
+          />
+        </a>
+        <ul class="g2m-links" id="g2mLinks">
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="index.html#tours" data-i18n="nav_tours">Tours</a></li>
+          <li><a href="blog.html" data-i18n="nav_stories">Stories</a></li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.youtube.com/@bek_ruby"
+              data-i18n="nav_youtube"
+              >Youtube</a
+            >
+          </li>
+          <li><a href="visa.html" data-i18n="nav_visa">Visa</a></li>
+          <li><a href="about-us-v2.html" data-i18n="nav_about">About</a></li>
+          <li>
+            <a
+              href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149"
+              data-i18n="footer_nav_faq"
+              >Q&amp;A</a
+            >
+          </li>
+          <li>
+            <button
+              class="g2m-lang"
+              id="langBtn"
+              type="button"
+              aria-label="Switch language"
+              data-i18n="nav_lang_label"
+            >
+              EN / 中文
+            </button>
+          </li>
+        </ul>
+        <a class="g2m-cta" href="contact.html" data-i18n="custom_btn"
+          >Start my trip plan</a
+        >
+        <button
+          class="g2m-menu"
+          id="g2mMenu"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="g2mLinks"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <section class="abour-us-sub-header">
+      
       <h1>我們的故事</h1>
     </section>
 
@@ -196,8 +230,7 @@
           <h2>推廣吉爾吉斯</h2>
           <small>2023 </small>
           <p>
-            差點放棄youtube回到各自工作崗位，發現好友Navat
-            多年來和我們都在推廣吉爾吉斯，是大家都超喜歡的熱情導遊，我們成為夥伴共同創立吉爾吉斯旅行社。
+            差點放棄youtube回到各自工作崗位，最後我們決定把推廣吉爾吉斯的熱情化為行動，創立吉爾吉斯旅行社。
           </p>
 
           <span class="timeline-left-container-arrow"></span>
@@ -240,59 +273,114 @@
       </div>
     </div>
 
-    <!-------- footer ---------->
-
-    <section class="footer">
-      <div class="footer-container">
-        <div class="footer-logo">
-          <a href="index.html"
-            ><img loading="lazy"
-              class="logo"
-              src="assets/bek-ruby-logo/logo for website.png"
-              alt="Bek Ruby Logo"
-          /></a>
-        </div>
-        <p>Copyright © Bek & Ruby 2023. All Rights Reserved.</p>
-
-        <div class="footer-row">
-          <div class="footer-nav-links">
+    <!---------- Site footer (shared: css/site-chrome.css; details as in index.html) ---------->
+    <footer class="g2m-footer">
+      <div class="g2m-wrap">
+        <div class="g2m-footer-top">
+          <div class="g2m-footer-brand">
+            <a href="index.html"
+              ><img
+                loading="lazy"
+                src="assets/bek-ruby-logo/logo for website.png"
+                alt="Bek Ruby Logo"
+            /></a>
+            <p data-i18n="footer_about">
+              Kyrgyzstan journeys with real locals. Films, stories, and bespoke
+              trips designed for curious travelers.
+            </p>
+            <div class="g2m-social">
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.facebook.com/profile.php?id=100063753081808"
+                aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.instagram.com/bek_ruby?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw=="
+                aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.youtube.com/@bek_ruby"
+                aria-label="YouTube"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4>Explore</h4>
             <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="index.html#tours">TOURS</a></li>
-              <li><a href="blog.html">BLOG</a></li>
-              <li><a href="about-us.html">ABOUT US</a></li>
-              <!-- <li><a href="visa.html">VISA</a></li> -->
-              <li><a href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149">Q&amp;A</a></li>
-              <li><a href="contact.html">CONTACT</a></li>
+              <li><a href="index.html" data-i18n="footer_nav_home">Home</a></li>
+              <li>
+                <a href="index.html#tours" data-i18n="footer_nav_tours"
+                  >Tours</a
+                >
+              </li>
+              <li>
+                <a href="blog.html" data-i18n="footer_nav_stories">Stories</a>
+              </li>
+              <li>
+                <a href="about-us-v2.html" data-i18n="footer_nav_about"
+                  >About us</a
+                >
+              </li>
             </ul>
           </div>
-
-          <div class="footer-media-btn">
-            <div class="links">
-              <a
-                target="_blank"
-                href="https://www.facebook.com/profile.php?id=100063753081808"
-                ><i class="fa fa-facebook fa-2x"></i
-              ></a>
-
-              <a
-                target="_blank"
-                href="https://www.instagram.com/bek_ruby?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                ><i class="fa fa-instagram fa-2x"></i
-              ></a>
-              <a target="_blank" href="https://www.youtube.com/@bek_ruby"
-                ><i class="fa fa-youtube fa-2x"></i
-              ></a>
-            </div>
-            <div class="footer-btn">
-              <a class="footer-btn-email" href="mailto:bekruby.kg@gmail.com"
-                ><span>SEND EMAIL</span></a
-              >
-            </div>
+          <div>
+            <h4>Helpful</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149"
+                  data-i18n="footer_nav_faq"
+                  >Q&amp;A</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" data-i18n="footer_nav_contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul class="g2m-footer-contact">
+              <li>
+                <i class="fa-solid fa-location-dot"></i
+                ><span
+                  >87 Suleimanto Street, Ak-Ordo Residential Area, Leninsky
+                  District, Bishkek, Kyrgyz Republic</span
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i
+                ><a href="mailto:bekruby.kg@gmail.com">bekruby.kg@gmail.com</a>
+              </li>
+            </ul>
+            <a
+              class="g2m-footer-cta"
+              href="mailto:bekruby.kg@gmail.com"
+              data-i18n="footer_cta"
+              >Send email</a
+            >
           </div>
         </div>
+        <div class="g2m-footer-bottom">
+          <p data-i18n="footer_legal">
+            Kyrgyz travel agency · Reg No. 11708197200956 · OKPO 34155903
+          </p>
+          <p data-i18n="footer_copy">
+            © Bek &amp; Ruby 2023 — All Rights Reserved.
+          </p>
+        </div>
       </div>
-    </section>
+    </footer>
 
     <script>
       var navLinks = document.getElementById("navLinks");
