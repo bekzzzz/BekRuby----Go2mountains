@@ -196,7 +196,7 @@ h3 {
   display: flex;
   align-items: flex-end;
   color: #fff;
-  background: #1b2a33 url(../assets/image-itinerary/10d-kel-suu.png) center /
+  background: #1b2a33 url(../assets/image-itinerary/10d-kel-suu-lake.jpg) center /
     cover no-repeat;
 }
 
@@ -402,27 +402,6 @@ h3 {
   gap: 8px;
 }
 
-.level-bars {
-  display: inline-flex;
-  gap: 3px;
-  align-items: flex-end;
-}
-
-.level-bars i {
-  width: 5px;
-  border-radius: 2px;
-  background: var(--orange);
-}
-
-.level-bars i:nth-child(1) { height: 7px; }
-.level-bars i:nth-child(2) { height: 11px; }
-.level-bars i:nth-child(3) { height: 15px; }
-
-/* unlit bar, e.g. Moderate = 2 of 3 */
-.level-bars i.off {
-  background: var(--line);
-}
-
 .facts-card .btn {
   width: 100%;
   justify-content: center;
@@ -553,12 +532,6 @@ h3 {
   border-radius: 50%;
   background: var(--ink);
   border: 2px solid var(--green);
-}
-
-.route-stop.key::after {
-  background: var(--orange);
-  border-color: var(--orange);
-  box-shadow: 0 0 0 5px rgba(250, 116, 54, 0.25);
 }
 
 .route-stop strong {
@@ -1073,6 +1046,18 @@ h3 {
   padding: 26px 32px 30px;
 }
 
+/* Two photos in one day, one above the other */
+.day-media-stack {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 3px;
+  background: #fff;
+}
+.day-media-stack img {
+  position: static;
+  min-height: 0;
+}
+
 .day-body > p {
   color: var(--ink-soft);
   font-size: 15px;
@@ -1358,6 +1343,10 @@ h3 {
     height: 240px;
   }
 
+  .day-media-stack {
+    height: 440px;
+  }
+
   .day-tags {
     display: none;
   }
@@ -1597,3 +1586,57 @@ h3 {
     content: none;
   }
 }
+
+/* ---------- "Is this tour right for you?" button on tour pages ---------- */
+.survey-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 24px;
+  flex-wrap: wrap;
+  margin: 28px 0 0;
+  padding: 20px 24px;
+  border-radius: 16px;
+  background: #fff6f1;
+  border: 1px solid #f9cdb6;
+}
+.survey-cta strong {
+  display: block;
+  font-size: 17px;
+  color: #16212b;
+}
+.survey-cta span {
+  font-size: 14px;
+  color: #4a5560;
+}
+.survey-cta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: #fa7436;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.survey-cta a:hover {
+  background: #f05323;
+}
+@media (max-width: 640px) {
+  .survey-cta a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Difficulty stars in "Tour at a glance" (same scale as the homepage cards) */
+.level-stars {
+  display: inline-flex;
+  gap: 2px;
+  color: #fa7436;
+  font-size: 12px;
+  vertical-align: 1px;
+}
+

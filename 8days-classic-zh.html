@@ -65,7 +65,7 @@
           <li><a href="blog.html" data-i18n="nav_stories">Stories</a></li>
           <li><a target="_blank" rel="noopener" href="https://www.youtube.com/@bek_ruby" data-i18n="nav_youtube">Youtube</a></li>
           <li><a href="visa.html" data-i18n="nav_visa">Visa</a></li>
-          <li><a href="about-us-v2.html" data-i18n="nav_about">About</a></li>
+          <li><a href="about-us.html" data-i18n="nav_about">About</a></li>
           <li><a href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149" data-i18n="footer_nav_faq">Q&amp;A</a></li>
           <li><button class="g2m-lang" id="langBtn" type="button" aria-label="Switch language" data-i18n="nav_lang_label">EN / 中文</button></li>
         </ul>
@@ -103,6 +103,7 @@
           <li><a href="#overview">行程總覽</a></li>
           <li><a href="#before-you-book">出發前須知</a></li>
           <li><a href="#itinerary">每日行程</a></li>
+          <li><a href="#food">美食</a></li>
           <li><a href="#includes">費用包含</a></li>
         </ul>
         <a class="btn btn-primary" href="contact.html">預訂行程</a>
@@ -132,7 +133,7 @@
                 <!-- TODO: add exact dates / season -->
                 <li><span class="label"><i class="fa-solid fa-sun"></i>季節</span><span class="value">夏季</span></li>
                 <li>
-                  <span class="label"><i class="fa-solid fa-gauge-high"></i>難度</span> <span class="value level">中等 <span class="level-bars" aria-hidden="true"><i></i><i></i><i class="off"></i></span></span>
+                  <span class="label"><i class="fa-solid fa-gauge-high"></i>難度</span> <span class="value level">中等 <span class="level-stars" aria-label="3/5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span></span>
                 </li>
                 <li><span class="label"><i class="fa-solid fa-mountain"></i>最高點</span><span class="value">頌湖，約 3,000 m</span></li>
                 <li><span class="label"><i class="fa-solid fa-person-hiking"></i>體能需求</span><span class="value">一般</span></li>
@@ -148,21 +149,21 @@
 
           <div class="highlights">
             <article class="highlight reveal">
-              <img loading="lazy" src="assets/images-7-day-tour-section/son-kol.jpg" alt="頌湖氈房旁的騎士" />
+              <img loading="lazy" src="assets/image-itinerary/8d-song-kul-rider.jpg" alt="頌湖畔騎馬經過氈房的少年" />
               <div class="highlight-body">
                 <h3>在頌湖兩晚</h3>
                 <p>住在海拔 3,000 公尺湖畔的氈房營地，騎馬，並與遊牧家庭共度一天。</p>
               </div>
             </article>
             <article class="highlight reveal">
-              <img loading="lazy" src="assets/8day-classic-tour/arashan.jpg" alt="阿爾金阿拉善山谷" />
+              <img loading="lazy" src="assets/image-itinerary/8d-hot-spring.jpg" alt="松林環繞的天然溫泉池" />
               <div class="highlight-body">
                 <h3>溫泉與阿爾金阿拉善</h3>
                 <p>早上在阿克蘇泡溫泉，再搭軍卡上到雪峰環繞的高山谷地。</p>
               </div>
             </article>
             <article class="highlight reveal">
-              <img loading="lazy" src="assets/image-itinerary/eagle hunting.jpg" alt="金雕獵鷹人" />
+              <img loading="lazy" src="assets/image-itinerary/8d-eagle-wings.jpg" alt="獵鷹人手臂上展翅的金雕" style="object-position: center 30%" />
               <div class="highlight-body">
                 <h3>遊牧傳統</h3>
                 <p>獵鷹人、搭建氈房、羊毛氈工坊，以及和遊牧家庭一起做五指麵（beshbarmak）。</p>
@@ -181,11 +182,11 @@
             <div class="route-stop"><strong>比什凱克</strong><span>出發</span></div>
             <div class="route-stop"><strong>布拉納塔</strong><span>第 1 天</span></div>
             <div class="route-stop"><strong>卡拉科爾</strong><span>第 1–2 天</span></div>
-            <div class="route-stop key"><strong>阿爾金阿拉善</strong><span>第 3 天</span></div>
+            <div class="route-stop"><strong>阿爾金阿拉善</strong><span>第 3 天</span></div>
             <div class="route-stop"><strong>童話峽谷</strong><span>第 4 天</span></div>
             <div class="route-stop"><strong>Bokonbaevo</strong><span>第 4 天</span></div>
             <div class="route-stop"><strong>Kochkor</strong><span>第 5 天</span></div>
-            <div class="route-stop key"><strong>頌湖</strong><span>第 6–7 天</span></div>
+            <div class="route-stop"><strong>頌湖</strong><span>第 6–7 天</span></div>
             <div class="route-stop"><strong>比什凱克</strong><span>第 8 天</span></div>
           </div>
         </div>
@@ -384,6 +385,11 @@
               </p>
             </div>
           </div>
+          <!-- Fit check before booking (survey.html) -->
+          <div class="survey-cta reveal">
+            <div><strong>這趟行程適合你嗎？</strong><span>報名前花 3–5 分鐘填寫問卷，馬上知道結果。</span></div>
+            <a href="survey.html?tour=SKC"><i class="fa-solid fa-clipboard-check"></i> 開始填寫問卷</a>
+          </div>
         </div>
       </section>
 
@@ -412,7 +418,7 @@
               <div class="day-num"><small>第</small><b>1</b></div>
               <details class="day-card reveal" open>
                 <summary class="day-summary">
-                  <img class="day-thumb" loading="lazy" src="assets/8day-classic-tour/issuk-kul.jpg" alt="" />
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/8d-issyk-kul-boat.jpg" alt="" style="object-position: 28% center" />
                   <div class="day-heading">
                     <p class="day-route">比什凱克 → 布拉納塔 → Tokmok → 卡拉科爾</p>
                     <h3>絲路古塔與伊塞克湖畔</h3>
@@ -423,7 +429,7 @@
                 <div class="day-content">
                   <div class="day-media">
                   <!-- TODO: Burana Tower photo -->
-                    <img loading="lazy" src="assets/8day-classic-tour/issuk-kul.jpg" alt="伊塞克湖湖岸" />
+                    <img loading="lazy" src="assets/image-itinerary/8d-issyk-kul-boat.jpg" alt="雪山下伊塞克湖上的遊船與碼頭" style="object-position: 28% center" />
                   </div>
                   <div class="day-body">
                     <p>
@@ -452,7 +458,7 @@
               <div class="day-num"><small>第</small><b>2</b></div>
               <details class="day-card reveal">
                 <summary class="day-summary">
-                  <img class="day-thumb" loading="lazy" src="assets/hero-img/Frame 3.jpg" alt="" />
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/8d-karakol-meadow.jpg" alt="" style="object-position: center 60%" />
                   <div class="day-heading">
                     <p class="day-route">卡拉科爾峽谷與卡拉科爾小鎮</p>
                     <h3>森林峽谷與卡拉科爾小鎮</h3>
@@ -463,7 +469,7 @@
                 <div class="day-content">
                   <div class="day-media">
                   <!-- TODO: Karakol Gorge / Dungan Mosque photo -->
-                    <img loading="lazy" src="assets/hero-img/Frame 3.jpg" alt="流經森林峽谷的山間溪流" />
+                    <img loading="lazy" src="assets/image-itinerary/8d-karakol-meadow.jpg" alt="雲杉林上方開滿野花的草原與健行旅客" style="object-position: center 60%" />
                   </div>
                   <div class="day-body">
                     <p>
@@ -533,9 +539,9 @@
               <div class="day-num"><small>第</small><b>4</b></div>
               <details class="day-card reveal">
                 <summary class="day-summary">
-                  <img class="day-thumb" loading="lazy" src="assets/8day-classic-tour/jeti-broke.jpg" alt="" />
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/7d-skazka-group.jpg" alt="" style="object-position: center 40%" />
                   <div class="day-heading">
-                    <p class="day-route">阿爾金阿拉善 → 七牛岩 → Barskoon → 童話峽谷 → Bokonbaevo</p>
+                    <p class="day-route">阿爾金阿拉善 → Barskoon → 童話峽谷 → Bokonbaevo</p>
                     <h3>紅岩與童話峽谷</h3>
                   </div>
                   <div class="day-tags"><span class="tag"><i class="fa-solid fa-mountain-sun"></i>峽谷</span><span class="tag"><i class="fa-solid fa-people-roof"></i>家庭晚餐</span></div>
@@ -543,12 +549,11 @@
                 </summary>
                 <div class="day-content">
                   <div class="day-media">
-                  <!-- TODO: Skazka Canyon photo could also fit here -->
-                    <img loading="lazy" src="assets/8day-classic-tour/jeti-broke.jpg" alt="七牛岩的紅色砂岩峭壁" />
+                    <img loading="lazy" src="assets/image-itinerary/7d-skazka-group.jpg" alt="旅客站在童話峽谷彩色岩丘上" style="object-position: center 40%" />
                   </div>
                   <div class="day-body">
                     <p>
-                      早餐後搭軍卡下山。午餐是烤魚，接著前往七牛岩，那裡的紅色砂岩峭壁形成了著名的「七頭公牛」和「破碎的心」岩石，並步行到上方的觀景點。傍晚在 Barskoon 受邀到當地家庭共進晚餐，再驅車前往童話峽谷，正好趕上夕陽把彩色岩石染成紅色與金色的時刻。晚上抵達伊塞克湖南岸的民宿。
+                      早餐後搭軍卡下山。午餐是烤魚，接著沿著伊塞克湖南岸前進。傍晚在 Barskoon 受邀到當地家庭共進晚餐，再驅車前往童話峽谷，正好趕上夕陽把彩色岩石染成紅色與金色的時刻。晚上抵達伊塞克湖南岸的民宿。
                     </p>
                     <ul class="day-facts">
                     <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>約 6.5 小時，含軍卡路段與停留</div></li>
@@ -572,7 +577,7 @@
               <div class="day-num"><small>第</small><b>5</b></div>
               <details class="day-card reveal">
                 <summary class="day-summary">
-                  <img class="day-thumb" loading="lazy" src="assets/8day-classic-tour/bir-kut.jpg" alt="" />
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/eagle-hunter-portrait.jpg" alt="" style="object-position: center 25%" />
                   <div class="day-heading">
                     <p class="day-route">Bokonbaevo → Kyzyl-Tuu → Kochkor</p>
                     <h3>獵鷹人與氈房工匠</h3>
@@ -582,7 +587,7 @@
                 </summary>
                 <div class="day-content">
                   <div class="day-media">
-                    <img loading="lazy" src="assets/8day-classic-tour/bir-kut.jpg" alt="獵鷹人與他的金雕" />
+                    <img loading="lazy" src="assets/image-itinerary/eagle-hunter-portrait.jpg" alt="穿著傳統服飾的年輕獵鷹人和他的金雕" style="object-position: center 25%" />
                   </div>
                   <div class="day-body">
                     <p>
@@ -611,7 +616,7 @@
               <div class="day-num"><small>第</small><b>6</b></div>
               <details class="day-card reveal">
                 <summary class="day-summary">
-                  <img class="day-thumb" loading="lazy" src="assets/8day-classic-tour/boz-ui.jpg" alt="" />
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/8d-road-song-kul.jpg" alt="" style="object-position: 30% center" />
                   <div class="day-heading">
                     <p class="day-route">Kochkor → 頌湖</p>
                     <h3>羊毛氈、遊牧家庭與通往頌湖的路</h3>
@@ -621,7 +626,7 @@
                 </summary>
                 <div class="day-content">
                   <div class="day-media">
-                    <img loading="lazy" src="assets/8day-classic-tour/boz-ui.jpg" alt="高山夏牧場上的氈房" />
+                    <img loading="lazy" src="assets/image-itinerary/8d-road-song-kul.jpg" alt="前往頌湖的山路上的卡車與翠綠山谷" style="object-position: 30% center" />
                   </div>
                   <div class="day-body">
                     <p>
@@ -652,7 +657,7 @@
               <div class="day-num"><small>第</small><b>7</b></div>
               <details class="day-card reveal">
                 <summary class="day-summary">
-                  <img class="day-thumb" loading="lazy" src="assets/hero-img/Frame 8.jpg" alt="" />
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/8d-song-kul-day.jpg" alt="" style="object-position: 38% 72%" />
                   <div class="day-heading">
                     <p class="day-route">頌湖</p>
                     <h3>頌湖的一整天</h3>
@@ -662,7 +667,7 @@
                 </summary>
                 <div class="day-content">
                   <div class="day-media">
-                    <img loading="lazy" src="assets/hero-img/Frame 8.jpg" alt="夏牧場上的馬群" />
+                    <img loading="lazy" src="assets/image-itinerary/8d-song-kul-day.jpg" alt="頌湖畔騎馬的少年" style="object-position: 38% 72%" />
                   </div>
                   <div class="day-body">
                     <p>
@@ -693,7 +698,7 @@
               <div class="day-num"><small>第</small><b>8</b></div>
               <details class="day-card reveal">
                 <summary class="day-summary">
-                  <img class="day-thumb" loading="lazy" src="assets/8day-classic-tour/too.jpg" alt="" />
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/8d-mountain-road.jpg" alt="" style="object-position: 22% 72%" />
                   <div class="day-heading">
                     <p class="day-route">頌湖 → Kochkor → 比什凱克</p>
                     <h3>下山回城</h3>
@@ -703,7 +708,7 @@
                 </summary>
                 <div class="day-content">
                   <div class="day-media">
-                    <img loading="lazy" src="assets/8day-classic-tour/too.jpg" alt="從頌湖下山途中的山谷" />
+                    <img loading="lazy" src="assets/image-itinerary/8d-mountain-road.jpg" alt="從頌湖下山時穿過翠綠山谷的蜿蜒山路" style="object-position: 22% 72%" />
                   </div>
                   <div class="day-body">
                     <p>
@@ -729,6 +734,59 @@
           </ol>
         </div>
       </section>
+      <!---------- Food ---------->
+      <section class="section" id="food">
+        <div class="container">
+          <span class="eyebrow">美食</span>
+          <h2 class="section-title">最道地的吉爾吉斯料理和當季新鮮水果</h2>
+          <p class="section-lead">在旅途中，你可能會品嚐到以下經典料理：</p>
+          <div class="highlights">
+            <article class="highlight reveal">
+              <img loading="lazy" src="assets/food/beshbarkam-4.jpg" alt="Beshbarmak" />
+              <div class="highlight-body"><h3>Beshbarmak</h3><p>手切麵佐清燉肉。最具代表性的吉爾吉斯料理，象徵節慶與款待。</p></div>
+            </article>
+            <article class="highlight reveal">
+              <img loading="lazy" src="assets/food/kuurdak 1.jpg" alt="Kuurdak" />
+              <div class="highlight-body"><h3>Kuurdak</h3><p>炒羊肉／牛肉，搭配馬鈴薯與洋蔥，是遊牧人的家常菜。</p></div>
+            </article>
+            <article class="highlight reveal">
+              <img loading="lazy" src="assets/food/plof-3.jpg" alt="Plov" />
+              <div class="highlight-body"><h3>Plov 抓飯</h3><p>用胡蘿蔔、肉、米飯燉煮而成，香氣濃郁。</p></div>
+            </article>
+            <article class="highlight reveal">
+              <img loading="lazy" src="assets/food/lagman.jpg" alt="Lagman" />
+              <div class="highlight-body"><h3>Lagman 拉麵</h3><p>手工拉麵加入蔬菜與牛肉，是中亞常見的麵食。</p></div>
+            </article>
+            <article class="highlight reveal">
+              <img loading="lazy" src="assets/food/samsa-2.jpg" alt="Samsa" />
+              <div class="highlight-body"><h3>Samsa 烤肉餅</h3><p>以傳統土窯烘烤，外酥內多汁。</p></div>
+            </article>
+            <article class="highlight reveal">
+              <img loading="lazy" src="assets/food/shashlyk-5.jpg" alt="Shashlik" />
+              <div class="highlight-body"><h3>Shashlik 烤肉串</h3><p>露天炭烤，是旅途中最常見的香味。</p></div>
+            </article>
+          </div>
+
+          <div class="includes-grid">
+            <div class="includes-col reveal">
+              <h3><i class="fa-solid fa-mug-hot"></i> 點心與飲品</h3>
+              <ul>
+                <li><i class="fa-solid fa-check"></i><span><b>Boorsok 油炸麵球</b>：遊牧民族宴席的必備點心；配果醬與熱茶，是在地人最愛的下午茶組合。</span></li>
+                <li><i class="fa-solid fa-check"></i><span><b>Maksym / Chalap / Jarma</b>：傳統穀物發酵飲，清爽帶點酸味，是當地人喜愛的日常飲料。</span></li>
+                <li><i class="fa-solid fa-check"></i><span><b>Kymyz 馬奶酒</b>：經典遊牧飲品，帶酸味，對腸胃有益。</span></li>
+              </ul>
+            </div>
+            <div class="includes-col reveal">
+              <h3><i class="fa-solid fa-apple-whole"></i> 當季水果</h3>
+              <ul>
+                <li><i class="fa-solid fa-check"></i><span><b>夏季</b>：櫻桃（六月）、杏子（七月，品質在中亞非常有名）、哈密瓜與甜瓜、各種莓類（覆盆子、草莓、黑醋栗、藍莓）。</span></li>
+                <li><i class="fa-solid fa-check"></i><span><b>秋季</b>：伊塞克湖周邊的蘋果、水分多的梨子，以及九月最甜的葡萄。</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       <!---------- Includes ---------->
       <!-- TODO: the source text had no price list. These come from the
@@ -796,7 +854,7 @@
               <li><a href="index.html" data-i18n="footer_nav_home">Home</a></li>
               <li><a href="index.html#tours" data-i18n="footer_nav_tours">Tours</a></li>
               <li><a href="blog.html" data-i18n="footer_nav_stories">Stories</a></li>
-              <li><a href="about-us-v2.html" data-i18n="footer_nav_about">About us</a></li>
+              <li><a href="about-us.html" data-i18n="footer_nav_about">About us</a></li>
             </ul>
           </div>
           <div>

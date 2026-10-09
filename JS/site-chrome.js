@@ -1,7 +1,7 @@
 // Shared site header + footer (css/site-chrome.css):
 // mobile menu, white header on scroll, and EN / 中文 for the header and footer.
 //
-// Pages with their own full translation (index, about-us-v2, tours-v2) set
+// Pages with their own full translation (index, about-us) set
 // <html data-page-i18n> and switch the language themselves; on those pages this
 // script only handles the menu and the header background.
 

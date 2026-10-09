@@ -20,7 +20,8 @@ const translations = {
     quick_title: "Discover the Heart of Kyrgyzstan",
     quick_body:
       "Kyrgyzstan is a land of breathtaking mountains, crystal-clear lakes, and timeless nomadic traditions. From high-altitude adventures to quiet moments in nature, this is a journey that stays with you long after you return home.",
-    tours_title: "Special Tours",
+    tours_title: "Kyrgyzstan 2027: which travel style is right for you?",
+    tours_btn: "Special Tours",
     tours_subtitle:
       "Curated journeys across Kyrgyzstan — culture, mountains, and authentic local experiences.",
     tours_filter_all: "All",
@@ -66,11 +67,9 @@ const translations = {
     blog_playlist2_title: "Travel Stories",
     blog_playlist2_desc:
       "People and places from the Tien Shan to the lakes—real slices of our daily life.",
-    blog_playlist2_item1:
-      "From office to Tien Shan: my journey to freedom",
+    blog_playlist2_item1: "From office to Tien Shan: my journey to freedom",
     blog_playlist2_item2: "Five must-do experiences in Kyrgyzstan",
-    blog_playlist2_item3:
-      "Autumn horseback adventure in mountain forests",
+    blog_playlist2_item3: "Autumn horseback adventure in mountain forests",
     blog_playlist3_tag: "Guest Voices",
     blog_playlist3_title: "Guest Voices",
     blog_playlist3_desc:
@@ -155,7 +154,8 @@ const translations = {
     quick_title: "探索吉爾吉斯的心臟地帶",
     quick_body:
       "吉爾吉斯擁有壯麗的群山、清澈的湖泊，以及延續至今的遊牧傳統。無論是高海拔冒險或靜謐的自然時光，這趟旅程都會在你心中留下長久的餘韻。",
-    tours_title: "精選行程",
+    tours_title: "2027 吉爾吉斯旅行，您想選擇的「旅行風格」？",
+    tours_btn: "精選行程",
     tours_subtitle: "精心策劃的吉爾吉斯旅程——文化、山脈與在地體驗。",
     tours_filter_all: "全部",
     tours_filter_culture: "文化",
@@ -170,11 +170,9 @@ const translations = {
     weather_spring_body:
       "野花、罌粟田與新綠點亮山野，適合低海拔健行與享受自然甦醒。",
     weather_summer_title: "夏季（6-8月）",
-    weather_summer_body:
-      "山徑開放、陽光湖泊、毡房體驗，是戶外冒險的最佳季節。",
+    weather_summer_body: "山徑開放、陽光湖泊、毡房體驗，是戶外冒險的最佳季節。",
     weather_autumn_title: "秋季（9-11月）",
-    weather_autumn_body:
-      "金紅色的山谷與涼爽天氣，適合探索與拍攝絕美景色。",
+    weather_autumn_body: "金紅色的山谷與涼爽天氣，適合探索與拍攝絕美景色。",
     weather_winter_title: "冬季（12-2月）",
     weather_winter_body: "滑雪、溫泉與靜謐雪原，體驗銀白世界的寧靜。",
     about_title: "我們的故事",
@@ -201,8 +199,7 @@ const translations = {
     blog_playlist2_item3: "馬背上的秋色探險——高山森林騎行",
     blog_playlist3_tag: "客座分享",
     blog_playlist3_title: "旅遊指南",
-    blog_playlist3_desc:
-      "旅伴、作家與朋友的視角，記錄心動瞬間與文化觀察。",
+    blog_playlist3_desc: "旅伴、作家與朋友的視角，記錄心動瞬間與文化觀察。",
     blog_playlist3_item1: "在「中亞瑞士」體驗人生最美好的騎行",
     blog_playlist3_item2: "草原遊牧民族也住「蒙古包」？",
     blog_playlist3_item3: "鷹獵人文化探索之旅",
@@ -222,8 +219,7 @@ const translations = {
     youtube_subtitle:
       "挑一支你想看的影片，直接跳到 YouTube 深入了解我們的旅程。",
     youtube_card1_meta: "18:22",
-    youtube_card1_title:
-      "台灣媳婦第一次過中亞冬天，三樣準備就搞定，超震撼！",
+    youtube_card1_title: "台灣媳婦第一次過中亞冬天，三樣準備就搞定，超震撼！",
     youtube_card2_meta: "09:58",
     youtube_card2_title:
       "台灣人飛到吉爾吉斯🇰🇬見未來公婆，開箱首都的家＋媽媽的牛肉五指麵",
@@ -237,8 +233,7 @@ const translations = {
 
     insta_card1_title: "客人的真心話",
 
-    insta_card2_title:
-      "以最道地的吉爾吉斯文化，款待每一位遠道而來的旅人。",
+    insta_card2_title: "以最道地的吉爾吉斯文化，款待每一位遠道而來的旅人。",
 
     insta_card3_title: "你聽過吉爾吉斯🇰🇬這個國家嗎？不是馬爾濟斯🐶喔！",
 
@@ -257,8 +252,7 @@ const translations = {
     footer_nav_faq: "常見問題",
     footer_nav_contact: "聯絡",
     footer_cta: "寄送 Email",
-    footer_legal:
-      "吉爾吉斯旅行社 · Reg No. 11708197200956 · OKPO 34155903",
+    footer_legal: "吉爾吉斯旅行社 · Reg No. 11708197200956 · OKPO 34155903",
     footer_copy: "© Bek & Ruby 2023 — 版權所有。",
   },
 };
@@ -268,6 +262,9 @@ Object.assign(translations.en, {
   tours_filter_long: "9+ days",
   tour_view: "View itinerary",
   tour_days: "{n} days",
+  tour_intensity: "Intensity",
+  tour_season: "Season",
+  tour_highlight: "Highlights",
   review_read_more: "Read more",
   weather_spring_name: "Spring",
   weather_spring_months: "March – May",
@@ -288,6 +285,9 @@ Object.assign(translations.zh, {
   tours_filter_long: "9 天以上",
   tour_view: "查看行程",
   tour_days: "{n} 天",
+  tour_intensity: "強度",
+  tour_season: "適合季節",
+  tour_highlight: "亮點",
   review_read_more: "閱讀更多",
   weather_spring_name: "春季",
   weather_spring_months: "3 – 5 月",
@@ -305,6 +305,7 @@ Object.assign(translations.zh, {
 
 // ---------- Authentic journey section (9 days in Bek's home mountains) ----------
 Object.assign(translations.en, {
+  auth_badge: "Signature journey",
   auth_kicker: "Authentic journey · With Bek's family",
   auth_title: "Deep Nomad Life",
   auth_sub: "9 days in Bek's home mountains",
@@ -318,9 +319,10 @@ Object.assign(translations.en, {
 });
 
 Object.assign(translations.zh, {
+  auth_badge: "招牌行程",
   auth_kicker: "道地之旅 · 與貝克的家人同行",
-  auth_title: "深度遊牧生活",
-  auth_sub: "貝克的故鄉・9 日之旅",
+  auth_title: "Special Tour 二訪限定 / 私房路線",
+  auth_sub: "適合：去過吉爾吉斯，想探索更獨家、高階的行程。",
   auth_lead:
     "這不是一趟觀光行程。你將前往貝克在托克托古爾附近長大的村莊，與他的家人和親戚同住，再和他們一起騎馬進山，一路走到遊牧民族的夏季營地。",
   auth_fact1: "9 天",
@@ -335,26 +337,32 @@ Object.assign(translations.zh, {
 // ---------- Tours (pages built in this redesign) ----------
 const TOURS = [
   {
-    days: 7,
+    days: 8,
     length: "short",
     style: "culture",
-    title_en: "7 Days of Nomad Life | Three Nights With a Nomad Family",
-    title_zh: "遊牧生活七日｜與遊牧家庭同住三晚",
-    img: "assets/images/gallery-optimized/g-son-kol-3.jpg",
+    title_en: "8 Days of Nomad Life | Three Nights With a Nomad Family",
+    title_zh: "8天 遊牧生活＋Karakol 定點慢遊",
+    img: "assets/image-itinerary/7d-milking-cow.jpg",
     link: "7days-nomad-life.html",
     label_en: "Nomad homestay",
     label_zh: "遊牧家庭寄宿",
     desc_en:
       "Milk the cows, make kaimak and boorsok, ride with the herders and soak in a natural hot spring, with an eagle hunter, Skazka Canyon and Karakol around it.",
-    desc_zh:
-      "擠牛奶、做奶油與炸麵球、跟著牧民騎馬、泡天然溫泉，再串連獵鷹人、童話峽谷與 Karakol。",
+    desc_zh: "",
+    // Details from the registration form (shown only in this language)
+    info_zh: {
+      code: "NML",
+      intensity: 2,
+      season: "5月中-9月底",
+      highlight: "山上和遊牧人生活，天山小鎮慢活健行",
+    },
   },
   {
     days: 8,
     length: "short",
     style: "classic",
     title_en: "Classic Kyrgyzstan | Lakes, Mountains & Nomad Encounters",
-    title_zh: "經典吉爾吉斯｜湖泊、高山與遊牧相遇",
+    title_zh: "8天 Song-Kul 經典遊牧之心",
     img: "assets/images-7-day-tour-section/son-kol.jpg",
     link: "8days-classic.html",
     label_en: "Classic loop",
@@ -363,14 +371,21 @@ const TOURS = [
       "Burana Tower, Karakol Gorge, Altyn-Arashan hot springs, Skazka Canyon, an eagle hunter and two nights at Song-Kul with nomad families.",
     desc_zh:
       "布拉納塔、卡拉科爾峽谷、阿爾金阿拉善溫泉、童話峽谷、獵鷹人，以及在頌湖與遊牧家庭度過兩晚。",
+    // Details from the registration form (shown only in this language)
+    info_zh: {
+      code: "SKC",
+      intensity: 3,
+      season: "5月底 - 9月中",
+      highlight: "深入海拔 3000m 草原、住傳統 yurt 氈房、看見真實高山放牧",
+    },
   },
   {
     days: 8,
     length: "short",
     style: "slow",
     title_en: "Slow Travel at the Foot of the Tien Shan | Around Issyk-Kul",
-    title_zh: "天山腳下的慢旅行｜伊塞克湖環湖",
-    img: "assets/images-7-day-tour-section/canion.jpg",
+    title_zh: "8天 Issyk-Kul 經典山谷慢旅行",
+    img: "assets/image-itinerary/8d-issyk-kul-boat.jpg",
     link: "8days-Issyk-kul.html",
     label_en: "Slow travel · Families",
     label_zh: "慢旅行・親子長輩",
@@ -378,14 +393,21 @@ const TOURS = [
       "A relaxed loop of Issyk-Kul with Chon Kemin valley, Altyn-Arashan hot springs and eagle hunting culture: ideal for families and senior travellers.",
     desc_zh:
       "伊塞克湖環湖、Chon Kemin 秋日山谷、Altyn-Arashan 高山溫泉與獵鷹文化。精緻小團，親子與長輩首選。",
+    // Details from the registration form (shown only in this language)
+    info_zh: {
+      code: "IKC",
+      intensity: 2,
+      season: "5月 - 11月",
+      highlight: "留在山谷與湖邊慢遊、舒服玩山玩水、健行。住宿相對舒適。",
+    },
   },
   {
     days: 10,
     length: "long",
     style: "adventure",
     title_en: "Son-Kol, Kel-Suu & Issyk-Kul | Highland Horse Trek",
-    title_zh: "頌湖、克蘇湖與伊塞克湖｜高山騎馬遠征",
-    img: "assets/image-itinerary/10d-kel-suu.png",
+    title_zh: "10天 三湖高山越野騎馬冒險",
+    img: "assets/image-itinerary/10d-kel-suu-lake.jpg",
     link: "10days-off-road-v2.html",
     label_en: "Horse trek · Off-road",
     label_zh: "騎馬・越野",
@@ -393,14 +415,21 @@ const TOURS = [
       "Ride over a 3,400 m pass to Son-Kol, travel deep into the border highlands to hidden Kel-Suu Lake, and finish with nomad culture on Issyk-Kul.",
     desc_zh:
       "騎馬翻越 3,400 公尺山口前往頌湖，深入邊境高原探訪秘境克蘇湖，最後在伊塞克湖體驗遊牧文化。",
+    // Details from the registration form (shown only in this language)
+    info_zh: {
+      code: "TLH",
+      intensity: 4,
+      season: "6月中 - 9月中",
+      highlight: "翻越山口、天氣變化、住宿簡約，共患難高山冒險體驗。",
+    },
   },
   {
     days: 14,
     length: "long",
     style: "adventure",
     title_en: "The Grand Kyrgyzstan Journey | Two Weeks Around the Tien Shan",
-    title_zh: "吉爾吉斯深度大環線｜天山兩週之旅",
-    img: "assets/hero-page-img/hero-visa.jpg",
+    title_zh: "14天 全境經典大環線",
+    img: "assets/image-itinerary/14d-song-kul-4wd.jpg",
     link: "14days-grand-tour.html",
     label_en: "Grand tour",
     label_zh: "深度大環線",
@@ -408,66 +437,79 @@ const TOURS = [
       "Song-Kul, hidden Kel-Suu, the canyons and shores of Issyk-Kul, Altyn-Arashan hot springs and Chon-Kemin, with nomad families along the way.",
     desc_zh:
       "頌湖、秘境克蘇湖、伊塞克湖的峽谷與湖岸、阿爾金阿拉善溫泉與 Chon-Kemin，一路與遊牧家庭相遇。",
+    // Details from the registration form (shown only in this language)
+    info_zh: {
+      code: "RGL",
+      intensity: 3,
+      season: "6月中 - 9月底",
+      highlight: "一次收集吉爾吉斯精華景點與極致高山大美風光",
+    },
   },
 ];
 
 // ---------- Google reviews (copied from index.html) ----------
 const REVIEWS = [
   {
-    "name": "龔小鈞",
-    "country": "Taiwan",
-    "en": "Before this trip, I honestly knew almost nothing about Kyrgyzstan (basically did no research at all).\nI joined mainly because of a simple thought: “If I don’t go with my friends this time, I’ll probably never come to this place in my lifetime.”\nBefore departure, I kept imagining I was heading to a very underdeveloped and even scary country. I worried about altitude sickness, getting sick, and all kinds of unknowns. I joined the trip completely out of courage, pushing myself forward despite the fear.\nAfter arriving, there were indeed many unexpected situations — a teammate’s suitcase was damaged by the airline, there was no hot water for showers, and some of us even got gastroenteritis.\nBut the breathtaking natural scenery of Kyrgyzstan, the kindness and warmth of the local people, and the chance to witness a country in the middle of its development were all incredibly fascinating. These experiences completely broke my stereotypes and made me fall in love with this country.\nA huge thank you to Ruby for her thoughtful planning, to Xiao Wu for his passionate and attentive service, to our driver for his professional skills, and to Bek’s mom for the generous and delicious home-cooked dinner.\nI truly hope we will meet again on this beautiful land. 💛",
-    "zh": "其實出發之前我完全不了解吉爾吉斯這個國家（俗稱沒有做功課），只是衝著一種「不跟朋友一起去的話，一輩子我都不會去這地方」的想法，出發之前一直覺得會到一個很落後很可怕的地方，擔心高山症擔心生病，完全是硬著頭皮參加這次旅行。\n抵達之後雖然也是發生很多意外（團員的行李箱被航空公司摔壞、洗澡沒熱水、腸胃炎），但吉爾吉斯大自然美麗的風光、當地人民的友善熱情以及見證一個國家發展中的歷程，種種都非常有趣，打破我原本的刻板印象，讓我愛上這個國家！\n非常謝謝Ruby用心的安排，小五熱忱的服務，司機大哥專業的技術，貝殼媽媽家豐盛美味的晚餐，希望還有機會在這片土地上相見\n❤️"
+    name: "龔小鈞",
+    country: "Taiwan",
+    en: "Before this trip, I honestly knew almost nothing about Kyrgyzstan (basically did no research at all).\nI joined mainly because of a simple thought: “If I don’t go with my friends this time, I’ll probably never come to this place in my lifetime.”\nBefore departure, I kept imagining I was heading to a very underdeveloped and even scary country. I worried about altitude sickness, getting sick, and all kinds of unknowns. I joined the trip completely out of courage, pushing myself forward despite the fear.\nAfter arriving, there were indeed many unexpected situations — a teammate’s suitcase was damaged by the airline, there was no hot water for showers, and some of us even got gastroenteritis.\nBut the breathtaking natural scenery of Kyrgyzstan, the kindness and warmth of the local people, and the chance to witness a country in the middle of its development were all incredibly fascinating. These experiences completely broke my stereotypes and made me fall in love with this country.\nA huge thank you to Ruby for her thoughtful planning, to Xiao Wu for his passionate and attentive service, to our driver for his professional skills, and to Bek’s mom for the generous and delicious home-cooked dinner.\nI truly hope we will meet again on this beautiful land. 💛",
+    zh: "其實出發之前我完全不了解吉爾吉斯這個國家（俗稱沒有做功課），只是衝著一種「不跟朋友一起去的話，一輩子我都不會去這地方」的想法，出發之前一直覺得會到一個很落後很可怕的地方，擔心高山症擔心生病，完全是硬著頭皮參加這次旅行。\n抵達之後雖然也是發生很多意外（團員的行李箱被航空公司摔壞、洗澡沒熱水、腸胃炎），但吉爾吉斯大自然美麗的風光、當地人民的友善熱情以及見證一個國家發展中的歷程，種種都非常有趣，打破我原本的刻板印象，讓我愛上這個國家！\n非常謝謝Ruby用心的安排，小五熱忱的服務，司機大哥專業的技術，貝殼媽媽家豐盛美味的晚餐，希望還有機會在這片土地上相見\n❤️",
   },
   {
-    "name": "Klay",
-    "country": "Taiwan",
-    "en": "Thank you to BekRuby for arranging such a wonderful journey, and special thanks to our hardworking driver and guide for taking such great care of every member of the group.We are truly grateful for the people we met and the experiences we had along the way. Thank you, Kyrgyzstan, for giving us such beautiful memories. If I have the chance, I would love to visit this amazing country again—and share it properly with friends back in Taiwan. 🇰🇬",
-    "zh": "謝謝BekRuby安排這麼棒的旅程，還有謝謝辛苦的司機以及導遊，都很照顧我們每個團員。旅途中遇見的人事物，感謝吉爾吉斯帶給我們最美好的回憶，有機會我還會想再拜訪這美麗的國家！並且好好的介紹給台灣朋友🇰🇬"
+    name: "Klay",
+    country: "Taiwan",
+    en: "Thank you to BekRuby for arranging such a wonderful journey, and special thanks to our hardworking driver and guide for taking such great care of every member of the group.We are truly grateful for the people we met and the experiences we had along the way. Thank you, Kyrgyzstan, for giving us such beautiful memories. If I have the chance, I would love to visit this amazing country again—and share it properly with friends back in Taiwan. 🇰🇬",
+    zh: "謝謝BekRuby安排這麼棒的旅程，還有謝謝辛苦的司機以及導遊，都很照顧我們每個團員。旅途中遇見的人事物，感謝吉爾吉斯帶給我們最美好的回憶，有機會我還會想再拜訪這美麗的國家！並且好好的介紹給台灣朋友🇰🇬",
   },
   {
-    "name": "David Chi",
-    "country": "Taiwan",
-    "en": "The first thing that left the deepest impression on me was how incredibly skilled the horses are at climbing mountains. Then there were the landscapes—endless deep blue skies paired with mountain ranges and golden-brown fields, truly breathtaking.At Song-Kol, I felt the profound silence of the open wilderness. At the 32 Parrots Bend, I witnessed a scene that felt straight out of a movie. The Kyrgyz bread was also unforgettable.Staying at a Japanese-style guesthouse, I experienced a comfortable and fascinating blend of different cultures. And of course, every meal and every cup of tea was wonderful.I’m truly grateful for such thoughtful planning and a beautifully designed itinerary. 🙏",
-    "zh": "第一個最難忘的是這邊的馬太會爬山了，再來是風景，永遠的湛藍搭配上群山和黃土色的田，真的很漂亮。在頌湖感受到荒原寂靜的感受，在32鸚鵡彎看到了電影般的場景；吉爾吉斯包也令人難忘。也在日式民宿看到了不同文化融合的感覺和舒適。當然每餐的食物和茶真的都很棒，很感謝有這樣的規劃和行程～！"
+    name: "David Chi",
+    country: "Taiwan",
+    en: "The first thing that left the deepest impression on me was how incredibly skilled the horses are at climbing mountains. Then there were the landscapes—endless deep blue skies paired with mountain ranges and golden-brown fields, truly breathtaking.At Song-Kol, I felt the profound silence of the open wilderness. At the 32 Parrots Bend, I witnessed a scene that felt straight out of a movie. The Kyrgyz bread was also unforgettable.Staying at a Japanese-style guesthouse, I experienced a comfortable and fascinating blend of different cultures. And of course, every meal and every cup of tea was wonderful.I’m truly grateful for such thoughtful planning and a beautifully designed itinerary. 🙏",
+    zh: "第一個最難忘的是這邊的馬太會爬山了，再來是風景，永遠的湛藍搭配上群山和黃土色的田，真的很漂亮。在頌湖感受到荒原寂靜的感受，在32鸚鵡彎看到了電影般的場景；吉爾吉斯包也令人難忘。也在日式民宿看到了不同文化融合的感覺和舒適。當然每餐的食物和茶真的都很棒，很感謝有這樣的規劃和行程～！",
   },
   {
-    "name": "Li",
-    "country": "Taiwan",
-    "en": "Kyrgyzstan is truly beautiful, with breathtaking and awe-inspiring landscapes. Throughout the journey, we experienced a wide variety of natural terrains and witnessed traditional skills passed down through generations—it was absolutely unforgettable. This trip has become one of the most special memories of my life.With the help of BekRuby Travel in planning everything, we were able to overcome challenges such as transportation, route planning, and language barriers with ease. As a result, the entire journey was smooth, enriching, and truly enjoyable.",
-    "zh": "吉爾吉斯真的很美，景色壯觀震撼！旅途中見證了吉爾吉斯的多種自然地形風貌、代代相傳的傳統技藝⋯ 實在令人難忘，這趟旅程是一生中很特別回憶之一。透過貝殼嚕比旅行社協助安排，幫我們直接克服了交通、行程路線、語言翻譯等等難題，使旅途一路順利進行且充實愉快！"
+    name: "Li",
+    country: "Taiwan",
+    en: "Kyrgyzstan is truly beautiful, with breathtaking and awe-inspiring landscapes. Throughout the journey, we experienced a wide variety of natural terrains and witnessed traditional skills passed down through generations—it was absolutely unforgettable. This trip has become one of the most special memories of my life.With the help of BekRuby Travel in planning everything, we were able to overcome challenges such as transportation, route planning, and language barriers with ease. As a result, the entire journey was smooth, enriching, and truly enjoyable.",
+    zh: "吉爾吉斯真的很美，景色壯觀震撼！旅途中見證了吉爾吉斯的多種自然地形風貌、代代相傳的傳統技藝⋯ 實在令人難忘，這趟旅程是一生中很特別回憶之一。透過貝殼嚕比旅行社協助安排，幫我們直接克服了交通、行程路線、語言翻譯等等難題，使旅途一路順利進行且充實愉快！",
   },
   {
-    "name": "林宥萱",
-    "country": "Taiwan",
-    "en": "I loved Central Asia’s “Little Switzerland,” the Japanese-style wooden houses, and the food (probably my ten-year quota of cilantro and sweet green peppers 😄).\nI loved the eagle show, horseback riding, staying in a Kyrgyz yurt, Son-Kul, and boating on Issyk-Kul — honestly, too many favorites to count.\n\nBek’s mom’s dinner was absolutely my favorite. I especially loved connecting with local people and experiencing this kind of cultural exchange. ❤️",
-    "zh": "中亞小瑞士喜歡，日本人的木屋喜歡，食物也喜歡（這大概是我10年分的香菜和甜椒青椒）。\n老鷹表演喜歡，騎馬喜歡，住吉爾吉斯包喜歡，頌湖喜歡，伊賽克湖遊湖喜歡……太多了～\nBek媽媽的晚宴超級超級超級喜歡（最喜歡跟當地人交流，也很喜歡這樣的表演和文化交流），手比愛心～"
+    name: "林宥萱",
+    country: "Taiwan",
+    en: "I loved Central Asia’s “Little Switzerland,” the Japanese-style wooden houses, and the food (probably my ten-year quota of cilantro and sweet green peppers 😄).\nI loved the eagle show, horseback riding, staying in a Kyrgyz yurt, Son-Kul, and boating on Issyk-Kul — honestly, too many favorites to count.\n\nBek’s mom’s dinner was absolutely my favorite. I especially loved connecting with local people and experiencing this kind of cultural exchange. ❤️",
+    zh: "中亞小瑞士喜歡，日本人的木屋喜歡，食物也喜歡（這大概是我10年分的香菜和甜椒青椒）。\n老鷹表演喜歡，騎馬喜歡，住吉爾吉斯包喜歡，頌湖喜歡，伊賽克湖遊湖喜歡……太多了～\nBek媽媽的晚宴超級超級超級喜歡（最喜歡跟當地人交流，也很喜歡這樣的表演和文化交流），手比愛心～",
   },
   {
-    "name": "吳蕙如",
-    "country": "Taiwan",
-    "en": "The horseback riding and staying in a Kyrgyz yurt were truly unforgettable. The scenery changed constantly within just two hours, making it a very rich experience. There were also many places without internet — which was surprisingly satisfying 🤭",
-    "zh": "騎馬與吉爾吉斯包的體驗令人永生難忘，兩小時內的景致就有不同的變化，是個很豐富的體驗。另沒有網路的地方很多，也令人滿意🤭"
+    name: "吳蕙如",
+    country: "Taiwan",
+    en: "The horseback riding and staying in a Kyrgyz yurt were truly unforgettable. The scenery changed constantly within just two hours, making it a very rich experience. There were also many places without internet — which was surprisingly satisfying 🤭",
+    zh: "騎馬與吉爾吉斯包的體驗令人永生難忘，兩小時內的景致就有不同的變化，是個很豐富的體驗。另沒有網路的地方很多，也令人滿意🤭",
   },
   {
-    "name": "Carina",
-    "country": "Taiwan",
-    "en": "Ever since I saw a photographer share videos of Kyrgyzstan on Instagram, this country has held a special place in my heart. After visiting in person, I realized that it’s not only beautiful, but the people are also incredibly friendly and warm. Being here, I felt a deep sense of happiness.",
-    "zh": "自從在IG上看到一位攝影師分享的吉爾吉斯影片，這個國家在我心裡就有著特別的印象，實際走訪當地，這裡不只風景美麗，人也很友善熱情，在這裡感受到滿滿的幸福感"
+    name: "Carina",
+    country: "Taiwan",
+    en: "Ever since I saw a photographer share videos of Kyrgyzstan on Instagram, this country has held a special place in my heart. After visiting in person, I realized that it’s not only beautiful, but the people are also incredibly friendly and warm. Being here, I felt a deep sense of happiness.",
+    zh: "自從在IG上看到一位攝影師分享的吉爾吉斯影片，這個國家在我心裡就有著特別的印象，實際走訪當地，這裡不只風景美麗，人也很友善熱情，在這裡感受到滿滿的幸福感",
   },
   {
-    "name": "LI PEI LIN",
-    "country": "Taiwan",
-    "en": "It was a very special trip — the scenery in Kyrgyzstan is truly beautiful.",
-    "zh": "很特別的一趟旅遊，吉爾吉斯景色真的很美"
-  }
+    name: "LI PEI LIN",
+    country: "Taiwan",
+    en: "It was a very special trip — the scenery in Kyrgyzstan is truly beautiful.",
+    zh: "很特別的一趟旅遊，吉爾吉斯景色真的很美",
+  },
 ];
 
 // ---------- Helpers ----------
 let lang = "en";
 const t = (key) => translations[lang][key] ?? translations.en[key] ?? "";
 const escapeHTML = (s) =>
-  s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  s.replace(
+    /[&<>"']/g,
+    (c) =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[
+        c
+      ],
+  );
 
 document.addEventListener("DOMContentLoaded", () => {
   // ---------- Floating contact button (site header: JS/site-chrome.js) ----------
@@ -483,14 +525,21 @@ document.addEventListener("DOMContentLoaded", () => {
   // ---------- Hero slideshow ----------
   const slides = [...document.querySelectorAll(".hero-slide")];
   const heroTitle = document.getElementById("heroTitle");
-  const titleKeys = [...document.querySelectorAll("#heroTitles [data-i18n]")].map((el) => el.dataset.i18n);
+  const titleKeys = [
+    ...document.querySelectorAll("#heroTitles [data-i18n]"),
+  ].map((el) => el.dataset.i18n);
   const dotsBox = document.getElementById("heroDots");
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
   let current = 0;
   let timer = null;
 
   dotsBox.innerHTML = slides
-    .map((_, i) => `<button type="button" role="tab" aria-label="Slide ${i + 1}"></button>`)
+    .map(
+      (_, i) =>
+        `<button type="button" role="tab" aria-label="Slide ${i + 1}"></button>`,
+    )
     .join("");
   const dots = [...dotsBox.children];
 
@@ -517,7 +566,7 @@ document.addEventListener("DOMContentLoaded", () => {
     dot.addEventListener("click", () => {
       showSlide(i);
       startTimer();
-    })
+    }),
   );
 
   // ---------- Tours ----------
@@ -525,11 +574,37 @@ document.addEventListener("DOMContentLoaded", () => {
   const filterBtns = [...document.querySelectorAll("#tourFilters .filter")];
   let activeFilter = "all";
 
+  // Stars out of 5, half stars allowed (e.g. 2.5)
+  function starIcons(n) {
+    const full = Math.floor(n);
+    const half = n - full >= 0.5 ? 1 : 0;
+    return (
+      '<i class="fa-solid fa-star"></i>'.repeat(full) +
+      '<i class="fa-solid fa-star-half-stroke"></i>'.repeat(half) +
+      '<i class="fa-regular fa-star"></i>'.repeat(5 - full - half)
+    );
+  }
+
+  // Intensity, season and highlights for tours that have info_<lang>
+  function tourInfo(info) {
+    const stars = info.intensity
+      ? `<p class="tour-intensity"><span>${t("tour_intensity")}</span><b aria-label="${info.intensity}/5">${starIcons(info.intensity)}</b></p>`
+      : "";
+    return `${stars}
+      <ul class="tour-info">
+        ${info.season ? `<li><i class="fa-regular fa-calendar"></i><span><b>${t("tour_season")}：</b>${escapeHTML(info.season)}</span></li>` : ""}
+        ${info.highlight ? `<li><i class="fa-solid fa-mountain-sun"></i><span><b>${t("tour_highlight")}：</b>${escapeHTML(info.highlight)}</span></li>` : ""}
+      </ul>`;
+  }
+
   function renderTours() {
-    const list = TOURS.filter((tour) => activeFilter === "all" || tour.length === activeFilter);
+    const list = TOURS.filter(
+      (tour) => activeFilter === "all" || tour.length === activeFilter,
+    );
     toursGrid.innerHTML = list
       .map((tour) => {
         const title = tour[`title_${lang}`] || tour.title_en;
+        const info = tour[`info_${lang}`];
         const isExternal = tour.link.startsWith("http");
         return `
         <article class="tour-card">
@@ -538,9 +613,12 @@ document.addEventListener("DOMContentLoaded", () => {
             <span class="tour-days"><i class="fa-regular fa-clock"></i>${t("tour_days").replace("{n}", tour.days)}</span>
           </div>
           <div class="tour-body">
-            <span class="tour-label ${tour.style}">${escapeHTML(tour[`label_${lang}`] || tour.label_en)}</span>
+            <div class="tour-tags">
+              ${info && info.code ? `<span class="tour-code">${escapeHTML(info.code)}</span>` : ""}
+              <span class="tour-label ${tour.style}">${escapeHTML(tour[`label_${lang}`] || tour.label_en)}</span>
+            </div>
             <h3>${escapeHTML(title)}</h3>
-            <p>${escapeHTML(tour[`desc_${lang}`] || tour.desc_en)}</p>
+            ${info ? tourInfo(info) : `<p>${escapeHTML(tour[`desc_${lang}`] || tour.desc_en)}</p>`}
             <a class="btn btn-primary" href="${tour.link}"${isExternal ? ' target="_blank" rel="noopener"' : ""}>
               ${t("tour_view")} <i class="fa-solid fa-arrow-right"></i>
             </a>
@@ -555,7 +633,7 @@ document.addEventListener("DOMContentLoaded", () => {
       filterBtns.forEach((b) => b.classList.toggle("active", b === btn));
       activeFilter = btn.dataset.filter;
       renderTours();
-    })
+    }),
   );
 
   // ---------- Seasons ----------
@@ -575,7 +653,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const step = { ArrowRight: 1, ArrowLeft: -1 }[e.key];
       if (step) {
         e.preventDefault();
-        selectSeason(seasonTabs[(i + step + seasonTabs.length) % seasonTabs.length], true);
+        selectSeason(
+          seasonTabs[(i + step + seasonTabs.length) % seasonTabs.length],
+          true,
+        );
       }
     });
   });
@@ -590,7 +671,10 @@ document.addEventListener("DOMContentLoaded", () => {
     reviewsRail.innerHTML = REVIEWS.map((r, i) => {
       const full = r[lang] || r.en;
       const short = full.length > 150 ? full.slice(0, 150).trim() + "…" : full;
-      const more = full.length > 150 ? `<button class="review-more" type="button" data-review="${i}">${t("review_read_more")}</button>` : "";
+      const more =
+        full.length > 150
+          ? `<button class="review-more" type="button" data-review="${i}">${t("review_read_more")}</button>`
+          : "";
       return `
         <article class="review-card">
           <div class="review-top">
@@ -614,7 +698,9 @@ document.addEventListener("DOMContentLoaded", () => {
     dialogAuthor.textContent = `${r.name} · ${r.country}`;
     dialog.showModal();
   });
-  document.getElementById("reviewClose").addEventListener("click", () => dialog.close());
+  document
+    .getElementById("reviewClose")
+    .addEventListener("click", () => dialog.close());
   dialog.addEventListener("click", (e) => {
     if (e.target === dialog) dialog.close(); // click on the backdrop
   });
@@ -625,8 +711,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const rail = document.getElementById(btn.dataset.rail);
       const item = rail.firstElementChild;
       const gap = parseFloat(getComputedStyle(rail).columnGap) || 20;
-      rail.scrollBy({ left: Number(btn.dataset.dir) * ((item?.clientWidth || 300) + gap), behavior: "smooth" });
-    })
+      rail.scrollBy({
+        left: Number(btn.dataset.dir) * ((item?.clientWidth || 300) + gap),
+        behavior: "smooth",
+      });
+    }),
   );
 
   // ---------- Language ----------
@@ -657,14 +746,21 @@ document.addEventListener("DOMContentLoaded", () => {
     renderReviews();
   }
 
-  document.getElementById("langBtn").addEventListener("click", () => setLanguage(lang === "zh" ? "en" : "zh"));
+  document
+    .getElementById("langBtn")
+    .addEventListener("click", () => setLanguage(lang === "zh" ? "en" : "zh"));
 
   // Same rule as the current homepage: saved choice, otherwise the browser language
   let saved = null;
   try {
     saved = localStorage.getItem("siteLang");
   } catch (e) {}
-  setLanguage(saved || ((navigator.language || "en").toLowerCase().startsWith("zh") ? "zh" : "en"));
+  setLanguage(
+    saved ||
+      ((navigator.language || "en").toLowerCase().startsWith("zh")
+        ? "zh"
+        : "en"),
+  );
   startTimer();
 
   // ---------- Reveal on scroll ----------
@@ -681,7 +777,7 @@ document.addEventListener("DOMContentLoaded", () => {
           io.unobserve(entry.target);
         }
       }),
-    { threshold: 0.12 }
+    { threshold: 0.12 },
   );
   revealEls.forEach((el) => io.observe(el));
 });

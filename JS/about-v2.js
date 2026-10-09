@@ -1,4 +1,4 @@
-// About page (about-us-v2.html): language switch, reveal animations.
+// About page (about-us.html): language switch, reveal animations.
 
 // ---------- Translations (copied from about-us.html) ----------
 const translations = {

@@ -64,7 +64,8 @@ h3 {
 :lang(zh-Hant) h1,
 :lang(zh-Hant) h2,
 :lang(zh-Hant) h3 {
-  font-family: "Poppins", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  font-family:
+    "Poppins", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
   letter-spacing: 0;
 }
 
@@ -124,7 +125,11 @@ h3 {
   font-size: 15px;
   border: none;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
 .btn:hover {
@@ -172,7 +177,9 @@ h3 {
   display: grid;
   place-items: center;
   cursor: pointer;
-  transition: border-color 0.2s, color 0.2s;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
 }
 
 .round-btn:hover {
@@ -194,7 +201,10 @@ h3 {
   right: 0;
   z-index: 100;
   color: #fff;
-  transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease;
 }
 
 .site-header.solid {
@@ -235,7 +245,9 @@ h3 {
   font-size: 14px;
   font-weight: 500;
   opacity: 0.92;
-  transition: color 0.2s, opacity 0.2s;
+  transition:
+    color 0.2s,
+    opacity 0.2s;
 }
 
 .site-links a:hover {
@@ -510,7 +522,9 @@ h3 {
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
   animation: cardIn 0.4s ease;
 }
 
@@ -610,7 +624,76 @@ h3 {
   flex: 1;
 }
 
+/* Code chip + label on one line */
+.tour-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-self: flex-start;
+  margin-bottom: 12px;
+}
+.tour-tags .tour-label {
+  margin-bottom: 0;
+}
+.tour-code {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+}
+
+/* Intensity stars, then season + highlights in a soft box */
+.tour-intensity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: -2px 0 12px;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+}
+.tour-intensity span {
+  font-weight: 600;
+  color: var(--ink);
+}
+.tour-intensity b {
+  display: inline-flex;
+  gap: 3px;
+  color: var(--orange);
+  font-size: 13px;
+  font-weight: 400;
+}
+.tour-info {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--sand);
+  display: grid;
+  gap: 8px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+.tour-info li {
+  display: flex;
+  gap: 10px;
+}
+.tour-info i {
+  color: var(--orange);
+  margin-top: 4px;
+  width: 14px;
+  flex: 0 0 auto;
+}
+.tour-info b {
+  color: var(--ink);
+  font-weight: 600;
+}
+
 .tour-body .btn {
+  margin-top: auto;
   align-self: flex-start;
   padding: 10px 20px;
   font-size: 14px;
@@ -900,7 +983,9 @@ h3 {
   border-radius: var(--radius);
   padding: 28px 24px;
   border: 1px solid var(--line);
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  transition:
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
 }
 
 .why-card:hover {
@@ -1063,7 +1148,9 @@ h3 {
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .media-card:hover {
@@ -1272,7 +1359,9 @@ h3 {
   opacity: 0;
   transform: translateY(20px);
   pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .floating-contact.show {
@@ -1286,7 +1375,9 @@ h3 {
 .reveal {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
 }
 
 .reveal.visible {
@@ -1501,56 +1592,174 @@ h3 {
 
 /* ==========================================================
    Authentic journey: 9 days in Bek's home mountains
-   One photo + text on sand, set apart from the tour cards
+   Full-width photo with the text on a dark fade,
+   so it stands apart from the tour cards
    ========================================================== */
 .authentic {
-  background: var(--sand);
-  padding: 90px 0;
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--ink);
+  color: #fff;
+}
+.authentic-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+.authentic::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(22, 33, 43, 0.88) 0%,
+    rgba(22, 33, 43, 0.6) 45%,
+    rgba(22, 33, 43, 0.05) 80%
+  );
 }
 .authentic-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 56px;
-  align-items: center;
-}
-.authentic-img {
+  position: relative;
+  z-index: 1;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: var(--radius);
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.authentic-text {
+  max-width: 560px;
+}
+.authentic-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--orange);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.authentic-kicker {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 10px;
+}
+.authentic-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(38px, 5.5vw, 64px);
+  line-height: 1.05;
+  color: #fff;
 }
 .authentic-sub {
   font-family: "Fraunces", Georgia, serif;
   font-style: italic;
-  font-size: 20px;
-  color: var(--green-dark);
-  margin: -6px 0 16px;
+  font-size: 21px;
+  color: #ffc9a8;
+  margin: 8px 0 18px;
 }
 .authentic-lead {
-  color: var(--ink-soft);
-  max-width: 52ch;
+  color: rgba(255, 255, 255, 0.88);
 }
 .authentic-facts {
   list-style: none;
   padding: 0;
-  margin: 22px 0 28px;
+  margin: 24px 0 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 22px;
-  font-size: 14px;
-  color: var(--ink);
+  gap: 10px;
 }
-.authentic-facts i {
-  color: var(--orange);
-  margin-right: 8px;
+.authentic-facts li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 14px;
 }
 
+/* Phones and tablets: photo on top, text below on dark blue */
 @media (max-width: 960px) {
   .authentic {
-    padding: 64px 0;
+    min-height: 0;
+    display: block;
+  }
+  .authentic-bg {
+    position: relative;
+    height: 300px;
+  }
+  .authentic::after {
+    inset: 0 0 auto 0;
+    height: 300px;
+    background: linear-gradient(
+      180deg,
+      rgba(22, 33, 43, 0) 55%,
+      var(--ink) 100%
+    );
   }
   .authentic-inner {
-    grid-template-columns: 1fr;
-    gap: 28px;
+    margin-top: -40px;
+    padding-top: 0;
+    padding-bottom: 64px;
   }
 }
+
+/* Shown only when the page is in Chinese */
+html:not([lang^="zh"]) .zh-only {
+  display: none;
+}
+
+/* Authentic section: intensity + season/highlights on the photo */
+.authentic-intensity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0 10px;
+  font-size: 14px;
+}
+.authentic-intensity span {
+  font-weight: 600;
+}
+.authentic-intensity b {
+  color: var(--orange);
+  letter-spacing: 2px;
+  font-size: 17px;
+  font-weight: 400;
+}
+.authentic-box {
+  list-style: none;
+  margin: 0;
+  padding: 12px 16px;
+  display: grid;
+  gap: 8px;
+  max-width: 460px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font-size: 14px;
+}
+.authentic-box li {
+  display: flex;
+  gap: 10px;
+}
+.authentic-box i {
+  color: var(--orange);
+  margin-top: 4px;
+  width: 14px;
+}
+.authentic-box b {
+  font-weight: 600;
+}
+
