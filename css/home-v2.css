@@ -1763,3 +1763,61 @@ html:not([lang^="zh"]) .zh-only {
   font-weight: 600;
 }
 
+/* What's included (all tours) */
+.included-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.included-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 30px 32px;
+}
+.included-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+.included-yes h3 i {
+  color: var(--green-dark);
+}
+.included-no h3 i {
+  color: var(--orange-dark);
+}
+.included-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+.included-card li {
+  display: flex;
+  gap: 12px;
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+.included-card li i {
+  flex: 0 0 auto;
+  margin-top: 5px;
+  font-size: 13px;
+}
+.included-yes li i {
+  color: var(--green-dark);
+}
+.included-no li i {
+  color: var(--orange-dark);
+}
+@media (max-width: 760px) {
+  .included-grid {
+    grid-template-columns: 1fr;
+  }
+  .included-card {
+    padding: 24px;
+  }
+}
+

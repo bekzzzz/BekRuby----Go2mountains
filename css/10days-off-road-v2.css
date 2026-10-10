@@ -1587,56 +1587,96 @@ h3 {
   }
 }
 
-/* ---------- "Is this tour right for you?" button on tour pages ---------- */
+/* ---------- "Is this tour right for you?" box on tour pages ---------- */
 .survey-cta {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px 24px;
+  gap: 22px 32px;
   flex-wrap: wrap;
-  margin: 28px 0 0;
-  padding: 20px 24px;
-  border-radius: 16px;
-  background: #fff6f1;
-  border: 1px solid #f9cdb6;
+  margin: 36px 0 0;
+  padding: 30px 34px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #fa7436 0%, #f05323 100%);
+  color: #fff;
+  box-shadow: 0 18px 40px rgba(240, 83, 35, 0.28);
 }
-.survey-cta strong {
-  display: block;
-  font-size: 17px;
-  color: #16212b;
+.survey-cta-text {
+  flex: 1 1 420px;
 }
-.survey-cta span {
-  font-size: 14px;
-  color: #4a5560;
-}
-.survey-cta a {
+.survey-cta-kicker {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 22px;
-  border-radius: 999px;
-  background: #fa7436;
-  color: #fff;
+  font-size: 12px;
   font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+.survey-cta strong {
+  display: block;
+  font-size: clamp(22px, 2.6vw, 28px);
+  line-height: 1.2;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.survey-cta-text > span:not(.survey-cta-kicker) {
+  display: block;
+  font-size: 15px;
+  opacity: 0.92;
+  max-width: 56ch;
+}
+.survey-steps {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.survey-steps li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.survey-steps b {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.22);
+  font-size: 13px;
+}
+.survey-cta > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  border-radius: 999px;
+  background: #fff;
+  color: #f05323;
+  font-weight: 700;
+  font-size: 16px;
   text-decoration: none;
   white-space: nowrap;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease;
 }
-.survey-cta a:hover {
-  background: #f05323;
+.survey-cta > a:hover {
+  transform: translateY(-2px);
 }
 @media (max-width: 640px) {
-  .survey-cta a {
+  .survey-cta {
+    padding: 24px 22px;
+  }
+  .survey-cta > a {
     width: 100%;
     justify-content: center;
   }
-}
-
-/* Difficulty stars in "Tour at a glance" (same scale as the homepage cards) */
-.level-stars {
-  display: inline-flex;
-  gap: 2px;
-  color: #fa7436;
-  font-size: 12px;
-  vertical-align: 1px;
 }
 

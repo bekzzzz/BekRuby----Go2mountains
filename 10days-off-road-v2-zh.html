@@ -44,7 +44,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/10days-off-road-v2.css" />
+    <link rel="stylesheet" href="css/10days-off-road-v2.css?v=2" />
     <script defer src="JS/10days-off-road-v2.js"></script>
     <link rel="stylesheet" href="css/site-chrome.css" />
     <script defer src="JS/site-chrome.js?v=3"></script>
@@ -105,7 +105,7 @@
           <li><a href="#food">美食</a></li>
           <li><a href="#includes">費用包含</a></li>
         </ul>
-        <a class="btn btn-primary" href="contact.html">預訂行程</a>
+        <a class="btn btn-primary" href="survey.html?tour=TLH">問卷・報名</a>
       </div>
     </nav>
 
@@ -161,7 +161,7 @@
               </div>
             </article>
             <article class="highlight reveal">
-              <img loading="lazy" src="assets/image-itinerary/eagle hunting.jpg" alt="金雕獵鷹人" />
+              <img loading="lazy" src="assets/image-itinerary/eagle-hunter-portrait.jpg" alt="穿著傳統服飾的年輕獵鷹人和他的金雕" />
               <div class="highlight-body">
                 <h3>遊牧傳統</h3>
                 <p>拜訪遊牧家庭、製作羊毛氈地毯（shyrdak）、搭建氈房，以及金雕獵鷹人。</p>
@@ -215,7 +215,7 @@
               <div class="info-icon"><i class="fa-solid fa-campground"></i></div>
               <h3>住宿安排</h3>
               <p>
-                <b>4 晚氈房營地</b>（Kilemche、頌湖北岸與南岸，以及 Bokonbaevo 的現代氈房住宿 Elestet），有時是豪華帳篷。<b>2 晚簡易木屋</b>在 Kok-Kiya。<b>3 晚民宿與飯店。</b>有些營地很安靜，有些則可能有不少其他旅客。
+                <b>3–4 晚氈房營地</b>（Kilemche、頌湖北岸與南岸，可能還有 Bokonbaevo 的現代氈房住宿），有時是豪華帳篷。<b>2 晚簡易木屋</b>在 Kok-Kiya。<b>3–4 晚民宿與飯店。</b>有些營地很安靜，有些則可能有不少其他旅客。
               </p>
             </div>
             <div class="info-card reveal">
@@ -320,7 +320,7 @@
                     <td data-label="Wi-Fi"><i class="dot good"></i>Wi-Fi</td>
                   </tr>
                   <tr>
-                    <td data-label="Day">第 2 天</td><td data-label="Overnight">氈房營地，Kilemche</td>
+                    <td data-label="Day">第 2 天</td><td data-label="Overnight">Kilemche 山谷吉爾吉斯包營地</td>
                     <td data-label="Shower"><i class="dot none"></i>無</td>
                     <td data-label="Toilet"><i class="dot limited"></i>戶外，共用</td>
                     <td data-label="Wi-Fi"><i class="dot none"></i>無</td>
@@ -339,7 +339,7 @@
                     <td data-label="Wi-Fi"><i class="dot unknown"></i>—</td>
                   </tr>
                   <tr>
-                    <td data-label="Day">第 5 天</td><td data-label="Overnight">飯店，納倫</td>
+                    <td data-label="Day">第 5 天</td><td data-label="Overnight">納倫四星級飯店</td>
                     <td data-label="Shower"><i class="dot good"></i>私人，熱水</td>
                     <td data-label="Toilet"><i class="dot good"></i>私人</td>
                     <td data-label="Wi-Fi"><i class="dot good"></i>Wi-Fi</td>
@@ -357,13 +357,13 @@
                     <td data-label="Wi-Fi"><i class="dot limited"></i>Wi-Fi 很弱，無訊號</td>
                   </tr>
                   <tr>
-                    <td data-label="Day">第 8 天</td><td data-label="Overnight">家庭民宿，Tash-Bashat</td>
+                    <td data-label="Day">第 8 天</td><td data-label="Overnight">民宿，Tash-Bashat</td>
                     <td data-label="Shower"><i class="dot good"></i>私人</td>
                     <td data-label="Toilet"><i class="dot good"></i>私人</td>
                     <td data-label="Wi-Fi"><i class="dot good"></i>Wi-Fi</td>
                   </tr>
                   <tr>
-                    <td data-label="Day">第 9 天</td><td data-label="Overnight">Elestet 現代氈房住宿，Bokonbaevo</td>
+                    <td data-label="Day">第 9 天</td><td data-label="Overnight">舒適的現代氈房住宿或民宿，Bokonbaevo</td>
                     <td data-label="Shower"><i class="dot limited"></i>共用</td>
                     <td data-label="Toilet"><i class="dot limited"></i>共用</td>
                     <td data-label="Wi-Fi"><i class="dot good"></i>Wi-Fi</td>
@@ -398,8 +398,17 @@
           </div>
           <!-- Fit check before booking (survey.html) -->
           <div class="survey-cta reveal">
-            <div><strong>這趟行程適合你嗎？</strong><span>報名前花 3–5 分鐘填寫問卷，馬上知道結果。</span></div>
-            <a href="survey.html?tour=TLH"><i class="fa-solid fa-clipboard-check"></i> 開始填寫問卷</a>
+            <div class="survey-cta-text">
+              <span class="survey-cta-kicker"><i class="fa-solid fa-clipboard-check"></i> 報名方式</span>
+              <strong>這趟行程適合你嗎？</strong>
+              <span>報名前請先花約 2 分鐘填寫評估問卷。通過評估後，就可以直接進入報名表單。</span>
+              <ol class="survey-steps">
+                <li><b>1</b>填寫評估問卷</li>
+                <li><b>2</b>查看是否適合這趟行程</li>
+                <li><b>3</b>通過後立即報名</li>
+              </ol>
+            </div>
+            <a href="survey.html?tour=TLH">開始填寫問卷 <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </section>
@@ -464,7 +473,7 @@
               <div class="day-num"><small>第</small><b>2</b></div>
               <details class="day-card reveal">
                 <summary class="day-summary">
-                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/7d-horse-toktogul.png" alt="" />
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/10d-riders-valley.jpg" alt="" style="object-position: center 60%" />
                   <div class="day-heading">
                     <p class="day-route">Kyzart → Kilemche 山谷</p>
                     <h3>跨上馬背</h3>
@@ -474,7 +483,7 @@
                 </summary>
                 <div class="day-content">
                   <div class="day-media">
-                  <img loading="lazy" src="assets/image-itinerary/7d-horse-toktogul.png" alt="騎馬穿越夏牧場" />
+                  <img loading="lazy" src="assets/image-itinerary/10d-riders-valley.jpg" alt="騎馬的旅客走在通往山谷的土路上" style="object-position: center 60%" />
                   </div>
                   <div class="day-body">
                   <p>
@@ -483,7 +492,7 @@
                   <ul class="day-facts">
                     <li><i class="fa-solid fa-horse"></i><div><span>騎馬</span>約 4 小時，含休息</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、晚餐</div></li>
-                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>氈房營地，Kilemche 山谷</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>Kilemche 山谷吉爾吉斯包營地</div></li>
                     <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>無</div></li>
                     <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>簡易戶外廁所，共用</div></li>
                     <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>沒有 Wi-Fi 和手機訊號</div></li>
@@ -545,7 +554,7 @@
               <div class="day-num"><small>第</small><b>4</b></div>
               <details class="day-card reveal">
                 <summary class="day-summary">
-                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/8d-toktogul-nomads.png" alt="" />
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/10d-nomad-yurt-pasture.jpg" alt="" style="object-position: 30% center" />
                   <div class="day-heading">
                     <p class="day-route">頌湖北岸 → 遊牧家庭 → 頌湖南岸</p>
                     <h3>高原上悠閒的一天</h3>
@@ -555,7 +564,7 @@
                 </summary>
                 <div class="day-content">
                   <div class="day-media">
-                  <img loading="lazy" src="assets/image-itinerary/8d-toktogul-nomads.png" alt="夏季氈房裡的遊牧家庭" />
+                  <img loading="lazy" src="assets/image-itinerary/10d-nomad-yurt-pasture.jpg" alt="高山牧場上的遊牧家庭吉爾吉斯包與吃草的牛" style="object-position: 30% center" />
                   </div>
                   <div class="day-body">
                   <p>
@@ -586,9 +595,9 @@
               <div class="day-num"><small>第</small><b>5</b></div>
               <details class="day-card reveal">
                 <summary class="day-summary">
-                  <img class="day-thumb" loading="lazy" src="assets/8day-classic-tour/too.jpg" alt="" />
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/10d-32-parrots-road.jpg" alt="" style="object-position: 68% center" />
                   <div class="day-heading">
-                    <p class="day-route">頌湖 → Moldo-Ashuu 山口 → 納倫</p>
+                    <p class="day-route">頌湖 →「32 鸚鵡彎」→ 納倫</p>
                     <h3>沿著「32 鸚鵡彎」下山</h3>
                   </div>
                   <div class="day-tags"><span class="tag"><i class="fa-solid fa-mug-hot"></i>休息與恢復</span></div>
@@ -596,18 +605,17 @@
                 </summary>
                 <div class="day-content">
                   <div class="day-media">
-                  <!-- TODO: Moldo-Ashuu / "32 Parrots" road or Naryn photo -->
-                  <img loading="lazy" src="assets/8day-classic-tour/too.jpg" alt="通往納倫的山路" />
+                  <img loading="lazy" src="assets/image-itinerary/10d-32-parrots-road.jpg" alt="「32 鸚鵡彎」蜿蜒的山路與山谷" style="object-position: 68% center" />
                   </div>
                   <div class="day-body">
                   <p>
-                    在湖邊度過最後一個早晨後，沿 Moldo-Ashuu 山口的公路離開頌湖。下山途中在著名的「32 鸚鵡彎」上方停留，這條路沿著山坡蜿蜒曲折，非常壯觀。往下走，風景逐漸變化，來到納倫河畔的山城納倫。中午抵達吃午餐，然後入住舒適的飯店，熱水澡和真正的床正在等你。下午完全自由：休息、洗衣服、去咖啡館，或沿河散步。晚餐在飯店，導遊也會為接下來兩天的偏遠克蘇湖地區做說明。
+                    在湖邊度過最後一個早晨後，經由著名的「32 鸚鵡彎」離開頌湖。這條路因為有許多髮夾彎而得名，先在上方停留拍照，接著沿著山坡蜿蜒而下，非常壯觀。往下走，風景逐漸變化，來到納倫河畔的山城納倫。中午抵達吃午餐，然後入住舒適的飯店，熱水澡和真正的床正在等你。下午完全自由：休息、洗衣服，或去咖啡館。晚餐在飯店，導遊也會為接下來兩天的偏遠克蘇湖地區做說明。
                   </p>
                   <ul class="day-facts">
                     <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>約 4 小時，含停留</div></li>
-                    <li><i class="fa-solid fa-mountain"></i><div><span>最高點</span>Moldo-Ashuu 山口</div></li>
+                    <li><i class="fa-solid fa-mountain"></i><div><span>路線</span>「32 鸚鵡彎」髮夾彎山路</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、晚餐</div></li>
-                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>納倫的飯店，私人衛浴</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>納倫舒適的四星級飯店，私人衛浴</div></li>
                     <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>有，房內熱水澡</div></li>
                     <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>有</div></li>
                   </ul>
@@ -627,7 +635,7 @@
               <div class="day-num"><small>第</small><b>6</b></div>
               <details class="day-card reveal">
                 <summary class="day-summary">
-                  <img class="day-thumb" loading="lazy" src="assets/images/off road.png" alt="" />
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/10d-highland-valley.jpg" alt="" style="object-position: center 65%" />
                   <div class="day-heading">
                     <p class="day-route">納倫 → Bosogo 峽谷 → Kyndy 山口 → Kok-Kiya 山谷</p>
                     <h3>深入偏遠高原</h3>
@@ -637,7 +645,7 @@
                 </summary>
                 <div class="day-content">
                   <div class="day-media">
-                  <img loading="lazy" src="assets/images/off road.png" alt="越野車駛入高原" />
+                  <img loading="lazy" src="assets/image-itinerary/10d-highland-valley.jpg" alt="岩峰下翠綠的高原山谷與雲杉" style="object-position: center 65%" />
                   </div>
                   <div class="day-body">
                   <p>
@@ -649,7 +657,7 @@
                     <li><i class="fa-solid fa-mountain"></i><div><span>最高點</span>Kyndy 山口</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、野餐午餐、晚餐</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>山區營地的簡易木屋，Kok-Kiya 山谷</div></li>
-                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>無淋浴，但包含傳統桑拿（banya）</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>無淋浴，但包含傳統桑拿（banya）；視當地狀況，有時可能無法使用</div></li>
                     <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>簡易戶外廁所，共用</div></li>
                     <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>Wi-Fi 很弱，沒有手機訊號</div></li>
                   </ul>
@@ -683,7 +691,7 @@
                   </div>
                   <div class="day-body">
                   <p>
-                    今天你將探訪吉爾吉斯最隱密的地方之一。早餐後，和在地馬伕一起騎馬約兩小時穿過山谷，抵達克蘇湖——一座在陡峭峽谷之間延伸的碧綠湖泊。在湖邊，導遊會準備咖啡時光，並開一杯香檳慶祝抵達這個偏遠的地方。接著搭船深入湖中，天氣允許的話，還會上岸短程健行到湖面上方的洞穴。午餐視天氣和你的選擇，在湖邊野餐或回營地吃熱食。下午自由休息、看書，或在桑拿裡放鬆。
+                    今天你將探訪吉爾吉斯最隱密的地方之一。早餐後，和在地馬伕一起騎馬約兩小時穿過山谷，抵達克蘇湖——一座在陡峭峽谷之間延伸的碧綠湖泊。接著搭船深入湖中，天氣允許的話，還會上岸短程健行到湖面上方的洞穴。午餐視天氣，在湖邊野餐或回營地吃熱食。下午自由休息、看書，或放鬆一下。
                   </p>
                   <ul class="day-facts">
                     <li><i class="fa-solid fa-horse"></i><div><span>騎馬</span>單程約 2 小時</div></li>
@@ -691,7 +699,7 @@
                     <li><i class="fa-solid fa-mountain"></i><div><span>海拔</span>湖邊約 3,500 m</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐（野餐或在營地）、晚餐</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>山區營地的簡易木屋，Kok-Kiya 山谷</div></li>
-                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>無淋浴，但包含傳統桑拿（banya）</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>無淋浴，但包含傳統桑拿（banya）；視當地狀況，有時可能無法使用</div></li>
                     <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>簡易戶外廁所，共用</div></li>
                     <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>Wi-Fi 很弱，沒有手機訊號</div></li>
                   </ul>
@@ -711,7 +719,7 @@
               <div class="day-num"><small>第</small><b>8</b></div>
               <details class="day-card reveal">
                 <summary class="day-summary">
-                  <img class="day-thumb" loading="lazy" src="assets/images-7-day-tour-section/7days-7.JPEG" alt="" />
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/10d-valley-horses.jpg" alt="" style="object-position: 45% center" />
                   <div class="day-heading">
                     <p class="day-route">Kok-Kiya → 納倫 → Tash-Bashat</p>
                     <h3>回到山谷</h3>
@@ -722,17 +730,17 @@
                 <div class="day-content">
                   <div class="day-media">
                   <!-- TODO: Tash-Bashat guesthouse photo -->
-                  <img loading="lazy" src="assets/images-7-day-tour-section/7days-7.JPEG" alt="吉爾吉斯山谷風景" />
+                  <img loading="lazy" src="assets/image-itinerary/10d-valley-horses.jpg" alt="森林山脈下翠綠山谷裡，木柵欄後吃草的馬" style="object-position: 45% center" />
                   </div>
                   <div class="day-body">
                   <p>
-                    在 Kok-Kiya 的寧靜中度過最後一個早晨後，翻越 Kyndy 山口往納倫方向返回，途中停下來拍照。午餐在納倫的餐廳，從山上下來後換換口味。下午開一小段車到安靜的 Tash-Bashat 村，家庭民宿以熱水澡和休息時間歡迎你。下午其餘時間自由放鬆，或在村子裡輕鬆散步，晚上和主人家一起享用家常晚餐。
+                    在 Kok-Kiya 的寧靜中度過最後一個早晨後，翻越 Kyndy 山口往納倫方向返回，途中停下來拍照。午餐在納倫的餐廳，從山上下來後換換口味。下午開一小段車到安靜的 Tash-Bashat 村，民宿以熱水澡和休息時間歡迎你。下午其餘時間自由放鬆，或在村子裡輕鬆散步，晚上和主人家一起享用家常晚餐。
                   </p>
                   <ul class="day-facts">
                     <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>總計約 5 小時，部分越野，含停留</div></li>
                     <li><i class="fa-solid fa-mountain"></i><div><span>最高點</span>Kyndy 山口</div></li>
-                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、晚餐</div></li>
-                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>家庭民宿，Tash-Bashat</div></li>
+                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、納倫餐廳午餐、民宿晚餐</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>民宿，Tash-Bashat</div></li>
                     <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>有，房內私人衛浴</div></li>
                     <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>有，在房內</div></li>
                     <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>有</div></li>
@@ -753,7 +761,7 @@
               <div class="day-num"><small>第</small><b>9</b></div>
               <details class="day-card reveal">
                 <summary class="day-summary">
-                  <img class="day-thumb" loading="lazy" src="assets/8-days-image/eagle-show.png" alt="" />
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/eagle-hunter-portrait.jpg" alt="" style="object-position: center 25%" />
                   <div class="day-heading">
                     <p class="day-route">Tash-Bashat → Kochkor → Kyzyl-Tuu → Bokonbaevo</p>
                     <h3>遊牧文化的一天</h3>
@@ -763,16 +771,16 @@
                 </summary>
                 <div class="day-content">
                   <div class="day-media">
-                  <img loading="lazy" src="assets/8-days-image/eagle-show.png" alt="金雕狩獵示範" />
+                  <img loading="lazy" src="assets/image-itinerary/eagle-hunter-portrait.jpg" alt="穿著傳統服飾的年輕獵鷹人和他的金雕" style="object-position: center 25%" />
                   </div>
                   <div class="day-body">
                   <p>
-                    今天專注在遊牧民族的工藝與傳統。在 Kochkor，當地工坊的婦女會示範如何手工製作色彩繽紛的吉爾吉斯羊毛氈地毯（shyrdak），這是代代相傳的手藝。在 Kochkor 吃完午餐後，驅車前往伊塞克湖南岸以氈房工匠聞名的 Kyzyl-Tuu 村。當地家庭會示範氈房如何搭建，你也可以一起動手。傍晚與鷹獵人（berkutchi）相遇，看他的金雕進行狩獵示範。晚上在他家繼續欣賞民族音樂表演，並和他的家人共進告別晚餐。
+                    今天專注在遊牧民族的工藝與傳統。在 Kochkor，當地工坊的婦女會示範如何手工製作色彩繽紛的吉爾吉斯羊毛氈地毯（shyrdak），這是代代相傳的手藝。在 Kochkor 吃完午餐後，驅車前往伊塞克湖南岸拜訪氈房工匠。當地家庭會示範氈房如何搭建，你也可以一起動手。傍晚與鷹獵人（berkutchi）相遇，看他的金雕進行狩獵示範。晚上在他家繼續欣賞民族音樂表演，並和他的家人共進告別晚餐。
                   </p>
                   <ul class="day-facts">
                     <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>總計約 5 小時，含停留</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、與獵鷹人家庭共進晚餐</div></li>
-                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>Elestet 現代氈房住宿，Bokonbaevo</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>舒適的現代氈房住宿或民宿，Bokonbaevo</div></li>
                     <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>共用</div></li>
                     <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>共用</div></li>
                     <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>有</div></li>
@@ -793,7 +801,7 @@
               <div class="day-num"><small>第</small><b>10</b></div>
               <details class="day-card reveal">
                 <summary class="day-summary">
-                  <img class="day-thumb" loading="lazy" src="assets/8day-classic-tour/canion.jpg" alt="" />
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/10d-issyk-kul-swim.jpg" alt="" style="object-position: 48% center" />
                   <div class="day-heading">
                     <p class="day-route">Bokonbaevo → Balykchy → Kok-Moinok → 比什凱克</p>
                     <h3>告別群山</h3>
@@ -804,7 +812,7 @@
                 <div class="day-content">
                   <div class="day-media">
                   <!-- TODO: Kok-Moinok canyon photo -->
-                  <img loading="lazy" src="assets/8day-classic-tour/canion.jpg" alt="紅色與橙色的峽谷" />
+                  <img loading="lazy" src="assets/image-itinerary/10d-issyk-kul-swim.jpg" alt="旅客在伊塞克湖畔游泳" style="object-position: 48% center" />
                   </div>
                   <div class="day-body">
                   <p>

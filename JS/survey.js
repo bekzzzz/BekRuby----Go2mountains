@@ -6,19 +6,22 @@
 
 (function () {
   const WEB3FORMS_KEY = "9af2499b-65f9-4804-ae49-a23a568ca84d";
+  // Registration form, shown when the result is a fit
+  const REGISTER_URL = "https://www.surveycake.com/s/yQpxD";
 
   // ---------- Tours ----------
   // ok: months (1–12) in season;  edge: months at the edge of the season.
   // high: high altitude;  riding: several long riding days;  family: not for older travelers or children.
   const TOURS = {
-    NML: { link: "7days-nomad-life.html", ok: [6, 7, 8, 9], edge: [5] }, // mid-May – end of Sep
-    IKC: { link: "8days-Issyk-kul.html", ok: [5, 6, 7, 8, 9, 10, 11] }, // May – Nov
-    SKC: { link: "8days-classic.html", ok: [6, 7, 8], edge: [5, 9], high: true }, // late May – mid-Sep
-    DNL: { link: "9days-toktogul.html", ok: [7, 8, 9], edge: [6], high: true, riding: true, family: true }, // mid-Jun – end of Sep
-    TLH: { link: "10days-off-road-v2.html", ok: [7, 8], edge: [6, 9], high: true, riding: true, family: true }, // mid-Jun – mid-Sep
-    RGL: { link: "14days-grand-tour.html", ok: [7, 8, 9], edge: [6], high: true }, // mid-Jun – end of Sep
+    // stars: intensity out of 5 (same as the homepage cards)
+    NML: { link: "7days-nomad-life.html", stars: 2, ok: [6, 7, 8, 9], edge: [5] }, // mid-May – end of Sep
+    IKC: { link: "8days-Issyk-kul.html", stars: 2, ok: [5, 6, 7, 8, 9, 10, 11] }, // May – Nov
+    SKC: { link: "8days-classic.html", stars: 3, ok: [6, 7, 8], edge: [5, 9], high: true }, // late May – mid-Sep
+    DNL: { link: "9days-toktogul.html", stars: 5, ok: [7, 8, 9], edge: [6], high: true, riding: true, family: true }, // mid-Jun – end of Sep
+    TLH: { link: "10days-off-road-v2.html", stars: 4, ok: [7, 8], edge: [6, 9], high: true, riding: true, family: true }, // mid-Jun – mid-Sep
+    RGL: { link: "14days-grand-tour.html", stars: 3, ok: [7, 8, 9], edge: [6], high: true }, // mid-Jun – end of Sep
   };
-  const ORDER = ["NML", "IKC", "SKC", "DNL", "TLH", "RGL"];
+  const ORDER = ["NML", "IKC", "SKC", "TLH", "RGL", "DNL"]; // same order as the homepage
   const EASY = ["IKC", "NML"];
 
   // ---------- Questions for each tour ----------
@@ -30,7 +33,7 @@
       { must: true, en: ["Are you OK with no Wi-Fi and little or no phone signal for 3 days?", "3 days without Wi-Fi or signal"], zh: ["你可以接受 3 天沒有 Wi-Fi、幾乎沒有手機訊號嗎？", "3 天沒有網路與訊號"] },
       { must: true, en: ["Are you comfortable with flexible plans that follow the animals and the weather?", "flexible plans that follow the animals and the weather"], zh: ["你可以接受行程隨著牲畜與天氣彈性調整嗎？", "隨牲畜與天氣調整的彈性行程"] },
       { must: false, en: ["Are you happy to eat what the family eats: bread, dairy, meat, noodles and lots of tea?", "Eating the family's simple home food"], zh: ["你願意和家人吃一樣的食物：麵包、乳製品、肉、麵條和很多茶嗎？", "吃家庭的簡單家常菜"] },
-      { must: false, en: ["Would you ride a horse for about half a day at a calm pace? (No experience needed.)", "Half a day on horseback"], zh: ["你願意以輕鬆的步調騎馬約半天嗎？（不需要經驗）", "騎馬約半天"] },
+      { must: false, en: ["Would you ride a horse for about half a day at a calm pace, plus an optional ride or hike in Karakol Gorge? (No experience needed.)", "Half a day on horseback"], zh: ["你願意以輕鬆的步調騎馬約半天，另外在卡拉科爾峽谷選擇騎馬或健行嗎？（不需要經驗）", "騎馬約半天"] },
       { must: false, en: ["Are you ready for cold mountain nights, even in summer?", "Cold mountain nights"], zh: ["你準備好面對山上寒冷的夜晚了嗎？即使在夏天也是。", "山上寒冷的夜晚"] },
     ],
     IKC: [
@@ -62,7 +65,7 @@
     TLH: [
       { must: true, en: ["Can you ride about 4 hours a day on Days 2 and 3, plus about 4 hours round trip on Day 7? (No experience needed.)", "about 4 hours a day on horseback"], zh: ["你可以在第 2、3 天每天騎馬約 4 小時，第 7 天再往返騎約 4 小時嗎？（不需要經驗）", "每天騎馬約 4 小時"] },
       { must: true, en: ["Are you OK spending most of the trip at 2,500–3,500 m, crossing a 3,400 m pass, with very cold nights?", "high altitude (up to 3,500 m) and cold nights"], zh: ["你可以接受大部分時間在海拔 2,500–3,500 公尺、翻越 3,400 公尺山口，以及非常寒冷的夜晚嗎？", "高海拔（最高 3,500 公尺）與寒冷夜晚"] },
-      { must: true, en: ["Can you go 2 days in a row without a shower, and 2 nights with only a banya (sauna)?", "days without a shower"], zh: ["你可以接受連續 2 天無法洗澡，另有 2 晚只有桑拿（banya）嗎？", "幾天無法洗澡"] },
+      { must: true, en: ["Can you go 2 days in a row without a shower, and 2 more nights with only a banya (sauna), which may not always be available?", "days without a shower"], zh: ["你可以接受連續 2 天無法洗澡，另有 2 晚只有桑拿（banya），而且視當地狀況有時可能無法使用嗎？", "幾天無法洗澡"] },
       { must: true, en: ["Are you OK with simple, shared, often outdoor toilets in the mountain camps?", "shared outdoor toilets in camps"], zh: ["你可以接受山區營地簡單、共用、常在戶外的廁所嗎？", "營地共用戶外廁所"] },
       { must: true, en: ["Can you send us your passport details in advance for the Kel-Suu border permit?", "sending passport details for the border permit"], zh: ["你可以事先提供護照資料，申請克蘇湖的邊境通行證嗎？", "提供護照資料申請邊境通行證"] },
       { must: false, en: ["Are you OK with some days of 4–5.5 hours of driving, partly on bumpy off-road tracks?", "Long off-road driving days"], zh: ["你可以接受幾天 4–5.5 小時的車程，部分是顛簸的越野路段嗎？", "長時間越野車程"] },
@@ -72,6 +75,7 @@
       { must: true, en: ["Are you happy moving on most days for two weeks, including four long drives (4–6.5 hours) and rough 4WD tracks?", "two weeks on the move with long 4WD drives"], zh: ["你可以接受兩週大多數日子都在移動，包括四天長車程（4–6.5 小時）與顛簸的越野路段嗎？", "兩週移動與長時間越野車程"] },
       { must: true, en: ["Are you OK with 2 nights at Song-Kul (3,016 m), high passes and cold nights?", "2 nights at 3,016 m and cold nights"], zh: ["你可以接受在頌湖（海拔 3,016 公尺）住 2 晚、翻越高山山口和寒冷的夜晚嗎？", "3,016 公尺住 2 晚與寒冷夜晚"] },
       { must: true, en: ["Are you OK with yurt camps and family homestays, with simple and often shared bathrooms?", "yurt camps with simple shared bathrooms"], zh: ["你可以接受氈房營地和家庭民宿，衛浴簡單且常常共用嗎？", "氈房營地與共用衛浴"] },
+      { must: true, en: ["Are you OK with 2 nights in a simple wooden cottage in Kok-Kiya, with no shower (only a banya, which may not always be available) and a shared outdoor toilet?", "2 nights in Kok-Kiya without a shower"], zh: ["你可以接受在 Kok-Kiya 住 2 晚簡易木屋，沒有淋浴（只有桑拿，視狀況有時可能無法使用），並使用共用戶外廁所嗎？", "Kok-Kiya 2 晚無法洗澡"] },
       { must: true, en: ["Can you send us your passport details in advance for the border permit (Kok-Kiya, Kel-Suu)?", "sending passport details for the border permit"], zh: ["你可以事先提供護照資料，申請邊境通行證（Kok-Kiya、克蘇湖）嗎？", "提供護照資料申請邊境通行證"] },
       { must: false, en: ["Can you hike 1.5–3 hours? (Horse riding is optional on most days.)", "Hikes of 1.5–3 hours"], zh: ["你可以健行 1.5–3 小時嗎？（大部分日子騎馬為選擇性）", "1.5–3 小時的健行"] },
       { must: false, en: ["Can you book a night flight home on Day 14 (or stay longer)?", "A night flight on Day 14"], zh: ["你可以在第 14 天預訂夜間航班回家（或多留幾天）嗎？", "第 14 天的夜間航班"] },
@@ -81,9 +85,9 @@
   // ---------- Texts ----------
   const T = {
     en: {
-      hero_badge: "Before you book",
+      hero_badge: "Step 1 before registering",
       hero_title: "Is this tour right for you?",
-      hero_lead: "A few honest questions about the real conditions of the trip. It takes about 2 minutes, and you'll see the result right away.",
+      hero_lead: "A few honest questions about the real conditions of the trip. It takes about 2 minutes. If the tour fits you, you can register right away.",
       steps: ["Choose a tour", "This tour", "Your group", "Contact"],
       step_of: "Step {n} of {total}",
       next: "Next",
@@ -100,13 +104,15 @@
       pick_title: "Which tour are you interested in?",
       pick_lead: "Each tour has its own questions, based on its real conditions.",
       tour_view: "See itinerary",
+      intensity: "Intensity",
+      season: "Season",
       tours: {
-        NML: ["8 days · Nomad life", "3 nights with a nomad family"],
-        IKC: ["8 days · Slow travel around Issyk-Kul", "Comfortable, slow, good for families"],
-        SKC: ["8 days · Classic Kyrgyzstan", "Lakes, mountains and 2 nights at Song-Kul"],
-        DNL: ["9 days · Deep Nomad Life", "Bek's home mountains, 4 days on horseback"],
-        TLH: ["10 days · Son-Kol, Kel-Suu & Issyk-Kul horse trek", "High passes, riding and border highlands"],
-        RGL: ["14 days · The grand Kyrgyzstan journey", "Two weeks around the Tien Shan"],
+        NML: ["NML · 8 days of nomad life + slow days in Karakol", "Life with nomads in the mountains, and slow days and hikes in a Tien Shan town", "Mid-May – end of September"],
+        IKC: ["IKC · 8 days · Issyk-Kul classic: slow travel in the valleys", "Slow days in the valleys and by the lake, easy mountain and lake trips, hiking. Comfortable stays.", "May – November"],
+        SKC: ["SKC · 8 days · Song-Kul classic: the heart of nomad life", "Up to the 3,000 m grasslands, traditional yurt stays and real high-pasture herding", "Late May – mid-September"],
+        TLH: ["TLH · 10 days · Three lakes: highland off-road horse adventure", "Mountain passes, changing weather and simple stays: a shared mountain adventure", "Mid-June – mid-September"],
+        RGL: ["RGL · 14 days · The grand loop of Kyrgyzstan", "All of Kyrgyzstan's highlights and its most spectacular mountain scenery in one trip", "Mid-June – end of September"],
+        DNL: ["Special tour · 9 days · Deep Nomad Life", "For return visitors: several days on horseback into the wild, in Bek's home mountains", "Mid-June – end of September"],
       },
 
       q_lead: "These questions come straight from this tour's conditions. Please answer honestly: there are no wrong answers, only the right trip for you.",
@@ -149,6 +155,9 @@
       res_failed: "We couldn't send your answers. Please try again, or email us at <a href=\"mailto:bekruby.kg@gmail.com\">bekruby.kg@gmail.com</a>.",
       res_retry: "Try again",
       res_view: "See the itinerary",
+      res_reg_title: "You can now register for this tour",
+      res_reg_text: "You passed the check. Fill in our registration form, and we'll contact you to confirm the details.",
+      res_reg_btn: "Register now",
       res_other: "Check another tour",
 
       r_no: "You answered \"no\" to {issue}.",
@@ -167,9 +176,9 @@
     },
 
     zh: {
-      hero_badge: "報名前",
+      hero_badge: "報名第一步",
       hero_title: "這趟行程適合你嗎？",
-      hero_lead: "幾個關於行程真實狀況的問題，大約 2 分鐘，馬上就能看到結果。",
+      hero_lead: "幾個關於行程真實狀況的問題，大約 2 分鐘。通過評估後，就可以直接報名。",
       steps: ["選擇行程", "行程問題", "你的團隊", "聯絡資料"],
       step_of: "第 {n} 步，共 {total} 步",
       next: "下一步",
@@ -186,13 +195,15 @@
       pick_title: "你對哪一趟行程有興趣？",
       pick_lead: "每趟行程都有自己的問題，根據它真實的狀況設計。",
       tour_view: "查看行程",
+      intensity: "強度",
+      season: "適合季節",
       tours: {
-        NML: ["8 天 · 遊牧生活", "與遊牧家庭同住 3 晚"],
-        IKC: ["8 天 · 伊塞克湖慢旅行", "舒適、慢步調，適合親子長輩"],
-        SKC: ["8 天 · 經典吉爾吉斯", "湖泊、高山，以及頌湖 2 晚"],
-        DNL: ["9 天 · 深度遊牧生活", "貝克的故鄉，騎馬 4 天"],
-        TLH: ["10 天 · 頌湖、克蘇湖與伊塞克湖騎馬之旅", "高山山口、騎馬與邊境高原"],
-        RGL: ["14 天 · 吉爾吉斯大環遊", "兩週環遊天山"],
+        NML: ["NML 8天 遊牧生活＋Karakol 定點慢遊", "山上和遊牧人生活，天山小鎮慢活健行", "5月中 - 9月底"],
+        IKC: ["IKC 8天 Issyk-Kul 經典山谷慢旅行", "留在山谷與湖邊慢遊、舒服玩山玩水、健行。住宿相對舒適。", "5月 - 11月"],
+        SKC: ["SKC 8天 Song-Kul 經典遊牧之心", "深入海拔 3000m 草原、住傳統 yurt 氈房、看見真實高山放牧", "5月底 - 9月中"],
+        TLH: ["TLH 10天 三湖高山越野騎馬冒險", "翻越山口、天氣變化、住宿簡約，共患難高山冒險體驗。", "6月中 - 9月中"],
+        RGL: ["RGL 14天 全境經典大環線", "一次收集吉爾吉斯精華景點與極致高山大美風光", "6月中 - 9月底"],
+        DNL: ["Special Tour 二訪限定 / 私房路線（9天）", "適合去過吉爾吉斯，想探索更獨家、高階的行程。多日騎馬進入荒野。", "6月中 - 9月底"],
       },
 
       q_lead: "這些問題直接來自這趟行程的真實狀況。請誠實回答：沒有錯的答案，只有最適合你的行程。",
@@ -235,6 +246,9 @@
       res_failed: "你的回答沒有成功送出。請再試一次，或寄信到 <a href=\"mailto:bekruby.kg@gmail.com\">bekruby.kg@gmail.com</a>。",
       res_retry: "重新送出",
       res_view: "查看行程",
+      res_reg_title: "恭喜通過評估，現在就可以報名！",
+      res_reg_text: "請填寫報名表單，我們會再與你聯繫，確認所有細節。",
+      res_reg_btn: "立即報名",
       res_other: "看看其他行程",
 
       r_no: "你對「{issue}」回答了「不行」。",
@@ -279,6 +293,18 @@
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
   const fill = (s, v) => s.replace(/\{(\w+)\}/g, (_, k) => (v[k] ?? ""));
   const tourName = (code, l = lang()) => T[l].tours[code][0];
+  const starIcons = (n) =>
+    '<i class="fa-solid fa-star"></i>'.repeat(Math.floor(n)) +
+    (n % 1 ? '<i class="fa-solid fa-star-half-stroke"></i>' : "") +
+    '<i class="fa-regular fa-star"></i>'.repeat(5 - Math.ceil(n));
+  // Intensity stars and season, the same as on the homepage cards
+  function tourFacts(code) {
+    const x = t();
+    return `<span class="sv-facts">
+      <span><b>${x.intensity}</b> <span class="sv-stars" aria-label="${TOURS[code].stars}/5">${starIcons(TOURS[code].stars)}</span></span>
+      <span><i class="fa-regular fa-calendar"></i> <b>${x.season}</b> ${x.tours[code][2]}</span>
+    </span>`;
+  }
 
   // ---------- Building blocks ----------
   function field(id, label, input, hint = "", optional = false) {
@@ -304,7 +330,7 @@
   function stepPick() {
     const x = t();
     const opts = ORDER.map((c) => `<label class="sv-tour"><input type="radio" name="tour" value="${c}" ${A.tour === c ? "checked" : ""}/>
-      <span class="sv-tour-body"><span class="sv-tour-name">${x.tours[c][0]}</span><span class="sv-tour-note">${x.tours[c][1]}</span>
+      <span class="sv-tour-body"><span class="sv-tour-name">${x.tours[c][0]}</span>${tourFacts(c)}<span class="sv-tour-note">${x.tours[c][1]}</span>
       <a class="sv-tour-link" href="${TOURS[c].link}" target="_blank" rel="noopener">${x.tour_view} <i class="fa-solid fa-arrow-up-right-from-square"></i></a></span></label>`).join("");
     return `<h2 class="sv-title">${x.pick_title}</h2><p class="sv-text">${x.pick_lead}</p>
       ${field("tour", "", `<div class="sv-tours">${opts}</div>`)}${nav(x.next)}`;
@@ -319,6 +345,7 @@
       return field("q" + i, `<span class="sv-qnum">${i + 1}</span>${q[l][0]}${tag}`, `<div class="sv-choices sv-yesno">${opts}</div>`);
     }).join("");
     return `<h2 class="sv-title">${tourName(A.tour)}</h2>
+      ${tourFacts(A.tour)}
       <p class="sv-kicker"><a href="${TOURS[A.tour].link}" target="_blank" rel="noopener">${x.tour_view} <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
       <p class="sv-text">${x.q_lead}</p>${qs}${nav(x.next)}`;
   }
@@ -385,9 +412,13 @@
         ${r.level === "no" && r.notes.length ? `<h3 class="sv-sub">${x.res_notes}</h3>${list(r.notes)}` : ""}
         ${r.suggest.length ? `<div class="sv-suggest"><h3>${x.res_suggest}</h3>${r.suggest.map((c) => `<a href="${TOURS[c].link}">${x.tours[c][0]} · ${x.tours[c][1]} <i class="fa-solid fa-arrow-right"></i></a>`).join("")}</div>` : ""}
       </div>
+      ${r.level !== "no" ? `<div class="sv-register">
+        <div><h3><i class="fa-solid fa-flag-checkered"></i> ${x.res_reg_title}</h3><p>${x.res_reg_text}</p></div>
+        <a class="btn btn-primary sv-register-btn" href="${REGISTER_URL}" target="_blank" rel="noopener">${x.res_reg_btn} <i class="fa-solid fa-arrow-right"></i></a>
+      </div>` : ""}
       ${status}
       <div class="sv-nav sv-nav-end">
-        ${r.level !== "no" ? `<a class="btn btn-primary" href="${TOURS[A.tour].link}">${x.res_view} <i class="fa-solid fa-arrow-right"></i></a>` : ""}
+        ${r.level !== "no" ? `<a class="btn btn-outline" href="${TOURS[A.tour].link}">${x.res_view}</a>` : ""}
         <a class="btn btn-outline" href="survey.html">${x.res_other}</a>
       </div>`;
   }

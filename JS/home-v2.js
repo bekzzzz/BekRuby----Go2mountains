@@ -332,6 +332,43 @@ Object.assign(translations.zh, {
   auth_img_main: "牧民騎馬前往夏牧場",
 });
 
+// ---------- What's included (all tours) ----------
+Object.assign(translations.en, {
+  inc_kicker: "Price",
+  inc_title: "What's included in our tours",
+  inc_yes_title: "Included",
+  inc_y1: "Accommodation and meals for the whole itinerary",
+  inc_y2: "Accommodation on Day 0 and the last night",
+  inc_y3: "Guide",
+  inc_y4: "Private transport for the itinerary (incl. airport transfers)",
+  inc_y5: "All entrance fees on the itinerary",
+  inc_y6: "Every 8-day tour includes one 2–3 hour horse ride",
+  inc_no_title: "Not included",
+  inc_n1: "International flights",
+  inc_n2: "Visa fees",
+  inc_n3: "Personal travel insurance",
+  inc_n4: "Tips",
+  inc_n5: "Other personal expenses",
+});
+
+Object.assign(translations.zh, {
+  inc_kicker: "費用說明",
+  inc_title: "行程費用包含與不包含",
+  inc_yes_title: "費用包含",
+  inc_y1: "全行程的住宿與餐食",
+  inc_y2: "Day 0 與最後一晚住宿",
+  inc_y3: "導遊",
+  inc_y4: "行程內專車交通（含機場接送）",
+  inc_y5: "所有行程門票",
+  inc_y6: "所有八天的行程皆包含 1 次 2–3 小時的騎馬體驗",
+  inc_no_title: "費用不包含",
+  inc_n1: "國際來回機票（可請台灣旅行社代訂）",
+  inc_n2: "簽證費用",
+  inc_n3: "個人旅遊保險",
+  inc_n4: "小費",
+  inc_n5: "其他個人開銷",
+});
+
 // ---------- Tours (same tours as check-small-tours.js) ----------
 // type: "group" = group dates or private, "private" = private & custom-made only
 // ---------- Tours (pages built in this redesign) ----------
@@ -360,28 +397,6 @@ const TOURS = [
   {
     days: 8,
     length: "short",
-    style: "classic",
-    title_en: "Classic Kyrgyzstan | Lakes, Mountains & Nomad Encounters",
-    title_zh: "8天 Song-Kul 經典遊牧之心",
-    img: "assets/images-7-day-tour-section/son-kol.jpg",
-    link: "8days-classic.html",
-    label_en: "Classic loop",
-    label_zh: "經典環線",
-    desc_en:
-      "Burana Tower, Karakol Gorge, Altyn-Arashan hot springs, Skazka Canyon, an eagle hunter and two nights at Song-Kul with nomad families.",
-    desc_zh:
-      "布拉納塔、卡拉科爾峽谷、阿爾金阿拉善溫泉、童話峽谷、獵鷹人，以及在頌湖與遊牧家庭度過兩晚。",
-    // Details from the registration form (shown only in this language)
-    info_zh: {
-      code: "SKC",
-      intensity: 3,
-      season: "5月底 - 9月中",
-      highlight: "深入海拔 3000m 草原、住傳統 yurt 氈房、看見真實高山放牧",
-    },
-  },
-  {
-    days: 8,
-    length: "short",
     style: "slow",
     title_en: "Slow Travel at the Foot of the Tien Shan | Around Issyk-Kul",
     title_zh: "8天 Issyk-Kul 經典山谷慢旅行",
@@ -399,6 +414,28 @@ const TOURS = [
       intensity: 2,
       season: "5月 - 11月",
       highlight: "留在山谷與湖邊慢遊、舒服玩山玩水、健行。住宿相對舒適。",
+    },
+  },
+  {
+    days: 8,
+    length: "short",
+    style: "classic",
+    title_en: "Classic Kyrgyzstan | Lakes, Mountains & Nomad Encounters",
+    title_zh: "8天 Song-Kul 經典遊牧之心",
+    img: "assets/images-7-day-tour-section/son-kol.jpg",
+    link: "8days-classic.html",
+    label_en: "Classic loop",
+    label_zh: "經典環線",
+    desc_en:
+      "Burana Tower, Karakol Gorge, Altyn-Arashan hot springs, Skazka Canyon, an eagle hunter and two nights at Song-Kul with nomad families.",
+    desc_zh:
+      "布拉納塔、卡拉科爾峽谷、阿爾金阿拉善溫泉、童話峽谷、獵鷹人，以及在頌湖與遊牧家庭度過兩晚。",
+    // Details from the registration form (shown only in this language)
+    info_zh: {
+      code: "SKC",
+      intensity: 3,
+      season: "5月底 - 9月中",
+      highlight: "深入海拔 3000m 草原、住傳統 yurt 氈房、看見真實高山放牧",
     },
   },
   {

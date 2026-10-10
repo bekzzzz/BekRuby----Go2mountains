@@ -45,7 +45,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- Same design as 10days-off-road-v2.html: shared stylesheet and script -->
-    <link rel="stylesheet" href="css/10days-off-road-v2.css" />
+    <link rel="stylesheet" href="css/10days-off-road-v2.css?v=2" />
     <script defer src="JS/10days-off-road-v2.js"></script>
     <link rel="stylesheet" href="css/site-chrome.css" />
     <script defer src="JS/site-chrome.js?v=3"></script>
@@ -110,7 +110,7 @@
           <li><a href="#food">Food</a></li>
           <li><a href="#includes">What's included</a></li>
         </ul>
-        <a class="btn btn-primary" href="contact.html">Book this tour</a>
+        <a class="btn btn-primary" href="survey.html?tour=NML">Check &amp; register</a>
       </div>
     </nav>
 
@@ -322,8 +322,17 @@
           </div>
           <!-- Fit check before booking (survey.html) -->
           <div class="survey-cta reveal">
-            <div><strong>Is this tour right for you?</strong><span>Before you book, take our 3–5 minute survey and find out right away.</span></div>
-            <a href="survey.html?tour=NML"><i class="fa-solid fa-clipboard-check"></i> Take the survey</a>
+            <div class="survey-cta-text">
+              <span class="survey-cta-kicker"><i class="fa-solid fa-clipboard-check"></i> How to register</span>
+              <strong>Is this tour right for you?</strong>
+              <span>Before you register, take a short survey (about 2 minutes). If the tour fits you, the registration form opens right away.</span>
+              <ol class="survey-steps">
+                <li><b>1</b>Take the survey</li>
+                <li><b>2</b>See if the tour fits you</li>
+                <li><b>3</b>Register for the tour</li>
+              </ol>
+            </div>
+            <a href="survey.html?tour=NML">Start the survey <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </section>

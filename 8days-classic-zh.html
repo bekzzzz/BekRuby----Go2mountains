@@ -45,7 +45,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- Same design as 10days-off-road-v2.html: shared stylesheet and script -->
-    <link rel="stylesheet" href="css/10days-off-road-v2.css" />
+    <link rel="stylesheet" href="css/10days-off-road-v2.css?v=2" />
     <script defer src="JS/10days-off-road-v2.js"></script>
     <link rel="stylesheet" href="css/site-chrome.css" />
     <script defer src="JS/site-chrome.js?v=3"></script>
@@ -106,7 +106,7 @@
           <li><a href="#food">美食</a></li>
           <li><a href="#includes">費用包含</a></li>
         </ul>
-        <a class="btn btn-primary" href="contact.html">預訂行程</a>
+        <a class="btn btn-primary" href="survey.html?tour=SKC">問卷・報名</a>
       </div>
     </nav>
 
@@ -387,8 +387,17 @@
           </div>
           <!-- Fit check before booking (survey.html) -->
           <div class="survey-cta reveal">
-            <div><strong>這趟行程適合你嗎？</strong><span>報名前花 3–5 分鐘填寫問卷，馬上知道結果。</span></div>
-            <a href="survey.html?tour=SKC"><i class="fa-solid fa-clipboard-check"></i> 開始填寫問卷</a>
+            <div class="survey-cta-text">
+              <span class="survey-cta-kicker"><i class="fa-solid fa-clipboard-check"></i> 報名方式</span>
+              <strong>這趟行程適合你嗎？</strong>
+              <span>報名前請先花約 2 分鐘填寫評估問卷。通過評估後，就可以直接進入報名表單。</span>
+              <ol class="survey-steps">
+                <li><b>1</b>填寫評估問卷</li>
+                <li><b>2</b>查看是否適合這趟行程</li>
+                <li><b>3</b>通過後立即報名</li>
+              </ol>
+            </div>
+            <a href="survey.html?tour=SKC">開始填寫問卷 <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </section>
