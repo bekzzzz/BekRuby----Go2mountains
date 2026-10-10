@@ -45,7 +45,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- Same design as 10days-off-road-v2.html: shared stylesheet and script -->
-    <link rel="stylesheet" href="css/10days-off-road-v2.css?v=2" />
+    <link rel="stylesheet" href="css/10days-off-road-v2.css?v=15" />
     <script defer src="JS/10days-off-road-v2.js"></script>
     <style>
       /* Issyk-Kul vs Song-Kul comparison (this page only) */
@@ -66,8 +66,8 @@
       .compare-grid .visited { background: #e8f5f0; color: var(--green-dark); }
       .compare-grid .not-visited { background: #eceef0; color: var(--muted); }
     </style>
-    <link rel="stylesheet" href="css/site-chrome.css" />
-    <script defer src="JS/site-chrome.js?v=3"></script>
+    <link rel="stylesheet" href="css/site-chrome.css?v=4" />
+    <script defer src="JS/site-chrome.js?v=6"></script>
   </head>
   <body>
     <div class="progress-bar" id="progressBar"></div>
@@ -88,7 +88,7 @@
           <li><a href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149" data-i18n="footer_nav_faq">Q&amp;A</a></li>
           <li><button class="g2m-lang" id="langBtn" type="button" aria-label="Switch language" data-i18n="nav_lang_label">EN / 中文</button></li>
         </ul>
-        <a class="g2m-cta" href="contact.html" data-i18n="custom_btn">Start my trip plan</a>
+        <a class="g2m-cta" href="https://www.surveycake.com/s/yQpxD" target="_blank" rel="noopener" data-i18n="custom_btn">Start my trip plan</a>
         <button class="g2m-menu" id="g2mMenu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="g2mLinks">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -166,7 +166,7 @@
                 <!-- TODO: add price -->
                 <li><span class="label"><i class="fa-solid fa-tag"></i>費用</span><span class="value">請來信洽詢</span></li>
               </ul>
-              <a class="btn btn-primary" href="mailto:bekruby.kg@gmail.com">來信報名或詢問</a>
+              <a class="btn btn-primary" href="survey.html?tour=IKC">填寫問卷・報名</a>
               <p class="price-note">含住宿、餐食、專車交通與門票</p>
             </aside>
           </div>
@@ -287,7 +287,89 @@
             <div class="info-card reveal">
               <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
               <h3>報名方式</h3>
-              <p>Email 我們：<a href="mailto:bekruby.kg@gmail.com"><b>bekruby.kg@gmail.com</b></a>，告知想參加的日期，mogi 小編將回覆訂金資訊與報名表格。</p>
+              <p>報名前請先填寫<a href="survey.html?tour=IKC"><b>行程評估問卷</b></a>（約 2 分鐘），通過評估後即可直接填寫報名表單。有任何問題，也歡迎來信 <a href="mailto:bekruby.kg@gmail.com">bekruby.kg@gmail.com</a>。</p>
+            </div>
+          </div>
+
+          <!-- Comfort at a glance (same facts as each day in the itinerary) -->
+          <div class="comfort reveal">
+            <div class="comfort-head">
+              <div>
+                <span class="eyebrow">每日行程</span>
+                <h3>舒適度一覽</h3>
+              </div>
+              <div class="legend">
+                <span><i class="dot good"></i>有</span> <span><i class="dot limited"></i>有限 / 共用</span> <span><i class="dot none"></i>無</span> <span><i class="dot unknown"></i>未確認</span>
+              </div>
+            </div>
+            <div class="table-scroll">
+              <table class="comfort-table">
+                <thead>
+                  <tr>
+                    <th>天</th>
+                    <th>住宿</th>
+                    <th>淋浴</th>
+                    <th>廁所</th>
+                    <th>Wi-Fi / 訊號</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Day">第 0 天</td><td data-label="Overnight">比什凱克飯店（已包含）</td>
+                    <td data-label="Shower"><i class="dot good"></i>房內熱水淋浴</td>
+                    <td data-label="Toilet"><i class="dot good"></i>有，房內</td>
+                    <td data-label="Wi-Fi"><i class="dot good"></i>Wi-Fi</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 1 天</td><td data-label="Overnight">Chunkurchak 山谷的山中度假村</td>
+                    <td data-label="Shower"><i class="dot limited"></i>有，房內；熱水有限，請勿使用太久</td>
+                    <td data-label="Toilet"><i class="dot good"></i>有，房內</td>
+                    <td data-label="Wi-Fi"><i class="dot good"></i>有</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 2 天</td><td data-label="Overnight">Chon Kemin 山谷擁有美麗山景的現代氈房住宿</td>
+                    <td data-label="Shower"><i class="dot limited"></i>有，房內；熱水有限，請勿使用太久</td>
+                    <td data-label="Toilet"><i class="dot good"></i>有，房內</td>
+                    <td data-label="Wi-Fi"><i class="dot good"></i>有</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 3 天</td><td data-label="Overnight">Altyn Oimok 或 Elestet，Bokonbaevo</td>
+                    <td data-label="Shower"><i class="dot limited"></i>共用；熱水有限，請勿使用太久</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>共用</td>
+                    <td data-label="Wi-Fi"><i class="dot good"></i>有</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 4 天</td><td data-label="Overnight">78 Hotel 或 Matsunoki，Karakol</td>
+                    <td data-label="Shower"><i class="dot limited"></i>有，房內；熱水有限，請勿使用太久</td>
+                    <td data-label="Toilet"><i class="dot good"></i>有，房內</td>
+                    <td data-label="Wi-Fi"><i class="dot good"></i>有</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 5 天</td><td data-label="Overnight">78 Hotel 或 Matsunoki，Karakol</td>
+                    <td data-label="Shower"><i class="dot limited"></i>有，房內；熱水有限，請勿使用太久</td>
+                    <td data-label="Toilet"><i class="dot good"></i>有，房內</td>
+                    <td data-label="Wi-Fi"><i class="dot good"></i>有</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 6 天</td><td data-label="Overnight">Altyn-Arashan 山中民宿的氈房</td>
+                    <td data-label="Shower"><i class="dot limited"></i>共用；熱水有限，請勿使用太久</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>共用</td>
+                    <td data-label="Wi-Fi"><i class="dot none"></i>沒有手機訊號</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 7 天</td><td data-label="Overnight">Cholpon-Ata 的飯店</td>
+                    <td data-label="Shower"><i class="dot limited"></i>有，房內；熱水有限，請勿使用太久</td>
+                    <td data-label="Toilet"><i class="dot good"></i>有，房內</td>
+                    <td data-label="Wi-Fi"><i class="dot good"></i>有</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 8 天</td><td data-label="Overnight">行程結束，或入住比什凱克的飯店</td>
+                    <td data-label="Shower"><i class="dot good"></i>有，房內</td>
+                    <td data-label="Toilet"><i class="dot good"></i>有，房內</td>
+                    <td data-label="Wi-Fi"><i class="dot good"></i>有</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
 
@@ -359,20 +441,6 @@
               </p>
             </div>
           </div>
-          <!-- Fit check before booking (survey.html) -->
-          <div class="survey-cta reveal">
-            <div class="survey-cta-text">
-              <span class="survey-cta-kicker"><i class="fa-solid fa-clipboard-check"></i> 報名方式</span>
-              <strong>這趟行程適合你嗎？</strong>
-              <span>報名前請先花約 2 分鐘填寫評估問卷。通過評估後，就可以直接進入報名表單。</span>
-              <ol class="survey-steps">
-                <li><b>1</b>填寫評估問卷</li>
-                <li><b>2</b>查看是否適合這趟行程</li>
-                <li><b>3</b>通過後立即報名</li>
-              </ol>
-            </div>
-            <a href="survey.html?tour=IKC">開始填寫問卷 <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
         </div>
       </section>
 
@@ -389,13 +457,44 @@
           <!-- Sticks below the section nav while scrolling through the days -->
           <div class="day-chips-bar">
             <nav class="day-chips" aria-label="跳到某一天">
-              <a href="#day-1">1</a><a href="#day-2">2</a><a href="#day-3">3</a><a href="#day-4">4</a>
+              <a href="#day-0">0</a><a href="#day-1">1</a><a href="#day-2">2</a><a href="#day-3">3</a><a href="#day-4">4</a>
               <a href="#day-5">5</a><a href="#day-6">6</a><a href="#day-7">7</a><a href="#day-8">8</a>
             </nav>
             <button type="button" class="toggle-all" id="toggleAllDays" data-open-label="全部展開" data-close-label="全部收合">全部展開</button>
           </div>
 
           <ol class="timeline">
+            <!-- Day 0 -->
+            <li class="day" id="day-0">
+              <div class="day-num"><small>第</small><b>0</b></div>
+              <details class="day-card reveal">
+                <summary class="day-summary">
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/day0-bishkek.jpg" alt="" />
+                  <div class="day-heading">
+                    <p class="day-route">抵達比什凱克</p>
+                    <h3>歡迎來到吉爾吉斯</h3>
+                  </div>
+                  <div class="day-tags"><span class="tag"><i class="fa-solid fa-plane-arrival"></i>抵達</span><span class="tag"><i class="fa-solid fa-hotel"></i>含住宿</span></div>
+                  <span class="day-toggle" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </summary>
+                <div class="day-content">
+                  <div class="day-media">
+                    <img loading="lazy" src="assets/image-itinerary/day0-bishkek.jpg" alt="雪山下的吉爾吉斯首都比什凱克" />
+                  </div>
+                  <div class="day-body">
+                    <p>
+                      行程全部從 Day 0 開始（住宿包含在行程內）。抵達比什凱克後入住首都的飯店，好好洗個舒服的熱水澡，迎接吉爾吉斯的旅程。
+                    </p>
+                    <ul class="day-facts">
+                    <li><i class="fa-solid fa-plane-arrival"></i><div><span>抵達</span>瑪納斯機場，接送至飯店</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>比什凱克飯店（已包含）</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>房內熱水淋浴</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+            </li>
+
             <!-- Day 1 -->
             <li class="day" id="day-1">
               <div class="day-num"><small>Day</small><b>1</b></div>
@@ -415,17 +514,25 @@
                     <img loading="lazy" src="assets/image-itinerary/8d-chunkurchak-autumn.jpg" alt="秋天的 Chunkurchak 山谷氈房度假村" style="object-position: 55% center" />
                   </div>
                   <div class="day-body">
-                    <p><strong>從首都日常出發，走進高山山谷，在遼闊草原健行散步，正式開啟中亞之旅。</strong></p>
-                    <p>旅程從首都 Bishkek 開始。早上先走進熱鬧的 Osh Bazaar，從堆滿攤位的香料、乾果、新鮮蔬果到各式布料與日常用品，在熙來攘往的人群之間，感受最真實的吉爾吉斯城市生活。</p>
-                    <p>中午前往一間傳統吉爾吉斯風格的餐廳享用午餐。以傳統吉爾吉斯建築與遊牧文化為設計靈感，在充滿民族特色的空間裡品嚐道地料理，也從飲食開始認識這片土地。</p>
-                    <p>午後離開城市，驅車約一小時前往 Chunkurchak 山谷。抵達後換上馬匹，以約 2 小時的騎馬體驗深入山谷。秋天的 Chunkurchak 有著與夏季完全不同的色彩，山坡與草地逐漸染上金黃與褐色，沿著山徑慢慢前行，在開闊的山谷與清涼空氣中，正式把城市的節奏留在身後。</p>
-                    <p>傍晚入住 Chunkurchak 山谷裡的山中度假村。被群山環繞的環境安靜而舒服，在山裡享用晚餐、好好休息，度過旅程溫暖而悠閒的第一個夜晚。</p>
+                    <p><strong>從首都日常出發，走進高山山谷，在遼闊草原騎馬，正式開啟中亞之旅。</strong></p>
+                    <p>早餐後，導遊會先用地圖講解八天的行程路線與今天的安排。</p>
+                    <p>上午走進熱鬧的 Osh Bazaar 市集：香料、果乾、肉品區，還有從土窯裡現烤出爐的饢餅，在人群之間感受最真實的吉爾吉斯城市生活。</p>
+                    <p>中午在一間傳統吉爾吉斯風格的餐廳享用午餐，以氈房為靈感的建築，搭配道地料理。</p>
+                    <p>午後驅車約一小時前往 Chunkurchak 山谷，換上馬匹騎行約 2 小時深入山谷。秋天的山坡與草地染上金黃與褐色，把城市的節奏留在身後。</p>
+                    <p>傍晚入住山谷裡的山中度假村，享用晚餐、好好休息，度過旅程的第一個夜晚。</p>
                     <ul class="day-facts">
                     <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>Bishkek → Osh Bazaar：約 10–15 km｜40 分鐘<br />Osh Bazaar → Chunkurchak：45 km｜約 1–1.5 小時</div></li>
                     <li><i class="fa-solid fa-horse"></i><div><span>騎馬</span>約 2 小時</div></li>
-                    <li><i class="fa-solid fa-utensils"></i><div><span>午餐</span>傳統吉爾吉斯風格餐廳的吉爾吉斯料理</div></li>
-                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>Chunkurchak 山谷的山中度假村，適合拍照，也非常適合放鬆</div></li>
+                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、傳統吉爾吉斯風格餐廳午餐、晚餐</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>Chunkurchak 山谷的山中度假村</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>有，房內；熱水有限，請勿使用太久</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>有，房內</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>有</div></li>
                     </ul>
+                    <div class="tip">
+                      <p class="tip-label"><i class="fa-solid fa-lightbulb"></i>小提醒</p>
+                      <p>今天會騎馬，請穿長褲並做好防曬。</p>
+                    </div>
                   </div>
                 </div>
               </details>
@@ -441,7 +548,7 @@
                     <p class="day-route">Chunkurchak → Burana Tower → Chon Kemin</p>
                     <h3>從絲路古塔走進山谷日常</h3>
                   </div>
-                  <div class="day-tags"><span class="tag"><i class="fa-solid fa-landmark"></i>絲路古塔</span><span class="tag"><i class="fa-solid fa-house-chimney"></i>鄉村民宿</span></div>
+                  <div class="day-tags"><span class="tag"><i class="fa-solid fa-landmark"></i>絲路古塔</span><span class="tag"><i class="fa-solid fa-campground"></i>現代氈房</span></div>
                   <span class="day-toggle" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
                 </summary>
                 <div class="day-content">
@@ -449,14 +556,19 @@
                     <img loading="lazy" src="assets/image-itinerary/8d-chon-kemin-yurts-group.jpg" alt="旅客站在山谷的氈房前，身後是夕陽照亮的群山" style="object-position: 45% 70%" />
                   </div>
                   <div class="day-body">
-                    <p>早餐後離開 Chunkurchak，今天一路向東，逐漸離開城市與主要公路，走進吉爾吉斯的山谷與鄉村。</p>
-                    <p>途中停留 Burana Tower，這座矗立在草原上的古塔，曾是絲綢之路古城 Balasagun 的一部分。登上古塔眺望四周，可以看見遼闊平原與遠方天山山脈，也從這座千年遺跡，慢慢認識中亞曾經繁盛的絲路文明。</p>
-                    <p>午後抵達 Chon Kemin 山谷。這裡沒有太多刻意安排的「景點」，真正迷人的是山谷裡緩慢而真實的生活。沿著村落與草原散步，看遠方雪山延伸在地平線上；坐下來喝杯茶，看牛羊從身旁經過，感受寧靜山谷。</p>
-                    <p>今晚入住山谷裡的家庭民宿，三餐由民宿主人親自準備，許多食材來自自家或附近農家。比起趕著前往下一個景點，今天更像是把時間留給 Chon Kemin——慢慢走、慢慢看，也好好感受吉爾吉斯鄉村生活最自然的一面。</p>
+                    <p><strong>山中晨景、絲路古塔，以及 Chon Kemin 寧靜的夜晚。</strong></p>
+                    <p>早起的話，先到觀景點拍照並短程健行，再享用早餐。</p>
+                    <p>接著前往 Burana Tower。這座矗立在草原上的古塔，曾是絲綢之路古城 Balasagun 的一部分。登上古塔眺望平原與遠方天山，聽導遊講述曾在這裡繁盛的絲路文明。</p>
+                    <p>午餐在 Burana 附近一戶當地人家中，享用主人親手準備的家常料理。</p>
+                    <p>午後繼續前往 Chon Kemin 山谷。入住擁有美麗山景的現代氈房住宿，晚餐前有時間在草原上散步、欣賞雪山。</p>
                     <ul class="day-facts">
                     <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>約 130 km｜約 4 小時</div></li>
-                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>三餐由民宿主人親自準備</div></li>
-                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>Chon Kemin 山谷的家庭民宿</div></li>
+                    <li><i class="fa-solid fa-person-hiking"></i><div><span>早上</span>觀景點拍照與短程健行</div></li>
+                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、Burana 附近當地人家中的家常午餐、晚餐</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>Chon Kemin 山谷擁有美麗山景的現代氈房住宿</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>有，房內；熱水有限，請勿使用太久</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>有，房內</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>有</div></li>
                     <li><i class="fa-solid fa-circle-play"></i><div><span>影片參考</span><a href="https://www.youtube.com/watch?v=pHu00kBeEP0&amp;t=301s" target="_blank" rel="noopener">觀看影片 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></li>
                     </ul>
                   </div>
@@ -483,16 +595,19 @@
                   </div>
                   <div class="day-body">
                     <p>今天從山裡開始。早餐後在 Chon Kemin 山谷晨間健行，慢慢走過山谷裡的草甸與森林，呼吸清新的山間空氣，在出發前好好欣賞這片山景。</p>
-                    <p>中午在 Chon Kemin 的家庭民宿享用家常午餐，餐後驅車前往伊塞克湖南岸的 Bokonbaevo。沿途景色從北部的山谷與草原，慢慢轉換成伊塞克湖一帶更加遼闊的山湖風景；途中每隔兩至三小時會安排停車休息，讓移動保持舒服的節奏。</p>
-                    <p>下午與當地獵鷹人見面，觀賞獵鷹表演。在獵人的介紹與示範下，近距離認識這項流傳已久的遊牧傳統。對獵人而言，金雕不只是狩獵的工具，更是需要長時間相處、訓練並建立默契的夥伴，也是一項代代傳承的生活技藝。</p>
-                    <p>晚餐在當地民宿享用家常料理，之後入住 Bokonbaevo 的現代氈房住宿，在伊塞克湖南岸好好休息，感受不同於城市的鄉村生活。</p>
+                    <p>中午在 Chon Kemin 住宿享用家常午餐，餐後驅車前往伊塞克湖南岸的 Bokonbaevo。沿途景色從北部的山谷與草原，慢慢轉換成伊塞克湖一帶更加遼闊的山湖風景；途中每隔兩至三小時會安排停車休息，讓移動保持舒服的節奏。</p>
+                    <p>下午與當地獵鷹人見面，觀看傳統獵鷹訓練示範。在獵人的介紹與示範下，近距離認識這項流傳已久的遊牧傳統。對獵人而言，金雕不只是狩獵的工具，更是需要長時間相處、訓練並建立默契的夥伴，也是一項代代傳承的生活技藝。</p>
+                    <p>晚餐在當地民宿享用家常料理，之後入住 Bokonbaevo 的 Altyn Oimok 或 Elestet，在伊塞克湖南岸好好休息，感受不同於城市的鄉村生活。</p>
                     <ul class="day-facts">
                     <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>270 km｜3.5–4.5 小時</div></li>
                     <li><i class="fa-solid fa-person-hiking"></i><div><span>健行</span>Chon Kemin 晨間健行</div></li>
-                    <li><i class="fa-solid fa-utensils"></i><div><span>午餐</span>Chon Kemin 家庭民宿的家常料理</div></li>
-                    <li><i class="fa-solid fa-feather"></i><div><span>下午</span>獵鷹表演</div></li>
+                    <li><i class="fa-solid fa-utensils"></i><div><span>午餐</span>Chon Kemin 住宿</div></li>
+                    <li><i class="fa-solid fa-feather"></i><div><span>下午</span>傳統獵鷹訓練示範</div></li>
                     <li><i class="fa-solid fa-bowl-food"></i><div><span>晚餐</span>當地民宿的家常料理</div></li>
-                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>Bokonbaevo 的現代氈房住宿</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>Altyn Oimok 或 Elestet，Bokonbaevo</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>共用；熱水有限，請勿使用太久</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>有</div></li>
                     <li><i class="fa-solid fa-circle-play"></i><div><span>影片參考</span><a href="https://www.instagram.com/p/DK2Eqc8I33H/" target="_blank" rel="noopener">觀看影片 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></li>
                     </ul>
                     <!-- TODO: 車程資訊寫 3.5–4.5 小時，內文寫「約五小時」，請確認 -->
@@ -524,21 +639,24 @@
                     <img loading="lazy" src="assets/image-itinerary/7d-skazka-group.jpg" alt="旅客站在童話峽谷彩色岩丘上" style="object-position: center 40%" />
                   </div>
                   <div class="day-body">
-                    <p>今天沿著伊塞克湖南岸一路向東前進，是整趟旅程中地貌變化最豐富的一天。</p>
-                    <p>早上首先來到 Skazka Canyon 童話峽谷，橙紅、土黃與淺褐色的岩層經過長年風雨侵蝕，形成像城堡、山脊與奇幻生物般的特殊地貌。沿著峽谷步行探索，登上高處還能遠眺湛藍的伊塞克湖，荒漠般的紅色岩層與湖水形成非常特別的對比。</p>
-                    <p>接著前往 Barskoon 山谷，景色也從乾燥的彩色峽谷轉變成森林與高山溪流。沿著松林步道健行約 1–2 小時前往 Barskoon Waterfall，可依當天體力選擇走到第一層瀑布，或繼續向上挑戰第二層。一路伴著森林、溪流與山谷景色，是今天最舒服的一段健行。</p>
-                    <p>下午繼續前往 Jeti-Oguz 紅岩峽谷，停留欣賞著名的「七頭公牛岩」，近距離感受巨大紅色岩壁的特殊地貌，也聽聽流傳在當地關於這片山谷的故事與傳說。</p>
-                    <p>傍晚抵達 Karakol。晚餐安排在當地餐廳，品嚐精緻的中亞與吉爾吉斯料理。從早晨的彩色峽谷、午後的森林瀑布，到傍晚的紅岩山谷，一天之內走過截然不同的自然景觀，最後在 Karakol 好好吃頓晚餐，為充實的一天收尾。</p>
+                    <p><strong>彩色峽谷、森林瀑布與紅岩峭壁：整趟旅程地貌變化最豐富的一天。</strong></p>
+                    <p>早餐後前往 Skazka 童話峽谷。橙紅、土黃與淺褐色的岩層經過風雨侵蝕，形成像城堡、山脊與奇幻生物般的地貌，身後就是湛藍的伊塞克湖。</p>
+                    <p>午餐在當地民宿享用家常料理。</p>
+                    <p>接著在 Barskoon 山谷沿著松林步道健行約 2 小時前往 Barskoon 瀑布，可依體力選擇走到第一層或第二層瀑布。</p>
+                    <p>傍晚來到 Jeti-Oguz 紅岩峽谷。先搭車上去，再步行約 15 分鐘沿著美麗的峽谷走下來，近距離看著名的「七頭公牛岩」，聽在地流傳的傳說。</p>
+                    <p>晚上抵達 Karakol，在餐廳享用精緻的中亞料理，之後入住飯店。</p>
                     <ul class="day-facts">
-                    <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>Bokonbaevo → Skazka Canyon：30 km｜40 分鐘<br />Skazka Canyon → Barskoon Waterfall：70 km｜約 1.5 小時<br />Barskoon Waterfall → Barskoon 村：10 km｜15–20 分鐘</div></li>
-                    <li><i class="fa-solid fa-person-hiking"></i><div><span>健行</span>Barskoon Waterfall 約 1–2 小時</div></li>
-                    <li><i class="fa-solid fa-utensils"></i><div><span>晚餐</span>中亞與吉爾吉斯料理餐廳</div></li>
-                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>Karakol 的民宿或飯店</div></li>
+                    <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>Bokonbaevo → Skazka Canyon：30 km｜40 分鐘<br />Skazka Canyon → Barskoon 瀑布：70 km｜約 1.5 小時<br />之後前往 Jeti-Oguz 與 Karakol</div></li>
+                    <li><i class="fa-solid fa-person-hiking"></i><div><span>健行</span>Barskoon 瀑布約 2 小時；Jeti-Oguz 步行下山約 15 分鐘</div></li>
+                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、當地民宿午餐、Karakol 餐廳晚餐</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>78 Hotel 或 Matsunoki，Karakol</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>有，房內；熱水有限，請勿使用太久</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>有，房內</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>有</div></li>
                     </ul>
-                    <!-- TODO: 請補上 Barskoon → Jeti-Oguz → Karakol 的車程 -->
                     <div class="tip">
                       <p class="tip-label"><i class="fa-solid fa-lightbulb"></i>小提醒</p>
-                      <p>瀑布健行可依當天體力選擇走到第一層瀑布，或繼續向上挑戰第二層。</p>
+                      <p>今天是戶外活動的一天，較晚入住（約 21:00）。請準備防曬與帽子。</p>
                     </div>
                   </div>
                 </div>
@@ -552,10 +670,10 @@
                 <summary class="day-summary">
                   <img class="day-thumb" loading="lazy" src="assets/image-itinerary/8d-karakol-meadow.jpg" alt="" style="object-position: center 60%" />
                   <div class="day-heading">
-                    <p class="day-route">Karakol City → Karakol Gorge</p>
-                    <h3>Karakol 城市與山谷野餐</h3>
+                    <p class="day-route">Karakol → Karakol 峽谷 → Karakol</p>
+                    <h3>Karakol 峽谷與多元文化的一天</h3>
                   </div>
-                  <div class="day-tags"><span class="tag"><i class="fa-solid fa-mosque"></i>多元文化</span><span class="tag"><i class="fa-solid fa-basket-shopping"></i>野餐</span></div>
+                  <div class="day-tags"><span class="tag"><i class="fa-solid fa-person-hiking"></i>峽谷健行</span><span class="tag"><i class="fa-solid fa-mosque"></i>多元文化</span></div>
                   <span class="day-toggle" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
                 </summary>
                 <div class="day-content">
@@ -564,18 +682,25 @@
                     <img loading="lazy" src="assets/image-itinerary/8d-karakol-meadow.jpg" alt="雲杉林上方開滿野花的草原與健行旅客" style="object-position: center 60%" />
                   </div>
                   <div class="day-body">
-                    <p><strong>在多元文化的城市、冷杉森林與山谷野餐之間，感受 Karakol 最真實的一天。</strong></p>
-                    <p>Karakol 是吉爾吉斯東部最重要的城市，也是多民族文化交融最明顯的地方。上午走訪兩處特色建築：建於 1895 年的 Holy Trinity 東正教木造教堂，見證了俄羅斯移民在此落地生根的歷史；東干清真寺（Dungan Mosque）由中亞東干族建造，整座建築不用一根釘子，造型融合中式與伊斯蘭風格，在世界上都屬罕見。</p>
-                    <p>逛完紀念品小店後，午餐吃東干族特色小吃——涼粉（Ashulanfu）酸香微辣，馬鈴薯餅（Pirozhki）外酥內軟，都是在地人日常的味道。吃飽前往市集逛逛，採買大家野餐想吃的東西後前往 Karakol Gorge 山谷健行，是貝殼嚕比影片裡的秘境。戶外野餐是吉爾吉斯人最喜歡的放鬆方式，今天我們也一起。</p>
+                    <p><strong>卡拉科爾峽谷健行、山谷烤肉野餐，以及多元文化的 Karakol。</strong></p>
+                    <p>早餐後前往 Karakol 峽谷，沿著雲杉林與山間溪流健行約 2.5 小時。</p>
+                    <p>午餐在峽谷裡野餐，這是吉爾吉斯人最喜歡的戶外放鬆方式。視當天狀況，安排烤肉野餐或一般野餐。</p>
+                    <p>下午參觀 Karakol 兩座特色建築：俄羅斯移民建造的木造聖三一大教堂，以及東干族不用一根釘子、融合中式與伊斯蘭風格建造的東干清真寺。接著到「一村一品」商店逛在地手工藝品，再到市集採買隔天的零食。</p>
+                    <p>晚餐吃東干料理：酸香微辣的涼粉（Ashlan-fu）和馬鈴薯餅（Pirozhki）。</p>
                     <ul class="day-facts">
-                    <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>25 km｜40 分鐘</div></li>
-                    <li><i class="fa-solid fa-utensils"></i><div><span>午餐</span>東干小吃：涼粉、馬鈴薯餅</div></li>
-                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>Karakol 的民宿或飯店</div></li>
+                    <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>約 25 km｜40 分鐘</div></li>
+                    <li><i class="fa-solid fa-person-hiking"></i><div><span>健行</span>Karakol 峽谷約 2.5 小時</div></li>
+                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、烤肉野餐或一般野餐午餐（視狀況而定）、東干料理晚餐</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>78 Hotel 或 Matsunoki，Karakol</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>有，房內；熱水有限，請勿使用太久</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>有，房內</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>有</div></li>
                     <li><i class="fa-solid fa-circle-play"></i><div><span>影片參考</span><a href="https://www.instagram.com/p/DPodOZWiLkg/" target="_blank" rel="noopener">觀看影片 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></li>
                     </ul>
                     <div class="tip">
                       <p class="tip-label"><i class="fa-solid fa-lightbulb"></i>小提醒</p>
-                      <p>原訂安排的 Aksu 秋日健行步道，因秋季沿途部分路段生長較多帶刺植物，步行體驗較不舒適，因此將健行路線調整為 Karakol Gorge。Karakol Gorge 秋季景色同樣非常漂亮，山谷開闊，沿途有高山森林、溪流與天山山脈景觀，路線舒適、視野遼闊。</p>
+                      <p>今天的順序會依天氣彈性調整：Karakol 峽谷健行與烤肉或野餐，可能安排在早餐後，也可能在午餐後，另一個時段則參觀市區。</p>
+                      <p>明天（第 6 天）會上山到 Altyn-Arashan 住一晚，今晚請先準備一個小包，裝過夜需要的物品；大行李會留在車上。</p>
                     </div>
                   </div>
                 </div>
@@ -589,8 +714,8 @@
                 <summary class="day-summary">
                   <img class="day-thumb" loading="lazy" src="assets/image-itinerary/8d-altyn-arashan-valley.jpg" alt="" style="object-position: 64% center" />
                   <div class="day-heading">
-                    <p class="day-route">Karakol → Altyn-Arashan</p>
-                    <h3>天山秘境・黃金溫泉</h3>
+                    <p class="day-route">Karakol → Ak-Suu 溫泉 → Altyn-Arashan</p>
+                    <h3>Ak-Suu 溫泉與天山秘境</h3>
                   </div>
                   <div class="day-tags"><span class="tag"><i class="fa-solid fa-hot-tub-person"></i>溫泉</span><span class="tag"><i class="fa-solid fa-truck-monster"></i>越野車</span></div>
                   <span class="day-toggle" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
@@ -601,14 +726,19 @@
                     <img loading="lazy" src="assets/image-itinerary/8d-altyn-arashan-valley.jpg" alt="Altyn-Arashan 山谷，雪峰下的松林與小屋" style="object-position: 64% center" />
                   </div>
                   <div class="day-body">
-                    <p><strong>搭乘越野車前往天山秘境，在雪峰環繞的山谷中，讓身體與心都徹底放鬆。</strong></p>
-                    <p>早餐後出發，從 Karakol 搭乘 4x4 越野車（四人以上改蘇聯軍卡）前往 Altyn-Arashan。30 公里的路程開起來約兩小時，路況顛簸，但沿途的山谷風景讓人捨不得閉眼。</p>
-                    <p>Altyn-Arashan 意思是「黃金溫泉」，海拔約 2,500 公尺，木屋散落在草甸與雪峰之間。抵達後換上泳衣泡進天然溫泉，熱水從地底湧出，一邊泡湯一邊看雪山——這是許多旅客事後說整趟旅程最難忘的時刻之一。三餐由民宿提供，夜晚星空清晰無比。</p>
+                    <p><strong>早上泡溫泉，再沿著崎嶇山路上到雪峰下的天山秘境。</strong></p>
+                    <p>早餐後到 Ak-Suu 溫泉泡湯放鬆約兩小時。</p>
+                    <p>接著搭 4x4 越野車（四人以上改蘇聯軍卡）沿著 30 公里的崎嶇山路上到 Altyn-Arashan，這座海拔約 2,500 公尺的高山山谷，木屋與氈房散落在草甸與雪峰之間。</p>
+                    <p>在民宿吃完午餐後，下午可以放鬆或在山谷輕鬆健行。晚餐由民宿提供，夜晚沒有光害，非常適合觀星。</p>
                     <ul class="day-facts">
                     <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>Karakol → Altyn-Arashan：30 km｜約 2 小時（越野路段，非常顛簸但經典）</div></li>
+                    <li><i class="fa-solid fa-hot-tub-person"></i><div><span>溫泉</span>Ak-Suu，約 2 小時</div></li>
                     <li><i class="fa-solid fa-mountain"></i><div><span>海拔</span>約 2,500 m</div></li>
-                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>午餐、晚餐由民宿提供</div></li>
+                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐與晚餐由民宿提供</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>Altyn-Arashan 山中民宿的氈房</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>共用；熱水有限，請勿使用太久</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>沒有手機訊號</div></li>
                     <li><i class="fa-solid fa-circle-play"></i><div><span>影片參考</span><a href="https://www.instagram.com/p/DPacrJUCNk-/" target="_blank" rel="noopener">觀看影片 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></li>
                     </ul>
                     <div class="tip">
@@ -625,7 +755,7 @@
               <div class="day-num"><small>Day</small><b>7</b></div>
               <details class="day-card reveal">
                 <summary class="day-summary">
-                  <img class="day-thumb" loading="lazy" src="assets/8day-classic-tour/issuk-kul.jpg" alt="" />
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/8d-cholpon-ata-shore.jpg" alt="" style="object-position: 52% center" />
                   <div class="day-heading">
                     <p class="day-route">Altyn-Arashan → Karakol → Cholpon-Ata</p>
                     <h3>從高山回到湖畔</h3>
@@ -636,22 +766,22 @@
                 <div class="day-content">
                   <div class="day-media">
                     <!-- TODO: replace with your photo IMG_6973 / IMG_5250 -->
-                    <img loading="lazy" src="assets/8day-classic-tour/issuk-kul.jpg" alt="伊塞克湖北岸" />
+                    <img loading="lazy" src="assets/image-itinerary/8d-cholpon-ata-shore.jpg" alt="Cholpon-Ata 的伊塞克湖畔與身後的山脈" style="object-position: 52% center" />
                   </div>
                   <div class="day-body">
-                    <p>早晨在 Altyn-Arashan 山谷醒來，今天可以選擇以健行的方式告別這片高山秘境。沿著山谷步行下山約 2.5 小時，一路伴著雪山、森林與湍急溪流，沿途景色非常漂亮；抵達半山腰後，再搭乘越野車繼續下山，返回山腳村落。</p>
-                    <p>中午前往 Karakol 近郊享用當地著名的鱒魚料理，為高山行程好好補充體力。餐後沿著伊塞克湖北岸一路向西，車程約三小時，抵達北岸最具度假氣息的小鎮 Cholpon-Ata。</p>
-                    <p>傍晚到湖畔散步，看著遼闊的伊塞克湖與遠方山脈，在旅程接近尾聲時，把步調慢下來。晚餐安排在阿拉伯餐廳，餐後還可以到隔壁的咖啡館吃甜點、冰淇淋。從高山健行回到湖畔小鎮，今晚不趕行程，好好享受伊塞克湖北岸悠閒的度假氛圍。</p>
+                    <p><strong>從高山走下來，回到伊塞克湖畔。</strong></p>
+                    <p>早餐後可以選擇用健行的方式告別 Altyn-Arashan：沿著山谷步行約 2.5 小時到半山腰的觀景點，再由車子接送。也可以全程搭車下山。</p>
+                    <p>下山到 Aksu 村，在魚料理餐廳享用午餐。</p>
+                    <p>接著沿著伊塞克湖北岸開約三小時到 Cholpon-Ata。入住後穿過公園走到湖邊散步，晚餐在當地人最愛的吉爾吉斯清真餐廳（清真餐廳不供應酒精飲料）。</p>
                     <ul class="day-facts">
-                    <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>Altyn-Arashan → Karakol：30 km｜約 2–3 小時（越野路段）<br />Karakol → Cholpon-Ata：140–150 km｜約 3 小時</div></li>
+                    <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>Altyn-Arashan → Karakol：30 km｜約 2 小時（越野路段）<br />Karakol → Cholpon-Ata：140–150 km｜約 3 小時</div></li>
                     <li><i class="fa-solid fa-person-hiking"></i><div><span>健行</span>下山約 2.5 小時（可選）</div></li>
-                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>午餐鱒魚料理，晚餐阿拉伯餐廳</div></li>
-                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>Cholpon-Ata 的飯店或民宿</div></li>
+                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、魚料理餐廳午餐、當地吉爾吉斯清真餐廳晚餐</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>Cholpon-Ata 的飯店</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>有，房內；熱水有限，請勿使用太久</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>有，房內</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>有</div></li>
                     </ul>
-                    <div class="tip">
-                      <p class="tip-label"><i class="fa-solid fa-lightbulb"></i>小提醒</p>
-                      <p>健行下山為自由選擇，也可以全程搭乘越野車。</p>
-                    </div>
                   </div>
                 </div>
               </details>
@@ -664,7 +794,7 @@
                 <summary class="day-summary">
                   <img class="day-thumb" loading="lazy" src="assets/image-itinerary/8d-issyk-kul-boat.jpg" alt="" style="object-position: 16% center" />
                   <div class="day-heading">
-                    <p class="day-route">Cholpon-Ata → Bishkek</p>
+                    <p class="day-route">Cholpon-Ata → Balykchy → 比什凱克</p>
                     <h3>乘船出湖・岩畫博物館・返回城市</h3>
                   </div>
                   <div class="day-tags"><span class="tag"><i class="fa-solid fa-sailboat"></i>遊艇出湖</span><span class="tag"><i class="fa-solid fa-landmark"></i>岩畫</span></div>
@@ -676,12 +806,19 @@
                     <img loading="lazy" src="assets/image-itinerary/8d-issyk-kul-boat.jpg" alt="雪山下伊塞克湖上的遊船" style="object-position: 16% center" />
                   </div>
                   <div class="day-body">
-                    <p>最後一天。今天的重頭戲是早上搭乘私人遊艇出湖——在開闊的湖面上慢慢前行，北岸的雪山與湖水交織成一幅橫向的壯麗風景，可以拍照、曬太陽，或就坐在船上放空。</p>
-                    <p>靠岸後參觀 Cholpon-Ata 戶外岩畫博物館，從 4000 年前的青銅時代至遊牧時期的岩刻保存在此。回程途中停靠加油站喝杯咖啡、休息一下，讓身體慢慢從山野節奏過渡回城市。晚上回到 Bishkek，在餐廳享用晚餐。</p>
+                    <p><strong>乘船出湖、古老岩畫，然後返回城市。</strong></p>
+                    <p>早餐後搭船出湖約一小時，北岸的雪山在湖面上展開。</p>
+                    <p>靠岸後參觀 Cholpon-Ata 露天岩畫區，這裡保存了從青銅時代到遊牧時期的岩刻。如果有興趣，也可以參觀當地的歷史博物館。</p>
+                    <p>接著開車到 Balykchy 吃午餐，再前往比什凱克，傍晚抵達後在餐廳享用告別晚餐。</p>
+                    <p class="day-end-note"><i class="fa-solid fa-van-shuttle"></i><span>行程結束後，我們會送您回首都的飯店休息（若您搭乘晚班飛機，也可以免費送您到機場）。</span></p>
                     <ul class="day-facts">
                     <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>Cholpon-Ata → Bishkek：270 km｜約 4 小時</div></li>
-                    <li><i class="fa-solid fa-utensils"></i><div><span>晚餐</span>Bishkek 餐廳</div></li>
+                    <li><i class="fa-solid fa-sailboat"></i><div><span>遊船</span>伊塞克湖，約 1 小時</div></li>
+                    <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、Balykchy 午餐、比什凱克告別晚餐</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>行程結束，或入住比什凱克的飯店</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>有，房內</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>有，房內</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>有</div></li>
                     <li><i class="fa-solid fa-circle-play"></i><div><span>影片參考</span><a href="https://www.instagram.com/p/DKZzJO5oFRJ/" target="_blank" rel="noopener">觀看影片 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></li>
                     </ul>
                   </div>
@@ -689,6 +826,28 @@
               </details>
             </li>
           </ol>
+          <!-- Fit check before booking (survey.html) -->
+          <div class="survey-cta reveal">
+            <div class="survey-cta-text">
+              <span class="survey-cta-kicker"><i class="fa-solid fa-clipboard-check"></i> 報名方式</span>
+              <strong>這趟行程適合你嗎？</strong>
+              <span>報名前請先花約 2 分鐘填寫評估問卷。通過評估後，就可以直接進入報名表單。</span>
+              <ol class="survey-steps">
+                <li><b>1</b>填寫評估問卷</li>
+                <li><b>2</b>查看是否適合這趟行程</li>
+                <li><b>3</b>通過後立即報名</li>
+              </ol>
+              <div class="survey-why">
+                <b><i class="fa-solid fa-circle-info"></i> 為什麼一定要先填問卷？</b>
+                <ul>
+                  <li>我們的行程深入偏遠山區：住宿簡約、車程較長、高海拔，天氣也變化快。</li>
+                  <li>你的回答能幫我們確認行程對你和整個團隊都安全、愉快。</li>
+                  <li>完成問卷後，我們才能確認報名。</li>
+                </ul>
+              </div>
+            </div>
+            <a href="survey.html?tour=IKC">開始填寫問卷 <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
         </div>
       </section>
 
@@ -777,13 +936,12 @@
       <!---------- CTA ---------->
       <section class="cta" style="background-image: url('assets/8day-classic-tour/issuk-kul.jpg')">
         <div class="container">
-          <h2>歡迎你來吉爾吉斯</h2>
+          <h2>還有其他問題嗎？</h2>
           <p>
-            Email 告訴我們想參加的日期，mogi 小編將回覆訂金資訊與報名表格。私人訂製團 2 人以上即可成行。
+            找不到你想知道的資訊嗎？直接寫信給我們，我們會盡快回覆你。
           </p>
           <div class="cta-actions">
-            <a class="btn btn-primary" href="mailto:bekruby.kg@gmail.com">來信報名 <i class="fa-solid fa-arrow-right"></i></a>
-            <a class="btn btn-ghost" href="contact.html"><i class="fa-regular fa-envelope"></i> 聯絡我們</a>
+            <a class="btn btn-primary" href="mailto:bekruby.kg@gmail.com"><i class="fa-regular fa-envelope"></i> 寫信給我們：bekruby.kg@gmail.com</a>
           </div>
         </div>
       </section>
@@ -821,15 +979,15 @@
           <div>
             <h4>Contact</h4>
             <ul class="g2m-footer-contact">
-              <li><i class="fa-solid fa-location-dot"></i><span>87 Suleimanto Street, Ak-Ordo Residential Area, Leninsky District, Bishkek, Kyrgyz Republic</span></li>
+              <li><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_address">Issyk-Kul Region, Kyrgyz Republic</span></li>
               <li><i class="fa-solid fa-envelope"></i><a href="mailto:bekruby.kg@gmail.com">bekruby.kg@gmail.com</a></li>
             </ul>
             <a class="g2m-footer-cta" href="mailto:bekruby.kg@gmail.com" data-i18n="footer_cta">Send email</a>
           </div>
         </div>
         <div class="g2m-footer-bottom">
-          <p data-i18n="footer_legal">Kyrgyz travel agency · Reg No. 11708197200956 · OKPO 34155903</p>
-          <p data-i18n="footer_copy">© Bek &amp; Ruby 2023 — All Rights Reserved.</p>
+          <p data-i18n="footer_legal">Go2Mountains LLC (ОсОО «Гоу ту Маунтинс») · Reg. No. 332596-3302-ООО · OKPO 35166636 · INN 01108202610020</p>
+          <p data-i18n="footer_copy">© 2023–2026 Bek &amp; Ruby — All Rights Reserved.</p>
         </div>
       </div>
     </footer>

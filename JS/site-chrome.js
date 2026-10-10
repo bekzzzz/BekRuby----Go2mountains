@@ -25,8 +25,9 @@
       "footer_nav_about": "About us",
       "footer_nav_contact": "Contact",
       "footer_cta": "Send email",
-      "footer_legal": "Kyrgyz travel agency · Reg No. 11708197200956 · OKPO 34155903",
-      "footer_copy": "© Bek & Ruby 2023 — All Rights Reserved."
+      "footer_legal": "Go2Mountains LLC (ОсОО «Гоу ту Маунтинс») · Reg. No. 332596-3302-ООО · OKPO 35166636 · INN 01108202610020",
+      "footer_address": "Issyk-Kul Region, Kyrgyz Republic",
+      "footer_copy": "© 2023–2026 Bek & Ruby — All Rights Reserved."
   },
     zh: {
       "nav_home": "首頁",
@@ -45,8 +46,9 @@
       "footer_nav_about": "關於我們",
       "footer_nav_contact": "聯絡",
       "footer_cta": "寄送 Email",
-      "footer_legal": "吉爾吉斯旅行社 · Reg No. 11708197200956 · OKPO 34155903",
-      "footer_copy": "© Bek & Ruby 2023 — 版權所有。"
+      "footer_legal": "Go2Mountains 有限責任公司（ОсОО «Гоу ту Маунтинс»）· 登記號 332596-3302-ООО · OKPO 35166636 · 稅號 INN 01108202610020",
+      "footer_address": "吉爾吉斯共和國 伊塞克湖州",
+      "footer_copy": "© 2023–2026 Bek & Ruby — 版權所有。"
   },
   };
 
@@ -131,6 +133,19 @@
     const footer = document.querySelector(".g2m-footer");
     if (!header) return;
 
+    // ---------- Skip link (keyboard users jump past the header) ----------
+    const main = document.querySelector("main") || header.nextElementSibling;
+    if (main) {
+      if (!main.id) main.id = "main";
+      if (!main.hasAttribute("tabindex")) main.setAttribute("tabindex", "-1");
+      const skip = document.createElement("a");
+      skip.className = "g2m-skip";
+      skip.href = "#" + main.id;
+      const zh = (document.documentElement.lang || "").toLowerCase().startsWith("zh");
+      skip.textContent = zh ? "跳到主要內容" : "Skip to main content";
+      document.body.prepend(skip);
+    }
+
     // ---------- Mobile menu ----------
     const menuBtn = document.getElementById("g2mMenu");
     const links = document.getElementById("g2mLinks");
@@ -138,12 +153,18 @@
     function setMenu(open) {
       links.classList.toggle("open", open);
       menuBtn.setAttribute("aria-expanded", open);
-      menuBtn.innerHTML = open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+      menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      menuBtn.innerHTML = open ? '<i class="fa-solid fa-xmark" aria-hidden="true"></i>' : '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
+      // move keyboard focus into the menu when it opens, and back to the button when it closes
+      if (open) links.querySelector("a, button")?.focus({ preventScroll: true });
     }
     menuBtn.addEventListener("click", () => setMenu(!links.classList.contains("open")));
     links.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && links.classList.contains("open")) setMenu(false);
+      if (e.key === "Escape" && links.classList.contains("open")) {
+        setMenu(false);
+        menuBtn.focus();
+      }
     });
 
     // ---------- White header after scrolling (fixed header only) ----------

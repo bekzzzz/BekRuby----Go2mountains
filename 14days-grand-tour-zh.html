@@ -45,10 +45,10 @@
       referrerpolicy="no-referrer"
     />
     <!-- Same design as 10days-off-road-v2.html: shared stylesheet and script -->
-    <link rel="stylesheet" href="css/10days-off-road-v2.css?v=2" />
+    <link rel="stylesheet" href="css/10days-off-road-v2.css?v=15" />
     <script defer src="JS/10days-off-road-v2.js"></script>
-    <link rel="stylesheet" href="css/site-chrome.css" />
-    <script defer src="JS/site-chrome.js?v=3"></script>
+    <link rel="stylesheet" href="css/site-chrome.css?v=4" />
+    <script defer src="JS/site-chrome.js?v=6"></script>
   </head>
   <body>
     <div class="progress-bar" id="progressBar"></div>
@@ -69,7 +69,7 @@
           <li><a href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149" data-i18n="footer_nav_faq">Q&amp;A</a></li>
           <li><button class="g2m-lang" id="langBtn" type="button" aria-label="Switch language" data-i18n="nav_lang_label">EN / 中文</button></li>
         </ul>
-        <a class="g2m-cta" href="contact.html" data-i18n="custom_btn">Start my trip plan</a>
+        <a class="g2m-cta" href="https://www.surveycake.com/s/yQpxD" target="_blank" rel="noopener" data-i18n="custom_btn">Start my trip plan</a>
         <button class="g2m-menu" id="g2mMenu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="g2mLinks">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -144,7 +144,7 @@
                 <li><span class="label"><i class="fa-solid fa-language"></i>語言</span><span class="value">英文、中文</span></li>
                 <li><span class="label"><i class="fa-solid fa-tag"></i>費用</span><span class="value">請來信洽詢</span></li>
               </ul>
-              <a class="btn btn-primary" href="contact.html">預訂或詢問</a>
+              <a class="btn btn-primary" href="survey.html?tour=RGL">填寫問卷・報名</a>
               <p class="price-note">小團或私人訂製團</p>
             </aside>
           </div>
@@ -296,19 +296,117 @@
               </p>
             </div>
           </div>
-          <!-- Fit check before booking (survey.html) -->
-          <div class="survey-cta reveal">
-            <div class="survey-cta-text">
-              <span class="survey-cta-kicker"><i class="fa-solid fa-clipboard-check"></i> 報名方式</span>
-              <strong>這趟行程適合你嗎？</strong>
-              <span>報名前請先花約 2 分鐘填寫評估問卷。通過評估後，就可以直接進入報名表單。</span>
-              <ol class="survey-steps">
-                <li><b>1</b>填寫評估問卷</li>
-                <li><b>2</b>查看是否適合這趟行程</li>
-                <li><b>3</b>通過後立即報名</li>
-              </ol>
+
+          <!-- Comfort at a glance (same facts as each day in the itinerary) -->
+          <div class="comfort reveal">
+            <div class="comfort-head">
+              <div>
+                <span class="eyebrow">每日行程</span>
+                <h3>舒適度一覽</h3>
+              </div>
+              <div class="legend">
+                <span><i class="dot good"></i>有</span> <span><i class="dot limited"></i>有限 / 共用</span> <span><i class="dot none"></i>無</span> <span><i class="dot unknown"></i>未確認</span>
+              </div>
             </div>
-            <a href="survey.html?tour=RGL">開始填寫問卷 <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="table-scroll">
+              <table class="comfort-table">
+                <thead>
+                  <tr>
+                    <th>天</th>
+                    <th>住宿</th>
+                    <th>淋浴</th>
+                    <th>廁所</th>
+                    <th>Wi-Fi / 訊號</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Day">第 0 天</td><td data-label="Overnight">比什凱克飯店（已包含）</td>
+                    <td data-label="Shower"><i class="dot good"></i>房內熱水淋浴</td>
+                    <td data-label="Toilet"><i class="dot good"></i>有，房內</td>
+                    <td data-label="Wi-Fi"><i class="dot good"></i>Wi-Fi</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 1 天</td><td data-label="Overnight">家庭民宿，Kochkor</td>
+                    <td data-label="Shower"><i class="dot limited"></i>有，房內；熱水有限，請勿使用太久</td>
+                    <td data-label="Toilet"><i class="dot good"></i>有，房內</td>
+                    <td data-label="Wi-Fi"><i class="dot good"></i>有</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 2 天</td><td data-label="Overnight">氈房營地，頌湖</td>
+                    <td data-label="Shower"><i class="dot none"></i>無</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>簡易戶外廁所，共用</td>
+                    <td data-label="Wi-Fi"><i class="dot none"></i>沒有 Wi-Fi 和手機訊號</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 3 天</td><td data-label="Overnight">氈房營地，頌湖</td>
+                    <td data-label="Shower"><i class="dot none"></i>無</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>簡易戶外廁所，共用</td>
+                    <td data-label="Wi-Fi"><i class="dot none"></i>沒有 Wi-Fi 和手機訊號</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 4 天</td><td data-label="Overnight">納倫舒適的四星級飯店，私人衛浴</td>
+                    <td data-label="Shower"><i class="dot limited"></i>有，房內熱水澡；熱水有限，請勿使用太久</td>
+                    <td data-label="Toilet"><i class="dot good"></i>有，房內</td>
+                    <td data-label="Wi-Fi"><i class="dot good"></i>有</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 5 天</td><td data-label="Overnight">山區營地的簡易木屋，Kok-Kiya 山谷</td>
+                    <td data-label="Shower"><i class="dot limited"></i>無淋浴，但包含傳統桑拿；視當地狀況，有時可能無法使用</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>簡易戶外廁所，共用</td>
+                    <td data-label="Wi-Fi"><i class="dot limited"></i>Wi-Fi 很弱，沒有手機訊號</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 6 天</td><td data-label="Overnight">木屋營地，Kok-Kiya 山谷</td>
+                    <td data-label="Shower"><i class="dot limited"></i>無淋浴，但包含傳統桑拿；視當地狀況，有時可能無法使用</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>簡易戶外廁所，共用</td>
+                    <td data-label="Wi-Fi"><i class="dot limited"></i>Wi-Fi 很弱，沒有手機訊號</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 7 天</td><td data-label="Overnight">家庭民宿，Tash-Bashat</td>
+                    <td data-label="Shower"><i class="dot limited"></i>有，房內私人衛浴；熱水有限，請勿使用太久</td>
+                    <td data-label="Toilet"><i class="dot good"></i>有，房內</td>
+                    <td data-label="Wi-Fi"><i class="dot good"></i>有</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 8 天</td><td data-label="Overnight">氈房營地，Aksay 峽谷 / 伊塞克湖</td>
+                    <td data-label="Shower"><i class="dot limited"></i>共用；熱水有限，請勿使用太久</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>簡易戶外廁所，共用</td>
+                    <td data-label="Wi-Fi"><i class="dot none"></i>沒有 Wi-Fi 和手機訊號</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 9 天</td><td data-label="Overnight">Kok-Jaiyk 山谷</td>
+                    <td data-label="Shower"><i class="dot none"></i>無</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>共用</td>
+                    <td data-label="Wi-Fi"><i class="dot limited"></i>Wi-Fi 很弱，有時沒有</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 10 天</td><td data-label="Overnight">78 Hotel 或 Matsunoki，Karakol</td>
+                    <td data-label="Shower"><i class="dot limited"></i>有，房內；熱水有限，請勿使用太久</td>
+                    <td data-label="Toilet"><i class="dot good"></i>有，房內</td>
+                    <td data-label="Wi-Fi"><i class="dot good"></i>有</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 11 天</td><td data-label="Overnight">旅舍 / 氈房，阿爾金阿拉善</td>
+                    <td data-label="Shower"><i class="dot limited"></i>共用；熱水有限，請勿使用太久</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>共用</td>
+                    <td data-label="Wi-Fi"><i class="dot none"></i>沒有手機訊號</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 12 天</td><td data-label="Overnight">旅舍 / 氈房，阿爾金阿拉善</td>
+                    <td data-label="Shower"><i class="dot limited"></i>共用；熱水有限，請勿使用太久</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>共用</td>
+                    <td data-label="Wi-Fi"><i class="dot none"></i>沒有手機訊號</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">第 13 天</td><td data-label="Overnight">家庭民宿，Chon-Kemin</td>
+                    <td data-label="Shower"><i class="dot limited"></i>有；熱水有限，請勿使用太久</td>
+                    <td data-label="Toilet"><i class="dot good"></i>有，房內</td>
+                    <td data-label="Wi-Fi"><i class="dot limited"></i>Wi-Fi 很弱，有時沒有</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
@@ -326,12 +424,43 @@
           <!-- Sticks below the section nav while scrolling through the days -->
           <div class="day-chips-bar">
             <nav class="day-chips" aria-label="跳到某一天">
-              <a href="#day-1">1</a><a href="#day-2">2</a><a href="#day-3">3</a><a href="#day-4">4</a><a href="#day-5">5</a><a href="#day-6">6</a><a href="#day-7">7</a><a href="#day-8">8</a><a href="#day-9">9</a><a href="#day-10">10</a><a href="#day-11">11</a><a href="#day-12">12</a><a href="#day-13">13</a><a href="#day-14">14</a>
+              <a href="#day-0">0</a><a href="#day-1">1</a><a href="#day-2">2</a><a href="#day-3">3</a><a href="#day-4">4</a><a href="#day-5">5</a><a href="#day-6">6</a><a href="#day-7">7</a><a href="#day-8">8</a><a href="#day-9">9</a><a href="#day-10">10</a><a href="#day-11">11</a><a href="#day-12">12</a><a href="#day-13">13</a><a href="#day-14">14</a>
             </nav>
             <button type="button" class="toggle-all" id="toggleAllDays" data-open-label="全部展開" data-close-label="全部收合">全部展開</button>
           </div>
 
           <ol class="timeline">
+            <!-- Day 0 -->
+            <li class="day" id="day-0">
+              <div class="day-num"><small>第</small><b>0</b></div>
+              <details class="day-card reveal">
+                <summary class="day-summary">
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/day0-bishkek.jpg" alt="" />
+                  <div class="day-heading">
+                    <p class="day-route">抵達比什凱克</p>
+                    <h3>歡迎來到吉爾吉斯</h3>
+                  </div>
+                  <div class="day-tags"><span class="tag"><i class="fa-solid fa-plane-arrival"></i>抵達</span><span class="tag"><i class="fa-solid fa-hotel"></i>含住宿</span></div>
+                  <span class="day-toggle" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </summary>
+                <div class="day-content">
+                  <div class="day-media">
+                    <img loading="lazy" src="assets/image-itinerary/day0-bishkek.jpg" alt="雪山下的吉爾吉斯首都比什凱克" />
+                  </div>
+                  <div class="day-body">
+                    <p>
+                      行程全部從 Day 0 開始（住宿包含在行程內）。抵達比什凱克後入住首都的飯店，好好洗個舒服的熱水澡，迎接吉爾吉斯的旅程。
+                    </p>
+                    <ul class="day-facts">
+                    <li><i class="fa-solid fa-plane-arrival"></i><div><span>抵達</span>瑪納斯機場，接送至飯店</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>比什凱克飯店（已包含）</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>房內熱水淋浴</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+            </li>
+
             <!-- Day 1 -->
             <li class="day" id="day-1">
               <div class="day-num"><small>第</small><b>1</b></div>
@@ -359,6 +488,9 @@
                     <li><i class="fa-solid fa-person-hiking"></i><div><span>健行</span>Kok-Moinok 峽谷，約 1.5 小時</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、晚餐</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>家庭民宿，Kochkor</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>有，房內；熱水有限，請勿使用太久</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>有，房內</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>有</div></li>
                     </ul>
                   </div>
                 </div>
@@ -392,6 +524,9 @@
                     <li><i class="fa-solid fa-mountain"></i><div><span>海拔</span>3,016 m</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、晚餐</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>氈房營地，頌湖</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>無</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>簡易戶外廁所，共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>沒有 Wi-Fi 和手機訊號</div></li>
                     </ul>
                   </div>
                 </div>
@@ -424,6 +559,9 @@
                     <li><i class="fa-solid fa-mountain"></i><div><span>海拔</span>3,016 m</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、晚餐</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>氈房營地，頌湖</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>無</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>簡易戶外廁所，共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>沒有 Wi-Fi 和手機訊號</div></li>
                     </ul>
                   </div>
                 </div>
@@ -456,6 +594,9 @@
                     <li><i class="fa-solid fa-person-walking"></i><div><span>步行</span>瀑布步道與納倫城鎮散步</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、晚餐</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>納倫舒適的四星級飯店，私人衛浴</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>有，房內熱水澡；熱水有限，請勿使用太久</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>有，房內</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>有</div></li>
                     </ul>
                   </div>
                 </div>
@@ -481,21 +622,24 @@
                   </div>
                   <div class="day-body">
                   <p>
-                    早上先逛納倫的在地市集，幫忙挑選今天野餐要吃的新鮮麵包、水果和蔬菜。接著往南，駛進吉爾吉斯最偏遠的地區之一。在 Bosogo 峽谷下車，往山裡健行 1.5 小時，再在峽谷裡野餐。下午繼續翻越 Kyndy 山口，在這裡檢查護照和邊境通行證，然後進入寬闊寧靜的 Kok-Kiya 山谷。抵達一個小型山區營地，這是接下來兩晚的基地，晚餐前有時間安頓下來，在傳統吉爾吉斯桑拿（banya）裡暖暖身子。
+                    早上先逛納倫的在地市集，幫忙挑選今天野餐要吃的新鮮麵包、水果和蔬菜。接著往南，駛進吉爾吉斯最偏遠的地區之一。在 Bosogo 峽谷下車，往山裡健行 1.5 小時，再在峽谷裡野餐。下午繼續翻越 Kyndy 山口，在這裡檢查護照和邊境通行證，然後進入寬闊寧靜的 Kok-Kiya 山谷。抵達一個小型山區營地，這是接下來兩晚的基地，晚餐前有時間安頓下來，在傳統吉爾吉斯桑拿裡暖暖身子。
                   </p>
                   <ul class="day-facts">
                     <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>約 4–5 小時，部分越野，含停留</div></li>
-                    <li><i class="fa-solid fa-person-hiking"></i><div><span>步行</span>峽谷散步，約 2 小時</div></li>
-                    <li><i class="fa-solid fa-passport"></i><div><span>通行證</span>需要邊境通行證</div></li>
+                    <li><i class="fa-solid fa-person-hiking"></i><div><span>健行</span>約 1.5 小時，視天氣而定</div></li>
+                    <li><i class="fa-solid fa-mountain"></i><div><span>最高點</span>Kyndy 山口</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、野餐午餐、晚餐</div></li>
-                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>木屋營地，Kok-Kiya 山谷</div></li>
-                    </ul>
-                    <div class="tip">
-                      <p class="tip-label"><i class="fa-solid fa-lightbulb"></i>小提醒</p>
-                      <p>
-                        Kok-Kiya 位於邊境管制區。請把護照帶在身上，不要放在主要行李裡。
-                      </p>
-                    </div>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>山區營地的簡易木屋，Kok-Kiya 山谷</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>無淋浴，但包含傳統桑拿；視當地狀況，有時可能無法使用</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>簡易戶外廁所，共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>Wi-Fi 很弱，沒有手機訊號</div></li>
+                  </ul>
+                  <div class="tip">
+                    <p class="tip-label"><i class="fa-solid fa-lightbulb"></i>小提醒</p>
+                    <p>
+                      這一區是邊境管制區，請把護照帶在身上，不要放在主要行李裡。越野路段很顛簸，如果會暈車，請告訴導遊讓你坐前座。如果天氣不好，健行會改成在峽谷裡短程散步。
+                    </p>
+                  </div>
                   </div>
                 </div>
               </details>
@@ -528,6 +672,9 @@
                     <li><i class="fa-solid fa-sailboat"></i><div><span>搭船</span>克蘇湖，可選</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、野餐午餐、晚餐</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>木屋營地，Kok-Kiya 山谷</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>無淋浴，但包含傳統桑拿；視當地狀況，有時可能無法使用</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>簡易戶外廁所，共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>Wi-Fi 很弱，沒有手機訊號</div></li>
                     </ul>
                   </div>
                 </div>
@@ -561,6 +708,9 @@
                     <li><i class="fa-solid fa-person-walking"></i><div><span>步行</span>村莊散步，約 1.5 小時</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、晚餐</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>家庭民宿，Tash-Bashat</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>有，房內私人衛浴；熱水有限，請勿使用太久</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>有，房內</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>有</div></li>
                     </ul>
                     <div class="tip">
                       <p class="tip-label"><i class="fa-solid fa-lightbulb"></i>小提醒</p>
@@ -600,6 +750,9 @@
                     <li><i class="fa-solid fa-person-hiking"></i><div><span>健行</span>Aksay 峽谷，約 2 小時</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、晚餐</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>氈房營地，Aksay 峽谷 / 伊塞克湖</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>共用；熱水有限，請勿使用太久</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>簡易戶外廁所，共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>沒有 Wi-Fi 和手機訊號</div></li>
                     </ul>
                   </div>
                 </div>
@@ -632,6 +785,9 @@
                     <li><i class="fa-solid fa-person-hiking"></i><div><span>健行</span>童話峽谷 1.5 小時，Barskoon 瀑布約 1.75 小時</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、晚餐</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>Kok-Jaiyk 山谷</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>無</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>Wi-Fi 很弱，有時沒有</div></li>
                     </ul>
                     <!-- TODO: confirm the eagle show location (Bokonbaevo area or Aksay) and the overnight in Kok-Jaiyk -->
                     <div class="tip">
@@ -670,7 +826,10 @@
                     <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>約 30 公里，約 1 小時</div></li>
                     <li><i class="fa-solid fa-person-hiking"></i><div><span>健行</span>少女辮瀑布約 1.5 小時，或短程散步</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、晚餐</div></li>
-                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>民宿，卡拉科爾</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>78 Hotel 或 Matsunoki，Karakol</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>有，房內；熱水有限，請勿使用太久</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>有，房內</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>有</div></li>
                     </ul>
                   </div>
                 </div>
@@ -703,6 +862,9 @@
                     <li><i class="fa-solid fa-hot-tub-person"></i><div><span>溫泉</span>Aksu，約 1.5 小時</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、晚餐</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>旅舍 / 氈房，阿爾金阿拉善</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>共用；熱水有限，請勿使用太久</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>沒有手機訊號</div></li>
                     </ul>
                     <!-- TODO: the morning in Karakol and the Aksu hot spring stop were still open questions in the source timetable -->
                     <div class="tip">
@@ -742,6 +904,9 @@
                     <li><i class="fa-solid fa-hot-tub-person"></i><div><span>溫泉</span>約 2 小時</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、晚餐</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>旅舍 / 氈房，阿爾金阿拉善</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>共用；熱水有限，請勿使用太久</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>共用</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>沒有手機訊號</div></li>
                     </ul>
                   </div>
                 </div>
@@ -774,6 +939,9 @@
                     <li><i class="fa-solid fa-sailboat"></i><div><span>搭船</span>伊塞克湖，約 1.5 小時</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>餐食</span>早餐、午餐、晚餐</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>住宿</span>家庭民宿，Chon-Kemin</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>淋浴</span>有；熱水有限，請勿使用太久</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>廁所</span>有，房內</div></li>
+                    <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>Wi-Fi 很弱，有時沒有</div></li>
                     </ul>
                     <div class="tip">
                       <p class="tip-label"><i class="fa-solid fa-lightbulb"></i>小提醒</p>
@@ -807,6 +975,7 @@
                     <p>
                       最後一個早晨，在 Chon-Kemin 騎馬或森林散步。午餐後開車回比什凱克享用告別晚餐，用溫暖的方式結束旅程。晚上送你到瑪納斯機場搭機回家。
                     </p>
+                    <p class="day-end-note"><i class="fa-solid fa-van-shuttle"></i><span>行程結束後，我們會送您回首都的飯店休息（若您搭乘晚班飛機，也可以免費送您到機場）。</span></p>
                     <ul class="day-facts">
                     <li><i class="fa-solid fa-van-shuttle"></i><div><span>車程</span>約 150 公里，約 3 小時</div></li>
                     <li><i class="fa-solid fa-horse"></i><div><span>騎馬 / 散步</span>約 2 小時</div></li>
@@ -818,6 +987,28 @@
               </details>
             </li>
           </ol>
+          <!-- Fit check before booking (survey.html) -->
+          <div class="survey-cta reveal">
+            <div class="survey-cta-text">
+              <span class="survey-cta-kicker"><i class="fa-solid fa-clipboard-check"></i> 報名方式</span>
+              <strong>這趟行程適合你嗎？</strong>
+              <span>報名前請先花約 2 分鐘填寫評估問卷。通過評估後，就可以直接進入報名表單。</span>
+              <ol class="survey-steps">
+                <li><b>1</b>填寫評估問卷</li>
+                <li><b>2</b>查看是否適合這趟行程</li>
+                <li><b>3</b>通過後立即報名</li>
+              </ol>
+              <div class="survey-why">
+                <b><i class="fa-solid fa-circle-info"></i> 為什麼一定要先填問卷？</b>
+                <ul>
+                  <li>我們的行程深入偏遠山區：住宿簡約、車程較長、高海拔，天氣也變化快。</li>
+                  <li>你的回答能幫我們確認行程對你和整個團隊都安全、愉快。</li>
+                  <li>完成問卷後，我們才能確認報名。</li>
+                </ul>
+              </div>
+            </div>
+            <a href="survey.html?tour=RGL">開始填寫問卷 <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
         </div>
       </section>
       <!---------- Food ---------->
@@ -907,12 +1098,12 @@
       <!---------- CTA ---------->
       <section class="cta" style="background-image: url('assets/images-7-day-tour-section/son-kol.jpg')">
         <div class="container">
-          <h2>群山在等你</h2>
+          <h2>還有其他問題嗎？</h2>
           <p>
-            對路線、日期或邊境通行證有疑問嗎？寫信給我們，我們會幫你規劃在吉爾吉斯的兩週旅程。
+            找不到你想知道的資訊嗎？直接寫信給我們，我們會盡快回覆你。
           </p>
           <div class="cta-actions">
-            <a class="btn btn-primary" href="contact.html">聯絡我們 <i class="fa-solid fa-arrow-right"></i></a> <a class="btn btn-ghost" href="mailto:bekruby.kg@gmail.com"><i class="fa-regular fa-envelope"></i> bekruby.kg@gmail.com</a>
+            <a class="btn btn-primary" href="mailto:bekruby.kg@gmail.com"><i class="fa-regular fa-envelope"></i> 寫信給我們：bekruby.kg@gmail.com</a>
           </div>
         </div>
       </section>
@@ -950,15 +1141,15 @@
           <div>
             <h4>Contact</h4>
             <ul class="g2m-footer-contact">
-              <li><i class="fa-solid fa-location-dot"></i><span>87 Suleimanto Street, Ak-Ordo Residential Area, Leninsky District, Bishkek, Kyrgyz Republic</span></li>
+              <li><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_address">Issyk-Kul Region, Kyrgyz Republic</span></li>
               <li><i class="fa-solid fa-envelope"></i><a href="mailto:bekruby.kg@gmail.com">bekruby.kg@gmail.com</a></li>
             </ul>
             <a class="g2m-footer-cta" href="mailto:bekruby.kg@gmail.com" data-i18n="footer_cta">Send email</a>
           </div>
         </div>
         <div class="g2m-footer-bottom">
-          <p data-i18n="footer_legal">Kyrgyz travel agency · Reg No. 11708197200956 · OKPO 34155903</p>
-          <p data-i18n="footer_copy">© Bek &amp; Ruby 2023 — All Rights Reserved.</p>
+          <p data-i18n="footer_legal">Go2Mountains LLC (ОсОО «Гоу ту Маунтинс») · Reg. No. 332596-3302-ООО · OKPO 35166636 · INN 01108202610020</p>
+          <p data-i18n="footer_copy">© 2023–2026 Bek &amp; Ruby — All Rights Reserved.</p>
         </div>
       </div>
     </footer>

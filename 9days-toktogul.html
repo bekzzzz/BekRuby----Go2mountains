@@ -2,6 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Coming soon: this tour page is closed for now. Visitors go to the homepage.
+         To look at the page yourself, open it with ?preview at the end (9days-toktogul.html?preview).
+         To open the tour again, delete this script and set the robots meta back to "index, follow". -->
+    <script>
+      if (!/[?&]preview\b/.test(location.search)) location.replace("index.html#authentic");
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicons -->
     <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -11,7 +17,7 @@
 
     <!-- Primary SEO -->
     <meta name="description" content="A 9-day signature journey to Toktogul, where Go2Mountains founder Bek grew up: four days on horseback, life with his family and relatives, and three nights with nomads in the high summer pastures." />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="noindex" /><!-- coming soon; was "index, follow" -->
     <link rel="canonical" href="https://go2mountains.com/9days-toktogul.html" />
 
     <!-- Open Graph -->
@@ -45,10 +51,10 @@
       referrerpolicy="no-referrer"
     />
     <!-- Same design as 10days-off-road-v2.html: shared stylesheet and script -->
-    <link rel="stylesheet" href="css/10days-off-road-v2.css?v=2" />
+    <link rel="stylesheet" href="css/10days-off-road-v2.css?v=15" />
     <script defer src="JS/10days-off-road-v2.js"></script>
-    <link rel="stylesheet" href="css/site-chrome.css" />
-    <script defer src="JS/site-chrome.js?v=3"></script>
+    <link rel="stylesheet" href="css/site-chrome.css?v=4" />
+    <script defer src="JS/site-chrome.js?v=6"></script>
     <style>
       /* page-specific: "Is this trip for you?" */
       .fit-check { margin-top: 32px; }
@@ -85,7 +91,7 @@
           <li><a href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149" data-i18n="footer_nav_faq">Q&amp;A</a></li>
           <li><button class="g2m-lang" id="langBtn" type="button" aria-label="Switch language" data-i18n="nav_lang_label">EN / 中文</button></li>
         </ul>
-        <a class="g2m-cta" href="contact.html" data-i18n="custom_btn">Start my trip plan</a>
+        <a class="g2m-cta" href="https://www.surveycake.com/s/yQpxD" target="_blank" rel="noopener" data-i18n="custom_btn">Start my trip plan</a>
         <button class="g2m-menu" id="g2mMenu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="g2mLinks">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -96,9 +102,9 @@
     <!-- NOTE: text from Bek & Ruby; details marked TODO need confirming -->
     <section class="hero" style="background-image: url('assets/8-days-migration/migration.jpg')">
       <div class="container">
-        <span class="hero-badge"><i class="fa-solid fa-house-chimney"></i> A signature journey to Toktogul · 9 days</span>
+        <span class="hero-badge"><i class="fa-regular fa-clock"></i> Coming soon · A signature journey to Toktogul · 9 days</span>
         <h1>Deep Nomad Life: 9 Days in Bek's Home Mountains</h1>
-        <p class="hero-sub-zh" lang="zh-Hant">貝克的故鄉：9日深度遊牧生活之旅</p>
+        <p class="hero-sub-zh" lang="zh-Hant">貝殼的故鄉：9日深度遊牧生活之旅</p>
         <p class="hero-lead">
           Ride into the mountains where our founder Bek grew up, live with his
           family and relatives, and spend days with nomads in the high summer
@@ -128,7 +134,7 @@
           <li><a href="#food">Food</a></li>
           <li><a href="#includes">What's included</a></li>
         </ul>
-        <a class="btn btn-primary" href="survey.html?tour=DNL">Check &amp; register</a>
+        <span class="btn btn-primary btn-soon"><i class="fa-regular fa-clock"></i> Coming soon</span>
       </div>
     </nav>
 
@@ -173,7 +179,7 @@
                 <!-- TODO: add price -->
                 <li><span class="label"><i class="fa-solid fa-tag"></i>Price</span><span class="value">On request</span></li>
               </ul>
-              <a class="btn btn-primary" href="contact.html">Book or ask a question</a>
+              <span class="btn btn-primary btn-soon"><i class="fa-regular fa-clock"></i> Coming soon</span>
               <p class="price-note">A signature journey with Bek's family</p>
             </aside>
           </div>
@@ -183,7 +189,7 @@
               <img loading="lazy" src="assets/image-itinerary/8d-toktogul-nomads.png" alt="Toktogul" />
               <div class="highlight-body">
                 <h3>Bek's home village</h3>
-                <p>A welcome dinner, a family banya and two nights in the house where Bek grew up.</p>
+                <p>A welcome dinner, a family sauna and two nights in the house where Bek grew up.</p>
               </div>
             </article>
             <article class="highlight reveal">
@@ -327,7 +333,7 @@
               <p>
                 From Day 3 to Day 7 there's <b>no shower</b>: you wash with warm
                 water the families prepare. You'll have a traditional
-                <b>banya</b> (Kyrgyz sauna) in the village before and after the
+                <b>Kyrgyz sauna</b> in the village before and after the
                 mountains.
               </p>
             </div>
@@ -396,6 +402,97 @@
             </div>
           </div>
 
+          <!-- Comfort at a glance (same facts as each day in the itinerary) -->
+          <div class="comfort reveal">
+            <div class="comfort-head">
+              <div>
+                <span class="eyebrow">Day by day</span>
+                <h3>Comfort at a glance</h3>
+              </div>
+              <div class="legend">
+                <span><i class="dot good"></i>Yes</span>
+                <span><i class="dot limited"></i>Limited / shared</span>
+                <span><i class="dot none"></i>None</span>
+                <span><i class="dot unknown"></i>Not confirmed</span>
+              </div>
+            </div>
+            <div class="table-scroll">
+              <table class="comfort-table">
+                <thead>
+                  <tr>
+                    <th>Day</th>
+                    <th>Overnight</th>
+                    <th>Shower</th>
+                    <th>Toilet</th>
+                    <th>Wi-Fi / signal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Day">Day 0</td><td data-label="Overnight">Hotel in Bishkek (included)</td>
+                    <td data-label="Shower"><i class="dot good"></i>Hot shower in your room</td>
+                    <td data-label="Toilet"><i class="dot good"></i>Private</td>
+                    <td data-label="Wi-Fi"><i class="dot good"></i>Wi-Fi</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">Day 1</td><td data-label="Overnight">Yurt, Suusamyr Valley</td>
+                    <td data-label="Shower"><i class="dot none"></i>No</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>Local outdoor toilet, shared</td>
+                    <td data-label="Wi-Fi"><i class="dot none"></i>No</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">Day 2</td><td data-label="Overnight">Bek's family house, village</td>
+                    <td data-label="Shower"><i class="dot limited"></i>Traditional sauna</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>Simple outdoor toilet, shared</td>
+                    <td data-label="Wi-Fi"><i class="dot none"></i>No</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">Day 3</td><td data-label="Overnight">Mud-brick house, Bek's relatives</td>
+                    <td data-label="Shower"><i class="dot limited"></i>Warm water, no shower</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>Simple outdoor toilet, shared</td>
+                    <td data-label="Wi-Fi"><i class="dot none"></i>No internet or signal</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">Day 4</td><td data-label="Overnight">Mud-brick house, Bek's relatives</td>
+                    <td data-label="Shower"><i class="dot limited"></i>Warm water, no shower</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>Simple outdoor toilet, shared</td>
+                    <td data-label="Wi-Fi"><i class="dot none"></i>No internet or signal</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">Day 5</td><td data-label="Overnight">Nomad yurt, summer pastures</td>
+                    <td data-label="Shower"><i class="dot limited"></i>Warm water, no shower</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>Simple outdoor toilet, shared</td>
+                    <td data-label="Wi-Fi"><i class="dot none"></i>No internet or signal</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">Day 6</td><td data-label="Overnight">Nomad yurt, summer pastures</td>
+                    <td data-label="Shower"><i class="dot limited"></i>Warm water, no shower</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>Simple outdoor toilet, shared</td>
+                    <td data-label="Wi-Fi"><i class="dot none"></i>No internet or signal</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">Day 7</td><td data-label="Overnight">Nomad yurt, summer pastures</td>
+                    <td data-label="Shower"><i class="dot limited"></i>Warm water, no shower</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>Simple outdoor toilet, shared</td>
+                    <td data-label="Wi-Fi"><i class="dot none"></i>No internet or signal</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">Day 8</td><td data-label="Overnight">Bek's family house, village</td>
+                    <td data-label="Shower"><i class="dot limited"></i>Traditional sauna</td>
+                    <td data-label="Toilet"><i class="dot limited"></i>Simple outdoor toilet, shared</td>
+                    <td data-label="Wi-Fi"><i class="dot none"></i>No</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Day">Day 9</td><td data-label="Overnight">Hotel, Bishkek</td>
+                    <td data-label="Shower"><i class="dot good"></i>Yes, in your room</td>
+                    <td data-label="Toilet"><i class="dot good"></i>Yes, in your room</td>
+                    <td data-label="Wi-Fi"><i class="dot good"></i>Yes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
           <!-- Why it's worth it -->
           <div class="worth reveal">
             <img loading="lazy" src="assets/images/gallery-optimized/g-star.jpg" alt="Yurt under the stars" />
@@ -419,20 +516,6 @@
               </p>
             </div>
           </div>
-          <!-- Fit check before booking (survey.html) -->
-          <div class="survey-cta reveal">
-            <div class="survey-cta-text">
-              <span class="survey-cta-kicker"><i class="fa-solid fa-clipboard-check"></i> How to register</span>
-              <strong>Is this tour right for you?</strong>
-              <span>Before you register, take a short survey (about 2 minutes). If the tour fits you, the registration form opens right away.</span>
-              <ol class="survey-steps">
-                <li><b>1</b>Take the survey</li>
-                <li><b>2</b>See if the tour fits you</li>
-                <li><b>3</b>Register for the tour</li>
-              </ol>
-            </div>
-            <a href="survey.html?tour=DNL">Start the survey <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
         </div>
       </section>
 
@@ -448,12 +531,46 @@
 
           <div class="day-chips-bar">
             <nav class="day-chips" aria-label="Jump to day">
-              <a href="#day-1">1</a><a href="#day-2">2</a><a href="#day-3">3</a><a href="#day-4">4</a><a href="#day-5">5</a><a href="#day-6">6</a><a href="#day-7">7</a><a href="#day-8">8</a><a href="#day-9">9</a>
+              <a href="#day-0">0</a><a href="#day-1">1</a><a href="#day-2">2</a><a href="#day-3">3</a><a href="#day-4">4</a><a href="#day-5">5</a><a href="#day-6">6</a><a href="#day-7">7</a><a href="#day-8">8</a><a href="#day-9">9</a>
             </nav>
             <button type="button" class="toggle-all" id="toggleAllDays">Open all</button>
           </div>
 
           <ol class="timeline">
+            <!-- Day 0 -->
+            <li class="day" id="day-0">
+              <div class="day-num"><small>Day</small><b>0</b></div>
+              <details class="day-card reveal">
+                <summary class="day-summary">
+                  <img class="day-thumb" loading="lazy" src="assets/image-itinerary/day0-bishkek.jpg" alt="" />
+                  <div class="day-heading">
+                    <p class="day-route">Arrival in Bishkek</p>
+                    <h3>Welcome to Kyrgyzstan</h3>
+                  </div>
+                  <div class="day-tags"><span class="tag"><i class="fa-solid fa-plane-arrival"></i>Arrival</span><span class="tag"><i class="fa-solid fa-hotel"></i>Night included</span></div>
+                  <span class="day-toggle" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </summary>
+                <div class="day-content">
+                  <div class="day-media">
+                    <img loading="lazy" src="assets/image-itinerary/day0-bishkek.jpg" alt="Bishkek, the capital of Kyrgyzstan, below the snowy Ala-Too mountains" />
+                  </div>
+                  <div class="day-body">
+                    <p>
+                      All our tours start on Day 0, and this night is included
+                      in the trip. Arrive in Bishkek, check in to your hotel in
+                      the capital, enjoy a comfortable hot shower and rest well
+                      before your journey through Kyrgyzstan begins.
+                    </p>
+                    <ul class="day-facts">
+                    <li><i class="fa-solid fa-plane-arrival"></i><div><span>Arrival</span>Manas Airport, transfer to your hotel</div></li>
+                    <li><i class="fa-solid fa-bed"></i><div><span>Overnight</span>Hotel in Bishkek (included)</div></li>
+                    <li><i class="fa-solid fa-shower"></i><div><span>Shower</span>Hot shower in your room</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
+            </li>
+
             <!-- Day 1 -->
             <li class="day" id="day-1">
               <div class="day-num"><small>Day</small><b>1</b></div>
@@ -522,7 +639,7 @@
                       by mountains. In the afternoon, you arrive
                       in Bek's home village, where his family
                       welcomes you with a traditional dinner. In
-                      the evening, relax in the family banya after
+                      the evening, relax in the family sauna after
                       two days on the road.
                     </p>
                     <ul class="day-facts">
@@ -530,7 +647,7 @@
                     <li><i class="fa-solid fa-mountain"></i><div><span>Highest point</span>High mountain pass, above 3,000 m</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>Meals</span>Breakfast, lunch, welcome dinner with Bek's family</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>Overnight</span>Bek's family house, village</div></li>
-                    <li><i class="fa-solid fa-hot-tub-person"></i><div><span>Washing</span>Traditional banya</div></li>
+                    <li><i class="fa-solid fa-hot-tub-person"></i><div><span>Washing</span>Traditional sauna</div></li>
                     <li><i class="fa-solid fa-restroom"></i><div><span>Toilet</span>Simple outdoor toilet, shared</div></li>
                     <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>No</div></li>
                     </ul>
@@ -772,14 +889,14 @@
                       afternoon, the village celebrates your
                       journey with a horse show, where local
                       riders show the skills Kyrgyz horsemen are
-                      famous for. After a long-awaited banya, you
+                      famous for. After a long-awaited sauna, you
                       join Bek's family for a farewell dinner.
                     </p>
                     <ul class="day-facts">
                     <li><i class="fa-solid fa-horse"></i><div><span>Horse riding</span>About 2–4 hours</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>Meals</span>Breakfast, lunch, farewell dinner with Bek's family</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>Overnight</span>Bek's family house, village</div></li>
-                    <li><i class="fa-solid fa-hot-tub-person"></i><div><span>Washing</span>Traditional banya</div></li>
+                    <li><i class="fa-solid fa-hot-tub-person"></i><div><span>Washing</span>Traditional sauna</div></li>
                     <li><i class="fa-solid fa-restroom"></i><div><span>Toilet</span>Simple outdoor toilet, shared</div></li>
                     <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>No</div></li>
                     </ul>
@@ -814,11 +931,13 @@
                       back to a hotel with a hot shower and a soft
                       bed.
                     </p>
+                    <p class="day-end-note"><i class="fa-solid fa-van-shuttle"></i><span>After the tour, we take you back to your hotel in the capital to rest (or, if you have an evening flight, we take you to the airport for free).</span></p>
                     <ul class="day-facts">
                     <li><i class="fa-solid fa-van-shuttle"></i><div><span>Driving</span>About 6–7 hours, with stops</div></li>
                     <li><i class="fa-solid fa-utensils"></i><div><span>Meals</span>Breakfast, lunch, dinner</div></li>
                     <li><i class="fa-solid fa-bed"></i><div><span>Overnight</span>Hotel, Bishkek</div></li>
                     <li><i class="fa-solid fa-shower"></i><div><span>Shower</span>Yes, in your room</div></li>
+                    <li><i class="fa-solid fa-restroom"></i><div><span>Toilet</span>Yes, in your room</div></li>
                     <li><i class="fa-solid fa-wifi"></i><div><span>Wi-Fi</span>Yes</div></li>
                     </ul>
                   </div>
@@ -826,6 +945,31 @@
               </details>
             </li>
           </ol>
+          <!-- Fit check before booking (survey.html) -->
+          <div class="survey-cta reveal">
+            <div class="survey-cta-text">
+              <span class="survey-cta-kicker"><i class="fa-regular fa-clock"></i> Coming soon</span>
+              <strong>This route is not open for registration yet</strong>
+              <span>We are still preparing this journey. If you'd like to hear first when it opens, send us an email: bekruby.kg@gmail.com</span>
+              <!-- Coming soon: the survey steps below are kept for when the route opens
+
+              <ol class="survey-steps">
+                <li><b>1</b>Take the survey</li>
+                <li><b>2</b>See if the tour fits you</li>
+                <li><b>3</b>Register for the tour</li>
+              </ol>
+              <div class="survey-why">
+                <b><i class="fa-solid fa-circle-info"></i> Why is this survey required?</b>
+                <ul>
+                  <li>Our tours go to remote mountains: simple stays, long drives, altitude and changing weather.</li>
+                  <li>Your answers help us make sure the trip is safe and enjoyable for you and the whole group.</li>
+                  <li>We can only confirm a registration after the survey.</li>
+                </ul>
+              </div>
+              -->
+            </div>
+            <a href="mailto:bekruby.kg@gmail.com">Email us <i class="fa-regular fa-envelope"></i></a>
+          </div>
         </div>
       </section>
       <!---------- Food ---------->
@@ -895,7 +1039,7 @@
                 <li><i class="fa-solid fa-check"></i>All accommodation: yurts, family houses and a hotel in Bishkek</li>
                 <li><i class="fa-solid fa-check"></i>All meals, cooked by the families</li>
                 <li><i class="fa-solid fa-check"></i>Driver and guide, horses with local horsemen, helmets</li>
-                <li><i class="fa-solid fa-check"></i>Banya, the village horse show and all activities with the families</li>
+                <li><i class="fa-solid fa-check"></i>Sauna, the village horse show and all activities with the families</li>
               </ul>
             </div>
             <div class="includes-col no reveal">
@@ -914,14 +1058,12 @@
       <!---------- CTA ---------->
       <section class="cta" style="background-image: url('assets/images/gallery-optimized/g-horse.jpg')">
         <div class="container">
-          <h2>Bek would love to welcome you home</h2>
+          <h2>Still have questions?</h2>
           <p>
-            Questions about riding, the conditions or the dates? Write to us
-            and we'll tell you honestly whether this journey is right for you.
+            Can't find what you're looking for? Email us directly and we'll get back to you soon.
           </p>
           <div class="cta-actions">
-            <a class="btn btn-primary" href="contact.html">Contact us <i class="fa-solid fa-arrow-right"></i></a>
-            <a class="btn btn-ghost" href="mailto:bekruby.kg@gmail.com"><i class="fa-regular fa-envelope"></i> bekruby.kg@gmail.com</a>
+            <a class="btn btn-primary" href="mailto:bekruby.kg@gmail.com"><i class="fa-regular fa-envelope"></i> Email us: bekruby.kg@gmail.com</a>
           </div>
         </div>
       </section>
@@ -959,15 +1101,15 @@
           <div>
             <h4>Contact</h4>
             <ul class="g2m-footer-contact">
-              <li><i class="fa-solid fa-location-dot"></i><span>87 Suleimanto Street, Ak-Ordo Residential Area, Leninsky District, Bishkek, Kyrgyz Republic</span></li>
+              <li><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_address">Issyk-Kul Region, Kyrgyz Republic</span></li>
               <li><i class="fa-solid fa-envelope"></i><a href="mailto:bekruby.kg@gmail.com">bekruby.kg@gmail.com</a></li>
             </ul>
             <a class="g2m-footer-cta" href="mailto:bekruby.kg@gmail.com" data-i18n="footer_cta">Send email</a>
           </div>
         </div>
         <div class="g2m-footer-bottom">
-          <p data-i18n="footer_legal">Kyrgyz travel agency · Reg No. 11708197200956 · OKPO 34155903</p>
-          <p data-i18n="footer_copy">© Bek &amp; Ruby 2023 — All Rights Reserved.</p>
+          <p data-i18n="footer_legal">Go2Mountains LLC (ОсОО «Гоу ту Маунтинс») · Reg. No. 332596-3302-ООО · OKPO 35166636 · INN 01108202610020</p>
+          <p data-i18n="footer_copy">© 2023–2026 Bek &amp; Ruby — All Rights Reserved.</p>
         </div>
       </div>
     </footer>

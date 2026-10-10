@@ -21,7 +21,7 @@
     TLH: { link: "10days-off-road-v2.html", stars: 4, ok: [7, 8], edge: [6, 9], high: true, riding: true, family: true }, // mid-Jun – mid-Sep
     RGL: { link: "14days-grand-tour.html", stars: 3, ok: [7, 8, 9], edge: [6], high: true }, // mid-Jun – end of Sep
   };
-  const ORDER = ["NML", "IKC", "SKC", "TLH", "RGL", "DNL"]; // same order as the homepage
+  const ORDER = ["NML", "IKC", "SKC", "TLH", "RGL"]; // same order as the homepage (DNL: coming soon, not open for registration)
   const EASY = ["IKC", "NML"];
 
   // ---------- Questions for each tour ----------
@@ -65,7 +65,7 @@
     TLH: [
       { must: true, en: ["Can you ride about 4 hours a day on Days 2 and 3, plus about 4 hours round trip on Day 7? (No experience needed.)", "about 4 hours a day on horseback"], zh: ["你可以在第 2、3 天每天騎馬約 4 小時，第 7 天再往返騎約 4 小時嗎？（不需要經驗）", "每天騎馬約 4 小時"] },
       { must: true, en: ["Are you OK spending most of the trip at 2,500–3,500 m, crossing a 3,400 m pass, with very cold nights?", "high altitude (up to 3,500 m) and cold nights"], zh: ["你可以接受大部分時間在海拔 2,500–3,500 公尺、翻越 3,400 公尺山口，以及非常寒冷的夜晚嗎？", "高海拔（最高 3,500 公尺）與寒冷夜晚"] },
-      { must: true, en: ["Can you go 2 days in a row without a shower, and 2 more nights with only a banya (sauna), which may not always be available?", "days without a shower"], zh: ["你可以接受連續 2 天無法洗澡，另有 2 晚只有桑拿（banya），而且視當地狀況有時可能無法使用嗎？", "幾天無法洗澡"] },
+      { must: true, en: ["Can you go 2 days in a row without a shower, and 2 more nights with only a sauna, which may not always be available?", "days without a shower"], zh: ["你可以接受連續 2 天無法洗澡，另有 2 晚只有桑拿，而且視當地狀況有時可能無法使用嗎？", "幾天無法洗澡"] },
       { must: true, en: ["Are you OK with simple, shared, often outdoor toilets in the mountain camps?", "shared outdoor toilets in camps"], zh: ["你可以接受山區營地簡單、共用、常在戶外的廁所嗎？", "營地共用戶外廁所"] },
       { must: true, en: ["Can you send us your passport details in advance for the Kel-Suu border permit?", "sending passport details for the border permit"], zh: ["你可以事先提供護照資料，申請克蘇湖的邊境通行證嗎？", "提供護照資料申請邊境通行證"] },
       { must: false, en: ["Are you OK with some days of 4–5.5 hours of driving, partly on bumpy off-road tracks?", "Long off-road driving days"], zh: ["你可以接受幾天 4–5.5 小時的車程，部分是顛簸的越野路段嗎？", "長時間越野車程"] },
@@ -75,7 +75,7 @@
       { must: true, en: ["Are you happy moving on most days for two weeks, including four long drives (4–6.5 hours) and rough 4WD tracks?", "two weeks on the move with long 4WD drives"], zh: ["你可以接受兩週大多數日子都在移動，包括四天長車程（4–6.5 小時）與顛簸的越野路段嗎？", "兩週移動與長時間越野車程"] },
       { must: true, en: ["Are you OK with 2 nights at Song-Kul (3,016 m), high passes and cold nights?", "2 nights at 3,016 m and cold nights"], zh: ["你可以接受在頌湖（海拔 3,016 公尺）住 2 晚、翻越高山山口和寒冷的夜晚嗎？", "3,016 公尺住 2 晚與寒冷夜晚"] },
       { must: true, en: ["Are you OK with yurt camps and family homestays, with simple and often shared bathrooms?", "yurt camps with simple shared bathrooms"], zh: ["你可以接受氈房營地和家庭民宿，衛浴簡單且常常共用嗎？", "氈房營地與共用衛浴"] },
-      { must: true, en: ["Are you OK with 2 nights in a simple wooden cottage in Kok-Kiya, with no shower (only a banya, which may not always be available) and a shared outdoor toilet?", "2 nights in Kok-Kiya without a shower"], zh: ["你可以接受在 Kok-Kiya 住 2 晚簡易木屋，沒有淋浴（只有桑拿，視狀況有時可能無法使用），並使用共用戶外廁所嗎？", "Kok-Kiya 2 晚無法洗澡"] },
+      { must: true, en: ["Are you OK with 2 nights in a simple wooden cottage in Kok-Kiya, with no shower (only a sauna, which may not always be available) and a shared outdoor toilet?", "2 nights in Kok-Kiya without a shower"], zh: ["你可以接受在 Kok-Kiya 住 2 晚簡易木屋，沒有淋浴（只有桑拿，視狀況有時可能無法使用），並使用共用戶外廁所嗎？", "Kok-Kiya 2 晚無法洗澡"] },
       { must: true, en: ["Can you send us your passport details in advance for the border permit (Kok-Kiya, Kel-Suu)?", "sending passport details for the border permit"], zh: ["你可以事先提供護照資料，申請邊境通行證（Kok-Kiya、克蘇湖）嗎？", "提供護照資料申請邊境通行證"] },
       { must: false, en: ["Can you hike 1.5–3 hours? (Horse riding is optional on most days.)", "Hikes of 1.5–3 hours"], zh: ["你可以健行 1.5–3 小時嗎？（大部分日子騎馬為選擇性）", "1.5–3 小時的健行"] },
       { must: false, en: ["Can you book a night flight home on Day 14 (or stay longer)?", "A night flight on Day 14"], zh: ["你可以在第 14 天預訂夜間航班回家（或多留幾天）嗎？", "第 14 天的夜間航班"] },
@@ -270,7 +270,7 @@
   // ---------- State ----------
   const A = { tour: "", q: [], month: "", size: "", who: "", health: [], name: "", email: "", phone: "", notes: "" };
   const preset = (new URLSearchParams(location.search).get("tour") || "").toUpperCase();
-  const fixedTour = TOURS[preset] ? preset : "";
+  const fixedTour = ORDER.includes(preset) ? preset : "";
   if (fixedTour) A.tour = fixedTour;
 
   // Steps: 0 choose tour (skipped when the link names the tour), 1 tour questions, 2 group, 3 contact, 4 result

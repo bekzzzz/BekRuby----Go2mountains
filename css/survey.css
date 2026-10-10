@@ -488,3 +488,32 @@
     justify-content: center;
   }
 }
+
+/* Keyboard focus ring */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--orange, #fa7436);
+  outline-offset: 3px;
+}
+
+/* Respect "reduce motion" */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* bigger tap area for the "see the tour" link under each tour */
+.sv-tour-link {
+  display: inline-block;
+  padding: 8px 0;
+}

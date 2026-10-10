@@ -87,9 +87,9 @@ const translations = {
     footer_nav_faq: "Q&A",
     footer_nav_contact: "Contact",
     footer_cta: "Send email",
-    footer_legal:
-      "Kyrgyz travel agency · Reg No. 11708197200956 · OKPO 34155903",
-    footer_copy: "© Bek & Ruby 2023 — All Rights Reserved.",
+    footer_legal: "Go2Mountains LLC (ОсОО «Гоу ту Маунтинс») · Reg. No. 332596-3302-ООО · OKPO 35166636 · INN 01108202610020",
+    footer_address: "Issyk-Kul Region, Kyrgyz Republic",
+    footer_copy: "© 2023–2026 Bek & Ruby — All Rights Reserved.",
   },
   zh: {
     nav_home: "首頁",
@@ -172,9 +172,9 @@ const translations = {
     footer_nav_faq: "常見問題",
     footer_nav_contact: "聯絡",
     footer_cta: "寄送 Email",
-    footer_legal:
-      "吉爾吉斯旅行社 · Reg No. 11708197200956 · OKPO 34155903",
-    footer_copy: "© Bek & Ruby 2023 — 版權所有。",
+    footer_legal: "Go2Mountains 有限責任公司（ОсОО «Гоу ту Маунтинс»）· 登記號 332596-3302-ООО · OKPO 35166636 · 稅號 INN 01108202610020",
+    footer_address: "吉爾吉斯共和國 伊塞克湖州",
+    footer_copy: "© 2023–2026 Bek & Ruby — 版權所有。",
   },
 };
 

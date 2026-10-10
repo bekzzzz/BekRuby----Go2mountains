@@ -304,3 +304,33 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Keyboard focus ring */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--orange, #fa7436);
+  outline-offset: 3px;
+}
+
+/* Respect "reduce motion" */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Short screens (phone held sideways): keep the top banner's text clear of the
+   floating header; the banner simply grows taller instead of hiding text */
+.hero .container,
+.about-hero .container {
+  padding-top: 104px;
+}

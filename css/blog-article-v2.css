@@ -108,6 +108,9 @@ h3:lang(zh-Hant) {
 
 .crumbs a {
   text-decoration: none;
+  display: inline-block;
+  min-width: 44px;
+  padding: 10px 0;
 }
 
 .crumbs a:hover {
@@ -308,6 +311,7 @@ h3:lang(zh-Hant) {
 }
 
 .post-end a {
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -442,6 +446,8 @@ h3:lang(zh-Hant) {
 }
 
 .related-head a {
+  display: inline-block;
+  padding: 10px 0;
   font-weight: 600;
   color: var(--orange-dark);
   text-decoration: none;
@@ -551,4 +557,10 @@ h3:lang(zh-Hant) {
   html {
     scroll-behavior: auto;
   }
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 3px;
 }
