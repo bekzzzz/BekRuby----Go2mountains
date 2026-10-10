@@ -20,10 +20,10 @@
     <link rel="apple-touch-icon" href="assets/bek-ruby-logo/favicon-64.png" />
 
     <!-- Primary SEO -->
-    <title>Go2Mountains — Authentic Kyrgyzstan Tours &amp; Experiences</title>
+    <title>Kyrgyzstan Tours &amp; Small-Group Trips with Locals | Go2Mountains</title>
     <meta
       name="description"
-      content="Explore Kyrgyzstan with local guides. Nomadic culture, mountain treks, horse riding, and bespoke tours — curated by Go2Mountains."
+      content="Small-group and private Kyrgyzstan tours with local hosts Bek &amp; Ruby: Song-Kul, Issyk-Kul, horse riding, yurt stays and nomad life. Chinese or English guide."
     />
     <meta
       name="keywords"
@@ -32,6 +32,8 @@
     <meta name="robots" content="index, follow" />
     <!-- TODO: if this replaces index.html, keep the canonical as the site root -->
     <link rel="canonical" href="https://go2mountains.com/" />
+    <link rel="alternate" hreflang="en" href="https://go2mountains.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://go2mountains.com/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -39,11 +41,11 @@
     <meta property="og:site_name" content="Go2Mountains" />
     <meta
       property="og:title"
-      content="Go2Mountains — Authentic Kyrgyzstan Tours &amp; Experiences"
+      content="Kyrgyzstan Tours &amp; Small-Group Trips with Locals | Go2Mountains"
     />
     <meta
       property="og:description"
-      content="Explore Kyrgyzstan with local guides. Nomadic culture, mountain treks, horse riding, and bespoke tours."
+      content="Small-group and private Kyrgyzstan tours with local hosts Bek &amp; Ruby: Song-Kul, Issyk-Kul, horse riding, yurt stays and nomad life. Chinese or English guide."
     />
     <meta
       property="og:image"
@@ -58,11 +60,11 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Go2Mountains — Authentic Kyrgyzstan Tours &amp; Experiences"
+      content="Kyrgyzstan Tours &amp; Small-Group Trips with Locals | Go2Mountains"
     />
     <meta
       name="twitter:description"
-      content="Explore Kyrgyzstan with local guides. Nomadic culture, mountain treks, horse riding, and bespoke tours."
+      content="Small-group and private Kyrgyzstan tours with local hosts Bek &amp; Ruby: Song-Kul, Issyk-Kul, horse riding, yurt stays and nomad life. Chinese or English guide."
     />
     <meta
       name="twitter:image"
@@ -70,17 +72,6 @@
     />
 
     <!-- Hreflang -->
-    <link rel="alternate" hreflang="en" href="https://go2mountains.com/en/" />
-    <link
-      rel="alternate"
-      hreflang="zh-Hant"
-      href="https://go2mountains.com/zh/"
-    />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://go2mountains.com/"
-    />
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -137,6 +128,7 @@
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Poppins:wght@300;400;500;600&display=swap"
@@ -150,7 +142,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/home-v2.css?v=22" />
-    <script defer src="JS/home-v2.js?v=37"></script>
+    <script defer src="JS/home-v2.js?v=40"></script>
     <link rel="stylesheet" href="css/site-chrome.css?v=4" />
     <script defer src="JS/site-chrome.js?v=6"></script>
   </head>
@@ -222,35 +214,41 @@
     >
       <div class="hero-slide active">
         <img
+          fetchpriority="high"
           src="assets/hero-img/Frame 7.jpg"
+          srcset="assets/hero-img/phone/Frame%207.jpg 900w, assets/hero-img/Frame%207.jpg 1800w" sizes="100vw"
           alt="Traditional Kyrgyzstan village life and nomadic culture"
         />
       </div>
       <div class="hero-slide">
         <img
-          loading="lazy"
-          src="assets/hero-img/Frame 13.jpg"
+          data-src="assets/hero-img/Frame 13.jpg"
+          data-srcset="assets/hero-img/phone/Frame%2013.jpg 900w, assets/hero-img/Frame%2013.jpg 1800w"
+          sizes="100vw"
           alt="Nomadic life at Song-Kol Lake Kyrgyzstan"
         />
       </div>
       <div class="hero-slide">
         <img
-          loading="lazy"
-          src="assets/hero-img/Frame 3.jpg"
+          data-src="assets/hero-img/Frame 3.jpg"
+          data-srcset="assets/hero-img/phone/Frame%203.jpg 900w, assets/hero-img/Frame%203.jpg 1800w"
+          sizes="100vw"
           alt="Epic Kyrgyzstan mountain landscape and alpine scenery"
         />
       </div>
       <div class="hero-slide">
         <img
-          loading="lazy"
-          src="assets/hero-img/Frame 8.jpg"
+          data-src="assets/hero-img/Frame 8.jpg"
+          data-srcset="assets/hero-img/phone/Frame%208.jpg 900w, assets/hero-img/Frame%208.jpg 1800w"
+          sizes="100vw"
           alt="Horses roaming free in Kyrgyzstan mountains"
         />
       </div>
       <div class="hero-slide">
         <img
-          loading="lazy"
-          src="assets/hero-img/Frame 15.jpg"
+          data-src="assets/hero-img/Frame 15.jpg"
+          data-srcset="assets/hero-img/phone/Frame%2015.jpg 900w, assets/hero-img/Frame%2015.jpg 1800w"
+          sizes="100vw"
           alt="Local Kyrgyz food culture and nomadic lifestyle stories"
         />
       </div>
@@ -318,17 +316,17 @@
           <div class="intro-photos reveal">
             <img
               loading="lazy"
-              src="assets/images/gallery-optimized/g-son-kol.jpg"
+              src="assets/images/gallery-optimized-800/g-son-kol.jpg"
               alt="Son-Kol Lake"
             />
             <img
               loading="lazy"
-              src="assets/images/gallery-optimized/g-horse.jpg"
+              src="assets/images/gallery-optimized-800/g-horse.jpg"
               alt="Horses in the mountains"
             />
             <img
               loading="lazy"
-              src="assets/images/gallery-optimized/IMG_1922.jpg"
+              src="assets/images/gallery-optimized-800/IMG_1922.jpg"
               alt="Eagle hunter on horseback"
             />
           </div>
@@ -872,7 +870,7 @@
               <div
                 class="story-thumb"
                 style="
-                  background-image: url(&quot;assets/blog/is-or-sk.png&quot;);
+                  background-image: url(&quot;assets/blog/is-or-sk.jpg&quot;);
                 "
               ></div>
               <div class="story-head">
@@ -1682,20 +1680,6 @@
             <figure>
               <img
                 loading="lazy"
-                src="assets/images/gallery-guest/guest-60.jpg"
-                srcset="
-                  assets/images/gallery-guest-800/guest-60.jpg  800w,
-                  assets/images/gallery-guest/guest-60.jpg     1400w
-                "
-                sizes="(max-width: 640px) 90vw, 60vw"
-                width="1280"
-                height="854"
-                alt="Bishkek with the mountains behind"
-              />
-            </figure>
-            <figure>
-              <img
-                loading="lazy"
                 src="assets/images/gallery-guest/guest-37.jpg"
                 srcset="
                   assets/images/gallery-guest-800/guest-37.jpg  800w,
@@ -2067,7 +2051,7 @@
                 <div
                   class="media-thumb"
                   style="
-                    background-image: url(&quot;assets/image-itinerary/about-us/IG-1.png&quot;);
+                    background-image: url(&quot;assets/image-itinerary/about-us/IG-1.webp&quot;);
                   "
                 >
                   <span class="play"><i class="fa-solid fa-play"></i></span>
@@ -2086,7 +2070,7 @@
                 <div
                   class="media-thumb"
                   style="
-                    background-image: url(&quot;assets/image-itinerary/about-us/IG-2.png&quot;);
+                    background-image: url(&quot;assets/image-itinerary/about-us/IG-2.webp&quot;);
                   "
                 >
                   <span class="play"><i class="fa-solid fa-play"></i></span>
@@ -2108,7 +2092,7 @@
                 <div
                   class="media-thumb"
                   style="
-                    background-image: url(&quot;assets/image-itinerary/about-us/IG-3.png&quot;);
+                    background-image: url(&quot;assets/image-itinerary/about-us/IG-3.webp&quot;);
                   "
                 >
                   <span class="play"><i class="fa-solid fa-play"></i></span>
