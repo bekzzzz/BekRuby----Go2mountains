@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,6 +10,7 @@
     <link rel="apple-touch-icon" href="assets/bek-ruby-logo/favicon-64.png" />
 
     <!-- Primary SEO -->
+    <title>Travel Stories from Kyrgyzstan | Go2Mountains Blog</title>
     <meta name="description" content="Latest travel stories from Kyrgyzstan. Nomadic culture, horse trekking, and mountain adventures told by local guides." />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://go2mountains.com/blog.html" />
@@ -20,7 +21,7 @@
     <meta property="og:site_name" content="Go2Mountains" />
     <meta property="og:title" content="Travel Stories from Kyrgyzstan | Go2Mountains Blog" />
     <meta property="og:description" content="Latest travel stories from Kyrgyzstan. Nomadic culture, horse trekking, and mountain adventures told by local guides." />
-    <meta property="og:image" content="https://go2mountains.com/assets/hero-img/Frame%203.jpg" />
+    <meta property="og:image" content="https://go2mountains.com/assets/images/gallery-optimized/g-son-kol.jpg" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="zh_TW" />
 
@@ -28,19 +29,12 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Travel Stories from Kyrgyzstan | Go2Mountains Blog" />
     <meta name="twitter:description" content="Latest travel stories from Kyrgyzstan. Nomadic culture, horse trekking, and mountain adventures told by local guides." />
-    <meta name="twitter:image" content="https://go2mountains.com/assets/hero-img/Frame%203.jpg" />
+    <meta name="twitter:image" content="https://go2mountains.com/assets/images/gallery-optimized/g-son-kol.jpg" />
 
-    <!-- Hreflang -->
-    <link rel="alternate" hreflang="en" href="https://go2mountains.com/en/" />
-    <link rel="alternate" hreflang="zh-Hant" href="https://go2mountains.com/zh/" />
-    <link rel="alternate" hreflang="x-default" href="https://go2mountains.com/" />
-    <title>Travel Stories from Kyrgyzstan | Go2Mountains Blog</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/blog.css" />
-    <link rel="stylesheet" href="css/guest.review.css" />
-    <link rel="stylesheet" href="css/blog-page.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -50,501 +44,340 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="css/home-v2.css?v=22" />
+    <link rel="stylesheet" href="css/blog-list-v2.css?v=2" />
+    <link rel="stylesheet" href="css/site-chrome.css?v=4" />
+    <script defer src="JS/site-chrome.js?v=6"></script>
   </head>
   <body>
-    <header class="header blog-header">
-      <div class="header-inner">
-        <nav>
-          <div class="logo-wrapper">
-            <a href="index.html">
-              <img
-                loading="eager"
-                class="head-ruby-logo"
-                src="assets/bek-ruby-logo/logo for website.png"
-                alt="Bek Ruby Logo"
-              />
-            </a>
-          </div>
-
-          <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
-            <ul>
-              <li><a href="index.html" data-i18n="nav_home">Home</a></li>
-              <li>
-                <a href="index.html#tours" data-i18n="nav_tours">Tours</a>
-              </li>
-
-              <li><a href="blog.html" data-i18n="nav_stories">Stories</a></li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.youtube.com/@bek_ruby"
-                  data-i18n="nav_youtube"
-                  >Youtube</a
-                >
-              </li>
-              <li><a href="visa.html" data-i18n="nav_visa">Visa</a></li>
-
-              <li><a href="about-us.html" data-i18n="nav_about">About</a></li>
-              <li>
-                <a
-                  href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149"
-                  data-i18n="footer_nav_faq"
-                  >Q&amp;A</a
-                >
-              </li>
-              <!-- <li><a href="visa.html" data-i18n="nav_visa"> Visa</a></li> -->
-              <li class="nav-lang">
-                <a
-                  href="#"
-                  class="nav-lang__btn"
-                  aria-label="Switch language"
-                  data-i18n="nav_lang_label"
-                >
-                  EN / 中文
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
+    <!---------- Site header (shared: css/site-chrome.css + JS/site-chrome.js; links as in index.html) ---------->
+    <header class="g2m-header" id="g2mHeader">
+      <div class="g2m-wrap">
+        <a class="g2m-logo" href="index.html">
+          <img src="assets/bek-ruby-logo/logo for website.png" alt="Bek Ruby Logo" />
+        </a>
+        <ul class="g2m-links" id="g2mLinks">
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="index.html#tours" data-i18n="nav_tours">Tours</a></li>
+          <li><a href="blog.html" data-i18n="nav_stories">Stories</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/@bek_ruby" data-i18n="nav_youtube">Youtube</a></li>
+          <li><a href="visa.html" data-i18n="nav_visa">Visa</a></li>
+          <li><a href="about-us.html" data-i18n="nav_about">About</a></li>
+          <li><a href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149" data-i18n="footer_nav_faq">Q&amp;A</a></li>
+          <li><button class="g2m-lang" id="langBtn" type="button" aria-label="Switch language" data-i18n="nav_lang_label">EN / 中文</button></li>
+        </ul>
+        <a class="g2m-cta" href="https://www.surveycake.com/s/yQpxD" target="_blank" rel="noopener" data-i18n="custom_btn">Start my trip plan</a>
+        <button class="g2m-menu" id="g2mMenu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="g2mLinks">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </header>
 
-    <div class="blog-page-container">
-      <h1 data-i18n="blog_latest">最新文章</h1>
-
-      <div class="blog-grid">
-        <a class="blog-card" href="blog-article-9.html">
-          <img
-            src="assets/blog/is-or-sk.png"
-            alt="Issyk-Kul vs Song-Kol"
-            loading="lazy"
-          />
-          <div class="blog-card__body">
-            <p class="blog-card__date">2025/03/28</p>
-            <h3 data-i18n="blog_card1_title">
-              伊塞克湖 vs. 頌湖：到底該去哪裡玩？
-            </h3>
-            <p class="blog-card__desc" data-i18n="blog_card1_desc">
-              兩大高原湖泊優缺點與行程建議。
-            </p>
-          </div>
-        </a>
-
-        <a class="blog-card" href="blog-article-10.html">
-          <img
-            src="assets/blog/is-or-sk2.jpg"
-            alt="Mongolia vs Kyrgyz steppe"
-            loading="lazy"
-          />
-          <div class="blog-card__body">
-            <p class="blog-card__date">2025/01/15</p>
-            <h3 data-i18n="blog_card2_title">
-              蒙古阿爾泰 vs. 吉爾吉斯：高山草原比較
-            </h3>
-            <p class="blog-card__desc" data-i18n="blog_card2_desc">
-              景色、文化、預算一次看懂差異。
-            </p>
-          </div>
-        </a>
-
-        <a class="blog-card" href="blog-article-8.html">
-          <img
-            src="assets/blog/ata-horse-child.jpg"
-            alt="Self-guided or group travel"
-            loading="lazy"
-          />
-          <div class="blog-card__body">
-            <p class="blog-card__date">2022/03/25</p>
-            <h3 data-i18n="blog_card3_title">來吉爾吉斯，自助還是跟團？</h3>
-            <p class="blog-card__desc" data-i18n="blog_card3_desc">
-              行程自由度、安全、預算怎麼選。
-            </p>
-          </div>
-        </a>
-
-        <a class="blog-card" href="blog-article-7.html">
-          <img
-            src="assets/guest-img/murmur.png"
-            alt="Office to mountains story"
-            loading="lazy"
-          />
-          <div class="blog-card__body">
-            <p class="blog-card__date">2022/04/12</p>
-            <h3 data-i18n="blog_card4_title">
-              從辦公室到天山：我的自由人生旅程
-            </h3>
-            <p class="blog-card__desc" data-i18n="blog_card4_desc">
-              一場婚禮、一段自由人生的開始。
-            </p>
-          </div>
-        </a>
-
-        <a class="blog-card" href="blog-article-11.html">
-          <img src="assets/blog/osen.webp" alt="Autumn ride" loading="lazy" />
-          <div class="blog-card__body">
-            <p class="blog-card__date">2022/11/12</p>
-            <h3 data-i18n="blog_card5_title">馬背上的秋色探險——高山森林騎行</h3>
-            <p class="blog-card__desc" data-i18n="blog_card5_desc">
-              高山針葉林與金色草坡的騎行日記。
-            </p>
-          </div>
-        </a>
-
-        <a class="blog-card" href="blog-article-6.html">
-          <img
-            src="assets/blog/5 thins to do.jpg"
-            alt="Five things to do"
-            loading="lazy"
-          />
-          <div class="blog-card__body">
-            <p class="blog-card__date">2022/06/28</p>
-            <h3 data-i18n="blog_card6_title">來吉爾吉斯一定要體驗的五件事</h3>
-            <p class="blog-card__desc" data-i18n="blog_card6_desc">
-              從鷹獵到溫泉，最不能錯過的亮點。
-            </p>
-          </div>
-        </a>
-
-        <a class="blog-card" href="blog-article-4.html">
-          <img src="assets/blog/murmur.jpg" alt="Yurt culture" loading="lazy" />
-          <div class="blog-card__body">
-            <p class="blog-card__date">2024/07/14</p>
-            <h3 data-i18n="blog_card7_title">草原遊牧民族也住「蒙古包」？</h3>
-            <p class="blog-card__desc" data-i18n="blog_card7_desc">
-              遊牧人的家與生活方式。
-            </p>
-          </div>
-        </a>
-
-        <a class="blog-card" href="blog-article-5.html">
-          <img
-            src="assets/blog/mlidi.jpg"
-            alt="Eagle hunting culture"
-            loading="lazy"
-          />
-          <div class="blog-card__body">
-            <p class="blog-card__date">2024/07/09</p>
-            <h3 data-i18n="blog_card8_title">鷹獵人文化探索之旅</h3>
-            <p class="blog-card__desc" data-i18n="blog_card8_desc">
-              與鷹同行的一天，傳統與技藝。
-            </p>
-          </div>
-        </a>
-
-        <a class="blog-card" href="blog-article-12.html">
-          <img
-            src="assets/blog/son-kol.jpg"
-            alt="Song-Kol journey"
-            loading="lazy"
-          />
-          <div class="blog-card__body">
-            <p class="blog-card__date">2024/02/18</p>
-            <h3 data-i18n="blog_card9_title">
-              Riding to Song-Kol: 8 days in the highlands
-            </h3>
-            <p class="blog-card__desc" data-i18n="blog_card9_desc">
-              高原湖的馬背日常與家庭旅途心得。
-            </p>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <section class="blog-page-coming-soon">
-      <div class="blog-page-coming-soon__inner">
-        <p class="blog-page-coming-soon__eyebrow" data-i18n="blog_coming_full">
-          Coming soon!
-        </p>
-        <h2 class="blog-page-coming-soon__title" data-i18n="blog_coming">
-          Blog posts are coming soon !
-        </h2>
-        <p class="blog-page-coming-soon__desc">
-          New travel stories, guides, and behind-the-scenes films will be
-          published here.
+    <!---------- Hero ---------->
+    <section class="blog-hero" style="background-image: url('assets/images/gallery-optimized/g-son-kol.jpg')">
+      <div class="container">
+        <span class="hero-badge"><i class="fa-solid fa-book-open"></i> Go2Mountains Stories</span>
+        <h1>Stories from Kyrgyzstan</h1>
+        <p>
+          Nomad life, horses, mountain lakes and the people we meet along the
+          way: travel guides and stories from Bek, Ruby and our guests.
         </p>
       </div>
     </section>
 
-    <!-------- footer ---------->
-
-    <footer class="footer">
-      <div class="footer-shell">
-        <div class="footer-top">
-          <div class="footer-brand">
-            <a href="index.html">
-              <img
-                loading="lazy"
-                src="assets/image-itinerary/about-us/Bek-Ruby.png"
-                alt="Bek Ruby Logo"
-              />
-            </a>
-            <p data-i18n="footer_about">
-              Kyrgyzstan journeys with real locals. Films, stories, and bespoke
-              trips designed for curious travelers.
-            </p>
-            <div class="footer-social">
-              <a
-                target="_blank"
-                href="https://www.facebook.com/profile.php?id=100063753081808"
-                aria-label="Facebook"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/bek_ruby?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                aria-label="Instagram"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a
-                target="_blank"
-                href="https://www.youtube.com/@bek_ruby"
-                aria-label="YouTube"
-                ><i class="fa-brands fa-youtube"></i
-              ></a>
-            </div>
+    <main class="section">
+      <div class="container">
+        <!---------- Featured (newest) ---------->
+        <a class="featured reveal" href="stories-1.html">
+          <img src="assets/images/blog/S-3.jpg" alt="" />
+          <div class="featured-body">
+            <span class="eyebrow">Latest story · Nomad Culture</span>
+            <h2>The Circle in the Sky: Why the Yurt Crown Is on Kyrgyzstan’s Flag</h2>
+            <p>Lie on your back in a Kyrgyz yurt and look up: the wooden ring above you, the tündük, is a family heirloom, a symbol of home and the centre of the national flag.</p>
+            <span class="read-link">Read the story →</span>
           </div>
+        </a>
 
-          <div class="footer-columns">
-            <div>
-              <h4>Explore</h4>
-              <ul>
-                <li>
-                  <a href="index.html" data-i18n="footer_nav_home">Home</a>
-                </li>
-                <li>
-                  <a href="index.html#tours" data-i18n="footer_nav_tours"
-                    >Tours</a
-                  >
-                </li>
-                <li>
-                  <a href="blog.html" data-i18n="footer_nav_stories">Stories</a>
-                </li>
-                <li>
-                  <a href="about-us.html" data-i18n="footer_nav_about"
-                    >About us</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4>Helpful</h4>
-              <ul>
-                <li>
-                  <!-- <a href="visa.html" data-i18n="footer_nav_visa">Visa</a> -->
-                </li>
-                <li>
-                  <a
-                    href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149"
-                    data-i18n="footer_nav_faq"
-                    >Q&amp;A</a
-                  >
-                </li>
-                <li>
-                  <a href="contact.html" data-i18n="footer_nav_contact"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4>Contact</h4>
-              <ul class="footer-contact">
-                <li>
-                  <i class="fa-solid fa-location-dot"></i> 87 Suleimanto Street,
-                  Ak-Ordo Residential Area, Leninsky District, Bishkek, Kyrgyz
-                  Republic
-                </li>
-                <li>
-                  <i class="fa-solid fa-phone"></i>
-                </li>
-                <li>
-                  <i class="fa-solid fa-envelope"></i>
-                  <a href="mailto:info@kaganvoyage.com">bekruby.kg@gmail.com</a>
-                </li>
-              </ul>
-              <a
-                class="footer-cta"
-                href="mailto:bekruby.kg@gmail.com"
-                data-i18n="footer_cta"
-                >Send email</a
-              >
-            </div>
+        <!---------- Filters ---------->
+        <div class="blog-toolbar">
+          <div class="filters" id="catFilters" role="group" aria-label="Filter by topic">
+            <button class="filter active" type="button" data-cat="all">All</button>
+            <button class="filter" type="button" data-cat="culture">Nomad Culture</button>
+            <button class="filter" type="button" data-cat="guides">Travel Guides</button>
+            <button class="filter" type="button" data-cat="stories">Travel Stories</button>
+            <button class="filter" type="button" data-cat="guest">Guest Voices</button>
           </div>
         </div>
+        <p class="blog-count" id="blogCount" aria-live="polite"></p>
 
-        <div class="footer-bottom">
-          <div class="footer-legal">
-            <p data-i18n="footer_legal">
-              吉爾吉斯旅行社 · Reg No. 11708197200956 · OKPO 34155903
-            </p>
+        <!---------- All articles (newest first) ---------->
+        <div class="post-grid" id="postGrid">
+            <a class="post-card reveal" href="stories-1.html" data-cat="culture" data-lang="en">
+              <div class="post-card-media">
+                <img loading="lazy" src="assets/images/blog/S-3.jpg" alt="" />
+              </div>
+              <div class="post-card-body">
+                <span class="post-cat">Nomad Culture</span>
+                <h3>The Circle in the Sky: Why the Yurt Crown Is on Kyrgyzstan’s Flag</h3>
+                <p>Lie on your back in a Kyrgyz yurt and look up: the wooden ring above you, the tündük, is a family heirloom, a symbol of home and the centre of the national flag.</p>
+                <div class="post-meta-row"><span><i class="fa-regular fa-calendar"></i>2026/10/03</span><span><i class="fa-regular fa-clock"></i>2 min read</span></div>
+              </div>
+            </a>
+            <a class="post-card reveal" href="stories-2.html" data-cat="culture" data-lang="en">
+              <div class="post-card-media">
+                <img loading="lazy" src="assets/images/gallery-optimized/g-horse.jpg" alt="" />
+              </div>
+              <div class="post-card-body">
+                <span class="post-cat">Nomad Culture</span>
+                <h3>Manas: The Epic Kyrgyz Storytellers Recite From Memory</h3>
+                <p>One of the longest epic poems in the world, passed down by heart for generations: the story of Manas, the manaschi who perform it, and where you’ll still meet the hero in Kyrgyzstan today.</p>
+                <div class="post-meta-row"><span><i class="fa-regular fa-calendar"></i>2026/10/03</span><span><i class="fa-regular fa-clock"></i>2 min read</span></div>
+              </div>
+            </a>
+            <a class="post-card reveal" href="stories-3.html" data-cat="guides" data-lang="en">
+              <div class="post-card-media">
+                <img loading="lazy" src="assets/8day-classic-tour/osh.jpg" alt="" />
+              </div>
+              <div class="post-card-body">
+                <span class="post-cat">Travel Guides</span>
+                <h3>A Morning at Osh Bazaar: Bread, Dried Fruit and Bishkek Life</h3>
+                <p>Bishkek’s biggest market is noisy, colourful and delicious. What to try, what to buy and how to shop like a local at Osh Bazaar.</p>
+                <div class="post-meta-row"><span><i class="fa-regular fa-calendar"></i>2026/10/03</span><span><i class="fa-regular fa-clock"></i>2 min read</span></div>
+              </div>
+            </a>
+            <a class="post-card reveal" href="stories-4.html" data-cat="guides" data-lang="en">
+              <div class="post-card-media">
+                <img loading="lazy" src="assets/images/weather-img/spring.jpg" alt="" />
+              </div>
+              <div class="post-card-body">
+                <span class="post-cat">Travel Guides</span>
+                <h3>Poppies, Pastures, Gold and Snow: Kyrgyzstan Through Four Seasons</h3>
+                <p>When is the best time to visit Kyrgyzstan? A season-by-season guide: poppy fields in spring, high pastures in summer, golden valleys in autumn and snowy mountains in winter.</p>
+                <div class="post-meta-row"><span><i class="fa-regular fa-calendar"></i>2026/10/03</span><span><i class="fa-regular fa-clock"></i>2 min read</span></div>
+              </div>
+            </a>
+            <a class="post-card reveal" href="stories-5.html" data-cat="culture" data-lang="en">
+              <div class="post-card-media">
+                <img loading="lazy" src="assets/images/blog/s-22.jpg" alt="" />
+              </div>
+              <div class="post-card-body">
+                <span class="post-cat">Nomad Culture</span>
+                <h3>Eagle, Hound and Bow: The Ancient Hunting Partnership of the Kyrgyz</h3>
+                <p>For centuries, Kyrgyz hunters worked with golden eagles, swift taigan hounds and the bow. Meet the berkutchi, learn how an eagle is trained, and see where the tradition lives on.</p>
+                <div class="post-meta-row"><span><i class="fa-regular fa-calendar"></i>2026/10/03</span><span><i class="fa-regular fa-clock"></i>2 min read</span></div>
+              </div>
+            </a>
+            <a class="post-card reveal" href="stories-6.html" data-cat="guides" data-lang="en">
+              <div class="post-card-media">
+                <img loading="lazy" src="assets/hero-page-img/hospitality.jpg" alt="" />
+              </div>
+              <div class="post-card-body">
+                <span class="post-cat">Travel Guides</span>
+                <h3>15 Kyrgyz Words to Learn Before Your Trip</h3>
+                <p>A few words of Kyrgyz open every door. Greetings, thank-yous and the words you’ll hear every day in the mountains, from jailoo and kymyz to the meaning behind Issyk-Kul.</p>
+                <div class="post-meta-row"><span><i class="fa-regular fa-calendar"></i>2026/10/03</span><span><i class="fa-regular fa-clock"></i>2 min read</span></div>
+              </div>
+            </a>
+            <a class="post-card reveal" href="blog-article-9-v2-en.html" data-cat="guides" data-lang="en">
+              <div class="post-card-media">
+                <img loading="lazy" src="assets/blog/769A1454.jpg" alt="" />
+              </div>
+              <div class="post-card-body">
+                <span class="post-cat">Travel Guides</span>
+                <h3>Issyk-Kul vs. Song-Kul: Which Lake Should You Visit?</h3>
+                <p>Issyk-Kul or Song-Kul? Altitude, highlights, access and seasons compared, to help you decide in the simplest way which Kyrgyz lake to visit.</p>
+                <div class="post-meta-row"><span><i class="fa-regular fa-calendar"></i>2025/03/28</span><span><i class="fa-regular fa-clock"></i>1 min read</span></div>
+              </div>
+            </a>
+            <a class="post-card reveal" href="blog-article-10-v2-en.html" data-cat="guides" data-lang="en">
+              <div class="post-card-media">
+                <img loading="lazy" src="assets/blog/MvsK.jpg" alt="" />
+              </div>
+              <div class="post-card-body">
+                <span class="post-cat">Travel Guides</span>
+                <h3>Mongolian Altai vs. Kyrgyzstan: A Complete Comparison of Mountain-Steppe Adventures</h3>
+                <p>Landscapes, travel experience, wildlife and access: the Mongolian Altai and Kyrgyzstan both have mountains and steppe, but traveling them is completely different. Which suits you better?</p>
+                <div class="post-meta-row"><span><i class="fa-regular fa-calendar"></i>2025/01/15</span><span><i class="fa-regular fa-clock"></i>2 min read</span></div>
+              </div>
+            </a>
+            <a class="post-card reveal" href="blog-article-4-v2-en.html" data-cat="guest" data-lang="en">
+              <div class="post-card-media">
+                <img loading="lazy" src="assets/images/blog/S-2.jpg" alt="" />
+              </div>
+              <div class="post-card-body">
+                <span class="post-cat">Guest Voices</span>
+                <h3>Do Kyrgyz Nomads Live in "Mongolian Yurts" Too?</h3>
+                <p>Do Kyrgyz nomads live in </p>
+                <div class="post-meta-row"><span><i class="fa-regular fa-calendar"></i>2024/07/14</span><span><i class="fa-regular fa-clock"></i>1 min read</span></div>
+              </div>
+            </a>
+            <a class="post-card reveal" href="blog-article-5-v2-en.html" data-cat="guest" data-lang="en">
+              <div class="post-card-media">
+                <img loading="lazy" src="assets/images/blog/s-33.jpg" alt="" />
+              </div>
+              <div class="post-card-body">
+                <span class="post-cat">Guest Voices</span>
+                <h3>Discovering Kyrgyzstan: A Thrilling, Moving Day with Traditional Eagle Hunters</h3>
+                <p>Meeting a Kyrgyz eagle hunter and his golden eagle: a hunting demonstration, holding the eagle ourselves, and the bond passed down between hunter, eagle and son.</p>
+                <div class="post-meta-row"><span><i class="fa-regular fa-calendar"></i>2024/07/09</span><span><i class="fa-regular fa-clock"></i>2 min read</span></div>
+              </div>
+            </a>
+            <a class="post-card reveal" href="blog-article-3-v2-en.html" data-cat="guest" data-lang="en">
+              <div class="post-card-media">
+                <img loading="lazy" src="assets/images/blog/An-1.jpg" alt="" />
+              </div>
+              <div class="post-card-body">
+                <span class="post-cat">Guest Voices</span>
+                <h3>The Best Ride of My Life in Kyrgyzstan, the "Switzerland of Central Asia"</h3>
+                <p>Leaving at 5:30 am, twelve hours on the road, and the next day a ride through May snow to Kel-Suu Lake, above 3,000 m: an unforgettable mountain ride.</p>
+                <div class="post-meta-row"><span><i class="fa-regular fa-calendar"></i>2024/06/14</span><span><i class="fa-regular fa-clock"></i>2 min read</span></div>
+              </div>
+            </a>
+            <a class="post-card reveal" href="blog-article-12-v2.html" data-cat="stories" data-lang="en">
+              <div class="post-card-media">
+                <img loading="lazy" src="assets/blog/son-kol.jpg" alt="" />
+              </div>
+              <div class="post-card-body">
+                <span class="post-cat">Travel Stories</span>
+                <h3>Riding to Song-Kol: 8 days in the highlands</h3>
+                <p>Eight lessons from our latest 8-day loop to Song-Kul: slow pacing, cozy yurt nights, horses matched to every rider, family-style food, and the best light of the trip.</p>
+                <div class="post-meta-row"><span><i class="fa-regular fa-calendar"></i>2024/02/18</span><span><i class="fa-regular fa-clock"></i>2 min read</span></div>
+              </div>
+            </a>
+            <a class="post-card reveal" href="blog-article-11-v2-en.html" data-cat="stories" data-lang="en">
+              <div class="post-card-media">
+                <img loading="lazy" src="assets/blog/Outhmn.jpg" alt="" />
+              </div>
+              <div class="post-card-body">
+                <span class="post-cat">Travel Stories</span>
+                <h3>An Autumn Ride in Kyrgyzstan</h3>
+                <p>Published in the first issue of the travel magazine La Listo: through golden forests, a picnic in the snow and more than five hours on horseback. Ruby's autumn ride in Kyrgyzstan.</p>
+                <div class="post-meta-row"><span><i class="fa-regular fa-calendar"></i>2022/11/12</span><span><i class="fa-regular fa-clock"></i>3 min read</span></div>
+              </div>
+            </a>
+            <a class="post-card reveal" href="blog-article-6-v2-en.html" data-cat="stories" data-lang="en">
+              <div class="post-card-media">
+                <img loading="lazy" src="assets/guest-img/5 thins to do.jpg" alt="" />
+              </div>
+              <div class="post-card-body">
+                <span class="post-cat">Travel Stories</span>
+                <h3>Five Things You Must Do in Kyrgyzstan</h3>
+                <p>Ride across the steppe, walk into the mountains, eat beshbarmak, melt in local hospitality, and spend a night in a yurt under the stars: five things you must do in Kyrgyzstan.</p>
+                <div class="post-meta-row"><span><i class="fa-regular fa-calendar"></i>2022/06/28</span><span><i class="fa-regular fa-clock"></i>3 min read</span></div>
+              </div>
+            </a>
+            <a class="post-card reveal" href="blog-article-7-v2-en.html" data-cat="stories" data-lang="en">
+              <div class="post-card-media">
+                <img loading="lazy" src="assets/guest-img/murmur.png" alt="" />
+              </div>
+              <div class="post-card-body">
+                <span class="post-cat">Travel Stories</span>
+                <h3>From the Office to the Tien Shan: My Journey to a Free Life</h3>
+                <p>Leaving the office at 25, founding Little OH!, backpacking through more than thirty countries, and finally a wedding at the foot of the Tien Shan, arriving on horseback: Ruby's journey to a free life.</p>
+                <div class="post-meta-row"><span><i class="fa-regular fa-calendar"></i>2022/04/12</span><span><i class="fa-regular fa-clock"></i>2 min read</span></div>
+              </div>
+            </a>
+            <a class="post-card reveal" href="blog-article-8-v2-en.html" data-cat="guides" data-lang="en">
+              <div class="post-card-media">
+                <img loading="lazy" src="assets/guest-img/ata-horse.png" alt="" />
+              </div>
+              <div class="post-card-body">
+                <span class="post-cat">Travel Guides</span>
+                <h3>Visiting Kyrgyzstan: Independent Travel or a Group Tour?</h3>
+                <p>Language, roads, hiking safety and travel information: Ruby, who has traveled independently through more than 30 countries, explains the real challenges of traveling Kyrgyzstan on your own, and how to choose what suits you.</p>
+                <div class="post-meta-row"><span><i class="fa-regular fa-calendar"></i>2022/03/25</span><span><i class="fa-regular fa-clock"></i>2 min read</span></div>
+              </div>
+            </a>
+        </div>
+        <p class="empty-note" id="emptyNote" hidden>No articles match this filter yet.</p>
+      </div>
+    </main>
+
+    <!---------- Site footer (shared: css/site-chrome.css; details as in index.html) ---------->
+    <footer class="g2m-footer">
+      <div class="g2m-wrap">
+        <div class="g2m-footer-top">
+          <div class="g2m-footer-brand">
+            <a href="index.html"><img loading="lazy" src="assets/bek-ruby-logo/logo for website.png" alt="Bek Ruby Logo" /></a>
+            <p data-i18n="footer_about">Kyrgyzstan journeys with real locals. Films, stories, and bespoke trips designed for curious travelers.</p>
+            <div class="g2m-social">
+              <a target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=100063753081808" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a target="_blank" rel="noopener" href="https://www.instagram.com/bek_ruby?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a target="_blank" rel="noopener" href="https://www.youtube.com/@bek_ruby" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
           </div>
-          <p class="footer-copy" data-i18n="footer_copy">
-            © Bek & Ruby 2023 — All Rights Reserved.
-          </p>
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html" data-i18n="footer_nav_home">Home</a></li>
+              <li><a href="index.html#tours" data-i18n="footer_nav_tours">Tours</a></li>
+              <li><a href="blog.html" data-i18n="footer_nav_stories">Stories</a></li>
+              <li><a href="about-us.html" data-i18n="footer_nav_about">About us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Helpful</h4>
+            <ul>
+              <li><a href="https://kyrgyzstan-tour.notion.site/Bek-Ruby-QA-156e583a17c180a991f8ee8a7355b936?pvs=149" data-i18n="footer_nav_faq">Q&amp;A</a></li>
+              <li><a href="contact.html" data-i18n="footer_nav_contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul class="g2m-footer-contact">
+              <li><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_address">Issyk-Kul Region, Kyrgyz Republic</span></li>
+              <li><i class="fa-solid fa-envelope"></i><a href="mailto:bekruby.kg@gmail.com">bekruby.kg@gmail.com</a></li>
+            </ul>
+            <a class="g2m-footer-cta" href="mailto:bekruby.kg@gmail.com" data-i18n="footer_cta">Send email</a>
+          </div>
+        </div>
+        <div class="g2m-footer-bottom">
+          <p data-i18n="footer_legal">Go2Mountains LLC (ОсОО «Гоу ту Маунтинс») · Reg. No. 332596-3302-ООО · OKPO 35166636 · INN 01108202610020</p>
+          <p data-i18n="footer_copy">© 2023–2026 Bek &amp; Ruby — All Rights Reserved.</p>
         </div>
       </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
-    ></script>
-    <script src="testimonial.js"></script>
     <script>
-      var navLinks = document.getElementById("navLinks");
+      // Topic + language filters, and fade-in on scroll
+      document.addEventListener("DOMContentLoaded", () => {
+        const cards = [...document.querySelectorAll(".post-card")];
+        const count = document.getElementById("blogCount");
+        const empty = document.getElementById("emptyNote");
+        let cat = "all";
+        let lang = "all";
 
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-
-      const translations = {
-        en: {
-          nav_home: "Home",
-          nav_tours: "Tours",
-          nav_stories: "Stories",
-          nav_youtube: "Youtube",
-          nav_about: "About",
-          nav_visa: "Visa",
-          nav_lang_label: "EN / 中文",
-          blog_latest: "Latest articles",
-          blog_card1_title: "Issyk-Kul vs. Song-Kol: which to visit?",
-          blog_card1_desc:
-            "Pros, cons, and itinerary tips for two alpine lakes.",
-          blog_card2_title: "Mongolian Altai vs. Kyrgyz high grasslands",
-          blog_card2_desc: "Landscape, culture, and budget at a glance.",
-          blog_card3_title: "Kyrgyzstan: self-guided or join a tour?",
-          blog_card3_desc: "How to choose for flexibility, safety, and budget.",
-          blog_card4_title: "From office to Tien Shan: my journey to freedom",
-          blog_card4_desc: "A wedding sparked a life of freedom.",
-          blog_card5_title: "Autumn on horseback — riding forested slopes",
-          blog_card5_desc: "A ride through conifer forests and golden hills.",
-          blog_card6_title: "Five must-do experiences in Kyrgyzstan",
-          blog_card6_desc:
-            "From eagle hunting to hot springs, can’t-miss highlights.",
-          blog_card7_title: 'Do steppe nomads also live in "yurts"?',
-          blog_card7_desc: "A look at the home and lifestyle of nomads.",
-          blog_card8_title: "Eagle hunter culture in a day",
-          blog_card8_desc: "Tradition and technique alongside an eagle.",
-          blog_card9_title: "Riding to Song-Kol: 8 days in the highlands",
-          blog_card9_desc:
-            "Horseback routines and a family trip at a highland lake.",
-          blog_coming: "Blog posts are coming soon!",
-          footer_about:
-            "Kyrgyzstan journeys with real locals. Films, stories, and bespoke trips designed for curious travelers.",
-          footer_nav_home: "Home",
-          footer_nav_tours: "Tours",
-          footer_nav_stories: "Stories",
-          footer_nav_about: "About us",
-          footer_nav_visa: "Visa",
-          footer_nav_faq: "Q&A",
-          footer_nav_contact: "Contact",
-          footer_cta: "Send email",
-          footer_legal:
-            "Kyrgyz travel agency · Reg No. 11708197200956 · OKPO 34155903",
-          footer_copy: "© Bek & Ruby 2023 — All Rights Reserved.",
-        },
-        zh: {
-          nav_home: "首頁",
-          nav_tours: "行程",
-          nav_stories: "故事",
-          nav_youtube: "YouTube",
-          nav_about: "關於我們",
-          nav_visa: "簽證",
-          nav_lang_label: "中文 / EN",
-          blog_latest: "最新文章",
-          blog_card1_title: "伊塞克湖 vs. 頌湖：到底該去哪裡玩？",
-          blog_card1_desc: "兩大高原湖泊優缺點與行程建議。",
-          blog_card2_title: "蒙古阿爾泰 vs. 吉爾吉斯：高山草原比較",
-          blog_card2_desc: "景色、文化、預算一次看懂差異。",
-          blog_card3_title: "來吉爾吉斯，自助還是跟團？",
-          blog_card3_desc: "行程自由度、安全、預算怎麼選。",
-          blog_card4_title: "從辦公室到天山：我的自由人生旅程",
-          blog_card4_desc: "一場婚禮、一段自由人生的開始。",
-          blog_card5_title: "馬背上的秋色探險——高山森林騎行",
-          blog_card5_desc: "高山針葉林與金色草坡的騎行日記。",
-          blog_card6_title: "來吉爾吉斯一定要體驗的五件事",
-          blog_card6_desc: "從鷹獵到溫泉，最不能錯過的亮點。",
-          blog_card7_title: "草原遊牧民族也住「蒙古包」？",
-          blog_card7_desc: "遊牧人的家與生活方式。",
-          blog_card8_title: "鷹獵人文化探索之旅",
-          blog_card8_desc: "與鷹同行的一天，傳統與技藝。",
-          blog_card9_title: "騎馬到頌湖：高原 8 天之旅",
-          blog_card9_desc: "高原湖的馬背日常與家庭旅途心得。",
-          blog_coming: "部落格內容即將上線，敬請期待！",
-          footer_about:
-            "與在地人一起走進吉爾吉斯。影片、故事與客製旅程，為好奇的旅人而生。",
-          footer_nav_home: "首頁",
-          footer_nav_tours: "行程",
-          footer_nav_stories: "故事",
-          footer_nav_about: "關於我們",
-          footer_nav_visa: "簽證",
-          footer_nav_faq: "常見問題",
-          footer_nav_contact: "聯絡",
-          footer_cta: "寄送 Email",
-          footer_legal:
-            "吉爾吉斯旅行社 · Reg No. 11708197200956 · OKPO 34155903",
-          footer_copy: "© Bek & Ruby 2023 — 版權所有。",
-        },
-      };
-
-      function setLanguage(lang) {
-        const bundle = translations[lang] || translations.en;
-        document.documentElement.lang = lang === "zh" ? "zh-Hant" : "en";
-        document.querySelectorAll("[data-i18n]").forEach((el) => {
-          const key = el.dataset.i18n;
-          if (!bundle[key]) return;
-          const value = bundle[key];
-          if (value.includes("<")) {
-            el.innerHTML = value;
-          } else {
-            el.textContent = value;
-          }
-        });
-        localStorage.setItem("siteLang", lang);
-        window.currentLang = lang;
-      }
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const saved = localStorage.getItem("siteLang") || "zh";
-        setLanguage(saved);
-
-        const langBtn = document.querySelector(".nav-lang__btn");
-        if (langBtn) {
-          langBtn.addEventListener("click", function (e) {
-            e.preventDefault();
-            const next =
-              (localStorage.getItem("siteLang") || "zh") === "zh" ? "en" : "zh";
-            setLanguage(next);
+        function apply() {
+          let shown = 0;
+          cards.forEach((card) => {
+            const ok = (cat === "all" || card.dataset.cat === cat) && (lang === "all" || card.dataset.lang === lang);
+            card.hidden = !ok;
+            if (ok) shown++;
           });
+          count.textContent = shown + (shown === 1 ? " article" : " articles");
+          empty.hidden = shown > 0;
         }
-      });
 
-      let listVideo = document.querySelectorAll(".video-list .vid");
-      let mainVideo = document.querySelector(".main-video iframe");
-      let title = document.querySelector(".main-video .title");
+        function group(id, key, set) {
+          const buttons = [...document.querySelectorAll("#" + id + " button")];
+          buttons.forEach((b) =>
+            b.addEventListener("click", () => {
+              buttons.forEach((x) => x.classList.toggle("active", x === b));
+              set(b.dataset[key]);
+              apply();
+            })
+          );
+        }
+        group("catFilters", "cat", (v) => (cat = v));
+        apply();
 
-      listVideo.forEach((video) => {
-        video.onclick = () => {
-          listVideo.forEach((vid) => vid.classList.remove("active"));
-          video.classList.add("active");
-          if (video.classList.contains("active")) {
-            let src = video.children[0].getAttribute("src");
-            mainVideo.src = src;
-            let text = video.children[1].innerHTML;
-            title.innerHTML = text;
-          }
-        };
+        const els = document.querySelectorAll(".reveal");
+        if (!("IntersectionObserver" in window)) return els.forEach((el) => el.classList.add("visible"));
+        const io = new IntersectionObserver(
+          (entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("visible"); io.unobserve(e.target); } }),
+          { threshold: 0.08 }
+        );
+        els.forEach((el) => io.observe(el));
       });
     </script>
   </body>
