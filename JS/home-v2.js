@@ -429,7 +429,7 @@ const TOURS = [
     style: "culture",
     title_en: "8 days · Nomad life + slow days in Karakol",
     title_zh: "8天 遊牧生活＋Karakol 定點慢遊",
-    img: "assets/image-itinerary/7d-milking-cow.jpg",
+    img: "assets/image-itinerary/card/7d-milking-cow.jpg",
     link: "7days-nomad-life.html",
     label_en: "Nomad homestay",
     label_zh: "遊牧家庭寄宿",
@@ -456,7 +456,7 @@ const TOURS = [
     style: "slow",
     title_en: "8 days · Issyk-Kul classic: slow travel in the valleys",
     title_zh: "8天 Issyk-Kul 經典山谷慢旅行",
-    img: "assets/image-itinerary/8d-yurt-valley-autumn.jpg",
+    img: "assets/image-itinerary/card/8d-yurt-valley-autumn.jpg",
     link: "8days-Issyk-kul.html",
     label_en: "Slow travel · Families",
     label_zh: "慢旅行・親子長輩",
@@ -484,7 +484,7 @@ const TOURS = [
     style: "classic",
     title_en: "8 days · Song-Kul classic: the heart of nomad life",
     title_zh: "8天 Song-Kul 經典遊牧之心",
-    img: "assets/images-7-day-tour-section/son-kol.jpg",
+    img: "assets/image-itinerary/card/son-kol.jpg",
     link: "8days-classic.html",
     label_en: "Classic loop",
     label_zh: "經典環線",
@@ -512,7 +512,7 @@ const TOURS = [
     style: "adventure",
     title_en: "10 days · Three lakes: highland off-road horse adventure",
     title_zh: "10天 三湖高山越野騎馬冒險",
-    img: "assets/image-itinerary/10d-kel-suu-lake.jpg",
+    img: "assets/image-itinerary/card/10d-kel-suu-lake.jpg",
     link: "10days-off-road-v2.html",
     label_en: "Horse trek · Off-road",
     label_zh: "騎馬・越野",
@@ -540,7 +540,7 @@ const TOURS = [
     style: "adventure",
     title_en: "14 days · The grand loop of Kyrgyzstan",
     title_zh: "14天 全境經典大環線",
-    img: "assets/image-itinerary/14d-song-kul-4wd.jpg",
+    img: "assets/image-itinerary/card/14d-song-kul-4wd.jpg",
     link: "14days-grand-tour.html",
     label_en: "Grand tour",
     label_zh: "深度大環線",
@@ -701,6 +701,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ---------- Hero slideshow ----------
   const slides = [...document.querySelectorAll(".hero-slide")];
+  // Slides 2–5 load only after the page is ready, so the first screen appears faster
+  const loadLaterSlides = () =>
+    slides.forEach((s) => {
+      const img = s.querySelector("img[data-src]");
+      if (!img) return;
+      img.srcset = img.dataset.srcset || "";
+      img.src = img.dataset.src;
+      img.removeAttribute("data-src");
+    });
+  if (document.readyState === "complete") loadLaterSlides();
+  else window.addEventListener("load", loadLaterSlides, { once: true });
   const heroTitle = document.getElementById("heroTitle");
   const titleKeys = [
     ...document.querySelectorAll("#heroTitles [data-i18n]"),
@@ -904,8 +915,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.documentElement.lang = lang === "zh" ? "zh-Hant" : "en";
     document.title =
       lang === "zh"
-        ? "Go2Mountains — 吉爾吉斯深度旅遊體驗"
-        : "Go2Mountains — Authentic Kyrgyzstan Tours & Experiences";
+        ? "吉爾吉斯旅遊｜小團與包團深度行程 | Go2Mountains"
+        : "Kyrgyzstan Tours & Small-Group Trips with Locals | Go2Mountains";
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const value = t(el.dataset.i18n);
       if (!value) return;

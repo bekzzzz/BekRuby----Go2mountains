@@ -1603,6 +1603,7 @@ svg {
   gap: 16px;
 }
 
+.contact-left-title h1,
 .contact-left-title h2 {
   margin: 0 0 8px;
   font-size: 30px;
@@ -1741,7 +1742,8 @@ svg {
     border-radius: 22px;
   }
 
-  .contact-left-title h2 {
+  .contact-left-title h1,
+.contact-left-title h2 {
     font-size: 26px;
   }
 }
