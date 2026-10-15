@@ -73,7 +73,6 @@
     "8days-Issyk-kul-en.html": "8days-Issyk-kul.html",
     "blog-article-1-v2-en.html": "blog-article-1-v2.html",
     "blog-article-2-v2-en.html": "blog-article-2-v2.html",
-    "blog-article-3-v2-en.html": "blog-article-3-v2.html",
     "blog-article-4-v2-en.html": "blog-article-4-v2.html",
     "blog-article-5-v2-en.html": "blog-article-5-v2.html",
     "blog-article-6-v2-en.html": "blog-article-6-v2.html",

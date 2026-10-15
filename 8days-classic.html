@@ -48,10 +48,10 @@
       referrerpolicy="no-referrer"
     />
     <!-- Same design as 10days-off-road-v2.html: shared stylesheet and script -->
-    <link rel="stylesheet" href="css/10days-off-road-v2.css?v=16" />
+    <link rel="stylesheet" href="css/10days-off-road-v2.css?v=18" />
     <script defer src="JS/10days-off-road-v2.js"></script>
     <link rel="stylesheet" href="css/site-chrome.css?v=4" />
-    <script defer src="JS/site-chrome.js?v=6"></script>
+    <script defer src="JS/site-chrome.js?v=7"></script>
     <script type="application/ld+json" data-seo="page">
 {
         "@context": "https://schema.org",
@@ -75,6 +75,12 @@
         }
       }
     </script>
+    <!-- Phones get a smaller copy of the top photo -->
+    <style>
+      @media (max-width: 760px) {
+        .hero { background-image: url("assets/hero-phone/Frame 13.jpg") !important; }
+      }
+    </style>
   </head>
   <body>
     <div class="progress-bar" id="progressBar"></div>

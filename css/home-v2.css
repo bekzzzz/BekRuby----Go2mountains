@@ -2082,3 +2082,47 @@ textarea:focus-visible {
     max-width: 760px;
   }
 }
+
+/* Phones (portrait): the wide banner photos are cropped to a narrow strip, so
+   aim each slide at its subject instead of the middle of the photo.
+   Slide order: 1 eagle hunter, 2 Song-Kul rider, 3 river walk, 4 horses, 5 bread market */
+@media (max-width: 760px) and (orientation: portrait) {
+  .hero-slide img,
+  .hero-slide.active img {
+    transform: none; /* no extra zoom: shows a bit more of the photo */
+  }
+  .hero-slide:nth-of-type(1) img {
+    object-position: 63% center; /* eagle's head and the hunter's face */
+  }
+  .hero-slide:nth-of-type(2) img {
+    object-position: 40% center; /* rider and yurt */
+  }
+  .hero-slide:nth-of-type(3) img {
+    object-position: 50% center;
+  }
+  .hero-slide:nth-of-type(4) img {
+    object-position: 58% center;
+  }
+  .hero-slide:nth-of-type(5) img {
+    object-position: 22% center; /* the bread seller */
+  }
+}
+
+/* Tour cards ("2027 … 旅行風格"): the whole card opens the itinerary.
+   The "View itinerary" link stretches an invisible layer over the card. */
+.tour-card {
+  position: relative;
+  cursor: pointer;
+}
+.tour-card .btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.tour-card .btn:hover {
+  transform: none; /* the card itself lifts on hover */
+}
+.tour-card:hover .btn {
+  background: var(--orange-dark);
+}

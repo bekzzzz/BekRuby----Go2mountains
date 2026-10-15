@@ -334,3 +334,15 @@ textarea:focus-visible {
 .about-hero .container {
   padding-top: 104px;
 }
+
+/* Phones get a smaller copy of the top photo */
+@media (max-width: 760px) {
+  .about-hero {
+    background-image: url("../assets/hero-phone/Bek-ruby-together.jpg");
+  }
+}
+
+/* Anything marked "hidden" stays hidden, even buttons (used for the closed "Our team" part) */
+[hidden] {
+  display: none !important;
+}
