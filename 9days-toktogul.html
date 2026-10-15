@@ -54,10 +54,10 @@
       referrerpolicy="no-referrer"
     />
     <!-- Same design as 10days-off-road-v2.html: shared stylesheet and script -->
-    <link rel="stylesheet" href="css/10days-off-road-v2.css?v=16" />
+    <link rel="stylesheet" href="css/10days-off-road-v2.css?v=18" />
     <script defer src="JS/10days-off-road-v2.js"></script>
     <link rel="stylesheet" href="css/site-chrome.css?v=4" />
-    <script defer src="JS/site-chrome.js?v=6"></script>
+    <script defer src="JS/site-chrome.js?v=7"></script>
     <style>
       /* page-specific: "Is this trip for you?" */
       .fit-check { margin-top: 32px; }
@@ -97,6 +97,12 @@
         }
       }
     </script>
+    <!-- Phones get a smaller copy of the top photo -->
+    <style>
+      @media (max-width: 760px) {
+        .hero { background-image: url("assets/hero-phone/migration.jpg") !important; }
+      }
+    </style>
   </head>
   <body>
     <div class="progress-bar" id="progressBar"></div>

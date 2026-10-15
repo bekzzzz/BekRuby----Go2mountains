@@ -1958,3 +1958,16 @@ textarea:focus-visible {
     padding: 24px;
   }
 }
+
+/* Top banner on the 10-day pages (photo set here, not in the page): phones get a smaller copy */
+@media (max-width: 760px) {
+  .hero {
+    background-image: url(../assets/hero-phone/10d-kel-suu-lake.jpg);
+  }
+}
+
+/* Highlight cards: the eagle hunter photo is tall, and on phones the card is wide,
+   so keep the top of the photo (his face and the eagle's head) in view */
+.highlight img[src*="eagle-hunter-portrait"] {
+  object-position: center 12%;
+}

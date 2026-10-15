@@ -517,3 +517,9 @@ textarea:focus-visible {
   display: inline-block;
   padding: 8px 0;
 }
+
+/* The questions are added by JS a moment after the page opens. Reserving the
+   space first stops the footer from jumping down when they appear. */
+.survey-card:empty {
+  min-height: 100vh;
+}

@@ -282,24 +282,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://go2mountains.com/blog-article-3-v2-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://go2mountains.com/blog-article-3-v2-en.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://go2mountains.com/blog-article-3-v2.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://go2mountains.com/blog-article-3-v2-en.html"/>
-    <lastmod>2026-10-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://go2mountains.com/blog-article-3-v2.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://go2mountains.com/blog-article-3-v2-en.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://go2mountains.com/blog-article-3-v2.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://go2mountains.com/blog-article-3-v2-en.html"/>
-    <lastmod>2026-10-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://go2mountains.com/blog-article-4-v2-en.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://go2mountains.com/blog-article-4-v2-en.html"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://go2mountains.com/blog-article-4-v2.html"/>
@@ -464,5 +446,5 @@
     <priority>0.5</priority>
   </url>
 
-  <!-- Not listed: 9days-toktogul (coming soon), survey (noindex), en/ and zh/ (language switch only) -->
+  <!-- Not listed: 9days-toktogul (coming soon), blog-article-3 (removed), survey (noindex), en/ and zh/ (language switch only) -->
 </urlset>

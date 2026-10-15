@@ -48,11 +48,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/home-v2.css?v=22" />
-    <link rel="stylesheet" href="css/about-v2.css?v=3" />
+    <link rel="stylesheet" href="css/home-v2.css?v=24" />
+    <link rel="stylesheet" href="css/about-v2.css?v=5" />
     <script defer src="JS/about-v2.js?v=3"></script>
     <link rel="stylesheet" href="css/site-chrome.css?v=4" />
-    <script defer src="JS/site-chrome.js?v=6"></script>
+    <script defer src="JS/site-chrome.js?v=7"></script>
   </head>
   <body>
     <!---------- Site header (shared: css/site-chrome.css + JS/site-chrome.js; links as in index.html) ---------->
@@ -89,7 +89,8 @@
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="contact.html"><span data-i18n="hero_cta">Plan with us</span> <i class="fa-solid fa-arrow-right"></i></a>
-          <a class="btn btn-ghost" href="#team" data-i18n="team_title">Our team</a>
+          <!-- "Our team" closed for now: remove hidden here and on the #team section to show it again -->
+          <a hidden class="btn btn-ghost" href="#team" data-i18n="team_title">Our team</a>
         </div>
       </div>
     </section>
@@ -180,7 +181,7 @@
       </section>
 
       <!---------- Team ---------->
-      <section class="section section-white" id="team">
+      <section class="section section-white" id="team" hidden>
         <div class="container">
           <div class="section-head">
             <div>
