@@ -420,3 +420,15 @@
     max-width: 1680px;
   }
 }
+
+/* Footer contact lines: keep a small space between the icon and the text
+   (the "li" reset above was switching off the flex layout and its gap) */
+.g2m-footer .g2m-footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.g2m-footer .g2m-footer-contact i {
+  width: 16px;
+  text-align: center;
+}
