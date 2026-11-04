@@ -2126,3 +2126,66 @@ textarea:focus-visible {
 .tour-card:hover .btn {
   background: var(--orange-dark);
 }
+
+/* Announcements box right under the top banner */
+.notice {
+  padding: 40px 0 8px;
+}
+.notice-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: clamp(22px, 2.6vw, 28px);
+  margin-bottom: 18px;
+}
+.notice-title i {
+  color: var(--orange);
+}
+.notice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.notice-card {
+  background: #fff6f0;
+  border: 1px solid #f9d3bf;
+  border-left: 5px solid var(--orange);
+  border-radius: var(--radius);
+  padding: 24px 26px;
+}
+.notice-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--orange-dark);
+  background: #fde3d5;
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+.notice-card h3 {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+.notice-card p {
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+.notice-mail {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 10px 0;
+  font-weight: 600;
+  color: var(--orange-dark);
+  text-decoration: none;
+}
+@media (max-width: 760px) {
+  .notice-grid {
+    grid-template-columns: 1fr;
+  }
+  .notice-card {
+    padding: 20px;
+  }
+}

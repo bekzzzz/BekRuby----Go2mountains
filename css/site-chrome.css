@@ -432,3 +432,12 @@
   width: 16px;
   text-align: center;
 }
+
+/* Make photos harder to save: no long-press "Save image" on iPhone/Android,
+   no dragging photos out, no selecting them */
+img {
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+}

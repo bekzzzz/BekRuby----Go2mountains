@@ -122,6 +122,17 @@
     true
   );
 
+  // ---------- Make photos harder to save ----------
+  // Blocks right-click "Save image", dragging a photo to the desktop, and long-press
+  // "Save to Photos" on phones. (Screenshots can never be blocked.)
+  function protectImages(e) {
+    if (e.target && e.target.closest && e.target.closest("img, picture, figure, .hero, .highlight, .tour-media")) e.preventDefault();
+  }
+  document.addEventListener("contextmenu", protectImages);
+  document.addEventListener("dragstart", (e) => {
+    if (e.target && e.target.tagName === "IMG") e.preventDefault();
+  });
+
   function ready(fn) {
     if (document.readyState !== "loading") fn();
     else document.addEventListener("DOMContentLoaded", fn);
