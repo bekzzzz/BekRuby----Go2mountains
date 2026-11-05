@@ -379,18 +379,20 @@ Object.assign(translations.zh, {
 // ---------- Announcements under the top banner ----------
 Object.assign(translations.en, {
   notice_title: "Registration news",
-  notice1_tag: "Group tours · Date change",
-  notice1_head: "🇰🇬 2027 group tours: announcement moved to 5 Nov",
-  notice1_text: "We planned to publish the 2027 group tour dates and registration details on 2 Nov. Our team is still confirming the final itineraries and dates, so we will publish them on <b>Thursday 5 Nov</b> instead. Thank you for your patience ❤️",
+  notice1_tag: "Group tours · Registration open",
+  notice1_head: "🇰🇬 Registration for 2027 group tours is open!",
+  notice1_text: "Three travel styles and two guide languages. Please choose the one that suits you. When a departure is full, it is closed in the form right away.",
+  notice1_btn: "Register now",
   notice2_tag: "Private tours · Registration closed",
   notice2_head: "🇰🇬 2027 private tours are fully booked",
   notice2_text: "Registration for 2027 private tours is now closed. Thank you for your support and trust! ❤️ If you would like to plan a private trip to Kyrgyzstan in 2028, email us early to register your travel wishes.",
 });
 Object.assign(translations.zh, {
   notice_title: "報名公告",
-  notice1_tag: "拼團・日期調整",
-  notice1_head: "🇰🇬 2027 拼團公告｜日期調整",
-  notice1_text: "原訂 11/2 公布的拼團日期與報名資訊，因團隊仍在進行最後的行程與檔期確認，將延後至 <b>11/5（四）</b>公布！謝謝大家的耐心與體諒 ❤️",
+  notice1_tag: "拼團・開放報名",
+  notice1_head: "🇰🇬 歡迎報名 2027 拼團！",
+  notice1_text: "三種風格類型，兩種導遊。請依需求選擇，該團期如滿額，會直接關閉選項。",
+  notice1_btn: "立即報名",
   notice2_tag: "私人團・已截止報名",
   notice2_head: "🇰🇬 私人團報名公告",
   notice2_text: "2027 年私人團目前已截止報名，感謝大家的支持與信任！❤️ 若您有意規劃 2028 年吉爾吉斯私人訂製旅行，歡迎提前透過 Email 與我們聯繫，登記您的旅行需求。",
@@ -483,7 +485,7 @@ const TOURS = [
     desc_en:
       "A relaxed loop of Issyk-Kul with Chon Kemin valley, Altyn-Arashan hot springs and eagle hunting culture: ideal for families and senior travellers.",
     desc_zh:
-      "伊塞克湖環湖、Chon Kemin 秋日山谷、Altyn-Arashan 高山溫泉與獵鷹文化。精緻小團，親子與長輩首選。",
+      "伊塞克湖環湖、Chon Kemin 春日山谷、Altyn-Arashan 高山溫泉與獵鷹文化。精緻小團，親子與長輩首選。",
     // Details from the registration form (shown only in this language)
     info_zh: {
       code: "IKC",
