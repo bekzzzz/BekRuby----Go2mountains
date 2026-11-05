@@ -2189,3 +2189,45 @@ textarea:focus-visible {
     padding: 20px;
   }
 }
+
+/* The main announcement (2027 group tour registration): full width and bigger */
+.notice-card--main {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #fff3ea, #ffe2d1);
+  border: 1px solid #f7b994;
+  border-left: 8px solid var(--orange);
+  padding: 34px 36px;
+  box-shadow: 0 14px 34px rgba(240, 83, 35, 0.14);
+}
+.notice-card--main .notice-tag {
+  font-size: 14px;
+  padding: 5px 14px;
+  background: var(--orange);
+  color: #fff;
+}
+.notice-card--main h3 {
+  font-size: clamp(24px, 3vw, 32px);
+  margin: 6px 0 12px;
+}
+.notice-card--main p {
+  font-size: clamp(16px, 1.6vw, 18px);
+  color: var(--ink);
+  max-width: 760px;
+}
+.notice-btn {
+  margin-top: 20px;
+  font-size: 17px;
+  padding: 15px 30px;
+}
+@media (max-width: 760px) {
+  .notice-card--main {
+    padding: 24px 20px;
+  }
+  .notice-btn {
+    width: 100%;
+  }
+}
+/* Announcements now stack in one column (big registration card first) */
+.notice-grid {
+  grid-template-columns: 1fr;
+}
